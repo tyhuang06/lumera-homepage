@@ -12,7 +12,7 @@ export function ProductGallery({ images }: Props) {
 		<div className="product-gallery relative w-full aspect-square rounded-sm border overflow-hidden">
 			<Swiper
 				modules={[Pagination]}
-				pagination={{ type: 'progressbar' }}
+				pagination={{ clickable: true }}
 				slidesPerView={1}
 				className="absolute inset-0 h-full"
 			>
