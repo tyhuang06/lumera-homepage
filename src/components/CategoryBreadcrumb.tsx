@@ -17,9 +17,7 @@ export function CategoryBreadcrumb({ category }: { category: string }) {
 				<BreadcrumbSeparator />
 
 				<BreadcrumbItem>
-					<BreadcrumbLink href="/collections">
-						Collections
-					</BreadcrumbLink>
+					<BreadcrumbLink href="/">Collections</BreadcrumbLink>
 				</BreadcrumbItem>
 
 				<BreadcrumbSeparator />

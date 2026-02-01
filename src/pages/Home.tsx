@@ -5,9 +5,9 @@ export function Home() {
 	return (
 		<section className="mx-auto max-w-7xl px-4 py-16">
 			<div className="mb-10">
-				<h1 className="text-sm tracking-[0.2em] text-muted-foreground">
+				<p className="text-xs tracking-[0.2em] text-muted-foreground mb-8">
 					Collections
-				</h1>
+				</p>
 			</div>
 
 			<div className="columns-1 gap-8 sm:columns-2 lg:columns-3">
