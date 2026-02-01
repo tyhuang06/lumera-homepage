@@ -22,8 +22,12 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from './ui/accordion';
+import { useTranslation } from 'react-i18next';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 export function Navbar() {
+	const { t } = useTranslation();
+
 	return (
 		<header className="fixed top-0 z-50 w-full border-b bg-white/80 backdrop-blur">
 			<div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4">
@@ -40,29 +44,29 @@ export function Navbar() {
 					<NavigationMenuList>
 						<NavigationMenuItem>
 							<NavigationMenuTrigger className="text-sm">
-								Collections
+								{t('nav.collections')}
 							</NavigationMenuTrigger>
 
 							<NavigationMenuContent>
-								<ul className="grid w-200px gap-2 p-4">
+								<ul className="grid w-50 gap-2 p-4">
 									<li>
 										<NavigationMenuLink asChild>
 											<Link to="/collections/necklaces">
-												Necklaces
+												{t('categories.necklaces')}
 											</Link>
 										</NavigationMenuLink>
 									</li>
 									<li>
 										<NavigationMenuLink asChild>
 											<Link to="/collections/earrings">
-												Earrings
+												{t('categories.earrings')}
 											</Link>
 										</NavigationMenuLink>
 									</li>
 									<li>
 										<NavigationMenuLink asChild>
 											<Link to="/collections/bracelets">
-												Bracelets
+												{t('categories.bracelets')}
 											</Link>
 										</NavigationMenuLink>
 									</li>
@@ -74,7 +78,7 @@ export function Navbar() {
 								asChild
 								className={navigationMenuTriggerStyle()}
 							>
-								<Link to="/story">Our Story</Link>
+								<Link to="/story">{t('nav.ourStory')}</Link>
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem>
@@ -82,7 +86,7 @@ export function Navbar() {
 								asChild
 								className={navigationMenuTriggerStyle()}
 							>
-								<Link to="/faq">FAQ</Link>
+								<Link to="/faq">{t('nav.faq')}</Link>
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem>
@@ -90,42 +94,47 @@ export function Navbar() {
 								asChild
 								className={navigationMenuTriggerStyle()}
 							>
-								<a href="#contact">Contact</a>
+								<a href="#contact">{t('nav.contact')}</a>
 							</NavigationMenuLink>
+						</NavigationMenuItem>
+						<NavigationMenuItem>
+							<LanguageSwitcher />
 						</NavigationMenuItem>
 					</NavigationMenuList>
 				</NavigationMenu>
 
 				{/* Mobile menu */}
-				<Sheet>
-					<SheetTrigger asChild>
-						<Button
-							variant="ghost"
-							size="icon"
-							className="md:hidden rounded-full"
-						>
-							<Menu className="h-5 w-5" />
-						</Button>
-					</SheetTrigger>
+				<div className="flex items-center gap-1 md:hidden">
+					<LanguageSwitcher />
+					<Sheet>
+						<SheetTrigger asChild>
+							<Button
+								variant="ghost"
+								size="icon"
+								className="md:hidden rounded-full"
+							>
+								<Menu className="h-5 w-5" />
+							</Button>
+						</SheetTrigger>
 
-					<SheetContent
-						side="right"
-						className="
+						<SheetContent
+							side="right"
+							className="
                             w-[75%] sm:w-[320px]
                             bg-white/95 backdrop-blur
                             border-l
                             px-4
                             pb-10
                         "
-					>
-						<nav className="mt-12 pt-4 flex flex-col gap-5 text-base tracking-wide">
-							<Accordion type="single" collapsible>
-								<AccordionItem
-									value="collections"
-									className="border-none"
-								>
-									<AccordionTrigger
-										className="
+						>
+							<nav className="mt-12 pt-4 flex flex-col gap-5 text-base tracking-wide">
+								<Accordion type="single" collapsible>
+									<AccordionItem
+										value="collections"
+										className="border-none"
+									>
+										<AccordionTrigger
+											className="
                                             py-0
                                             text-base
                                             font-normal
@@ -134,83 +143,84 @@ export function Navbar() {
                                             hover:text-foreground
                                             hover:no-underline
                                         "
+										>
+											{t('nav.collections')}
+										</AccordionTrigger>
+
+										<AccordionContent className="mt-4 flex flex-col gap-4 pl-2">
+											<SheetClose asChild>
+												<Link
+													to="/collections/necklaces"
+													className="text-muted-foreground hover:text-foreground transition"
+												>
+													{t('categories.necklaces')}
+												</Link>
+											</SheetClose>
+
+											<SheetClose asChild>
+												<Link
+													to="/collections/earrings"
+													className="text-muted-foreground hover:text-foreground transition"
+												>
+													{t('categories.earrings')}
+												</Link>
+											</SheetClose>
+
+											<SheetClose asChild>
+												<Link
+													to="/collections/bracelets"
+													className="text-muted-foreground hover:text-foreground transition"
+												>
+													{t('categories.bracelets')}
+												</Link>
+											</SheetClose>
+										</AccordionContent>
+									</AccordionItem>
+								</Accordion>
+
+								<SheetClose asChild>
+									<Link
+										to="/"
+										className="text-muted-foreground hover:text-foreground transition"
 									>
-										Collections
-									</AccordionTrigger>
+										{t('nav.home')}
+									</Link>
+								</SheetClose>
 
-									<AccordionContent className="mt-4 flex flex-col gap-4 pl-2">
-										<SheetClose asChild>
-											<Link
-												to="/collections/necklaces"
-												className="text-muted-foreground hover:text-foreground transition"
-											>
-												Necklaces
-											</Link>
-										</SheetClose>
+								<SheetClose asChild>
+									<Link
+										to="/story"
+										className="text-muted-foreground hover:text-foreground transition"
+									>
+										{t('nav.ourStory')}
+									</Link>
+								</SheetClose>
 
-										<SheetClose asChild>
-											<Link
-												to="/collections/earrings"
-												className="text-muted-foreground hover:text-foreground transition"
-											>
-												Earrings
-											</Link>
-										</SheetClose>
+								<SheetClose asChild>
+									<Link
+										to="/faq"
+										className="text-muted-foreground hover:text-foreground transition"
+									>
+										{t('nav.faq')}
+									</Link>
+								</SheetClose>
 
-										<SheetClose asChild>
-											<Link
-												to="/collections/bracelets"
-												className="text-muted-foreground hover:text-foreground transition"
-											>
-												Bracelets
-											</Link>
-										</SheetClose>
-									</AccordionContent>
-								</AccordionItem>
-							</Accordion>
+								<SheetClose asChild>
+									<a
+										href="#contact"
+										className="text-muted-foreground hover:text-foreground transition"
+									>
+										{t('nav.contact')}
+									</a>
+								</SheetClose>
+							</nav>
 
-							<SheetClose asChild>
-								<Link
-									to="/"
-									className="text-muted-foreground hover:text-foreground transition"
-								>
-									Home
-								</Link>
-							</SheetClose>
-
-							<SheetClose asChild>
-								<Link
-									to="/story"
-									className="text-muted-foreground hover:text-foreground transition"
-								>
-									Our Story
-								</Link>
-							</SheetClose>
-
-							<SheetClose asChild>
-								<Link
-									to="/faq"
-									className="text-muted-foreground hover:text-foreground transition"
-								>
-									FAQ
-								</Link>
-							</SheetClose>
-
-							<SheetClose asChild>
-								<a
-									href="#contact"
-									className="text-muted-foreground hover:text-foreground transition"
-								>
-									Contact
-								</a>
-							</SheetClose>
-						</nav>
-
-						<div className="mt-auto pt-10 text-xs tracking-[0.2em] text-muted-foreground">
-							LUMÉRA
-						</div>
-					</SheetContent>
-				</Sheet>
+							<div className="mt-auto pt-10 text-xs tracking-[0.2em] text-muted-foreground">
+								LUMÉRA
+							</div>
+						</SheetContent>
+					</Sheet>
+				</div>
 			</div>
 		</header>
 	);

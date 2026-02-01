@@ -1,12 +1,15 @@
 import { categories } from '@/data/categories';
 import { CategoryTile } from '@/components/CategoryTile';
+import { useTranslation } from 'react-i18next';
 
 export function Home() {
+	const { t } = useTranslation();
+
 	return (
 		<section className="mx-auto max-w-7xl px-4 py-8">
 			<div className="mb-10">
-				<p className="text-xs tracking-[0.2em] text-muted-foreground mb-8">
-					Collections
+				<p className="text-sm tracking-[0.2em] text-muted-foreground mb-8">
+					{t('nav.collections')}
 				</p>
 			</div>
 

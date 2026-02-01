@@ -1,0 +1,33 @@
+{
+	"nav": {
+		"home": "Home",
+		"collections": "Collections",
+		"ourStory": "Our Story",
+		"faq": "FAQ",
+		"contact": "Contact"
+	},
+
+	"categories": {
+		"necklaces": "Necklaces",
+		"earrings": "Earrings",
+		"bracelets": "Bracelets"
+	},
+
+	"products": {
+		"akoya-necklace": "Akoya Pearl Necklace",
+		"akoya-earrings": "Akoya Pearl Earrings"
+	},
+
+	"ui": {
+		"viewCollection": "View collection",
+		"collectionNotFound": "Collection not found."
+	},
+
+	"footer": {
+		"tagline": "Some placeholder text",
+		"wechatLabel": "WeChat",
+		"rednoteLabel": "RedNote",
+		"wechatHint": "Scan with WeChat to follow",
+		"close": "Close"
+	}
+}
