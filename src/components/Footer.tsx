@@ -1,7 +1,14 @@
-import { IconMail, IconBrandWechat, IconBook2 } from '@tabler/icons-react';
+import {
+	IconMail,
+	IconBrandWechat,
+	IconBook2,
+	IconBrandInstagram,
+} from '@tabler/icons-react';
+import { useState } from 'react';
 
 export function Footer() {
 	const iconClass = 'h-4 w-4 text-muted-foreground';
+	const [showWechat, setShowWechat] = useState(false);
 
 	return (
 		<footer className="border-t bg-white">
@@ -18,27 +25,56 @@ export function Footer() {
 
 				{/* Contact + socials */}
 				<div className="flex flex-col gap-3 text-sm text-muted-foreground">
-					<div className="flex items-start gap-2.5">
+					<button
+						onClick={() => setShowWechat(true)}
+						className="flex items-start gap-2.5 text-sm text-muted-foreground hover:text-foreground transition"
+					>
 						<IconBrandWechat className={`${iconClass} mt-0.5`} />
 						<span>WeChat: dollyzsca24</span>
-					</div>
+					</button>
+
+					{showWechat && (
+						<div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
+							<div className="rounded-lg bg-white p-6 text-center">
+								<img
+									src="/wechat-qr.png"
+									alt="WeChat QR code"
+									className="mx-auto h-48 w-48"
+								/>
+								<p className="mt-4 text-sm text-muted-foreground">
+									Scan with WeChat to follow
+								</p>
+								<button
+									onClick={() => setShowWechat(false)}
+									className="mt-4 text-sm underline"
+								>
+									Close
+								</button>
+							</div>
+						</div>
+					)}
+
+					{/* <div className="flex items-start gap-2.5">
+						<IconBrandWechat className={`${iconClass} mt-0.5`} />
+						<span>WeChat: dollyzsca24</span>
+					</div> */}
 
 					<FooterLink
-						href="https://www.xiaohongshu.com/user/profile/xxxx"
+						href="https://www.xiaohongshu.com/user/profile/65720f9b000000001902f3f6"
 						icon={<IconBook2 className={iconClass} />}
 						label="小红书: dollyzsca24"
 					/>
 
 					<FooterLink
-						href="mailto:hello@lumerafinepearls.com"
-						icon={<IconMail className={iconClass} />}
-						label="hello@lumerafinepearls.com"
+						href="https://instagram.com/lumera_pearls"
+						icon={<IconBrandInstagram className={iconClass} />}
+						label="Instagram: lumera_pearls"
 					/>
 
 					{/* <FooterLink
-						href="https://instagram.com/yourhandle"
-						icon={<IconBrandInstagram className={iconClass} />}
-						label="Instagram"
+						href="mailto:hello@lumerafinepearls.com"
+						icon={<IconMail className={iconClass} />}
+						label="hello@lumerafinepearls.com"
 					/> */}
 				</div>
 
