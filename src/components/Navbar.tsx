@@ -7,8 +7,8 @@ export function Navbar() {
 		<header className="fixed top-0 z-50 w-full border-b bg-white/80 backdrop-blur">
 			<div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4">
 				{/* Logo */}
-				<div className="text-lg font-semibold tracking-wide">
-					Lumera
+				<div className="text-lg font-didot font-semibold leading-none tracking-[0.12em]">
+					LUMÉRA
 				</div>
 
 				{/* Desktop nav */}
