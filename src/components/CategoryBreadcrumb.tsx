@@ -3,24 +3,29 @@ import {
 	BreadcrumbItem,
 	BreadcrumbLink,
 	BreadcrumbList,
-	BreadcrumbPage,
 	BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
 
-export function CollectionBreadcrumb({ category }) {
+export function CategoryBreadcrumb({ category }: { category: string }) {
 	return (
-		<Breadcrumb className="mb-6">
+		<Breadcrumb>
 			<BreadcrumbList>
 				<BreadcrumbItem>
 					<BreadcrumbLink href="/">Home</BreadcrumbLink>
 				</BreadcrumbItem>
+
 				<BreadcrumbSeparator />
+
 				<BreadcrumbItem>
-					<BreadcrumbLink href="/">Collections</BreadcrumbLink>
+					<BreadcrumbLink href="/collections">
+						Collections
+					</BreadcrumbLink>
 				</BreadcrumbItem>
+
 				<BreadcrumbSeparator />
+
 				<BreadcrumbItem>
-					<BreadcrumbPage>{category}</BreadcrumbPage>
+					<span className="text-muted-foreground">{category}</span>
 				</BreadcrumbItem>
 			</BreadcrumbList>
 		</Breadcrumb>

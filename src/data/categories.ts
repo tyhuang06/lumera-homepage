@@ -1,8 +1,11 @@
+export type CategorySlug = "necklaces" | "earrings" | "bracelets";
+
 export type Category = {
-  slug: string;
+  slug: CategorySlug;
   name: string;
   cover: string;
 };
+
 
 export const categories: Category[] = [
   {

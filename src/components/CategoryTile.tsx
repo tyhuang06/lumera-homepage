@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
 import type { Category } from '@/data/categories';
 
 export function CategoryTile({ category }: { category: Category }) {
