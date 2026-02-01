@@ -10,6 +10,16 @@ function App() {
 
 			<Gallery />
 
+			{/* <main className="pt-14">
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route
+						path="/collections/:category"
+						element={<CollectionPage />}
+					/>
+				</Routes>
+			</main> */}
+
 			<Footer />
 		</>
 	);
