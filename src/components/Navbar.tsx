@@ -90,7 +90,7 @@ export function Navbar() {
 								asChild
 								className={navigationMenuTriggerStyle()}
 							>
-								<Link to="/contact">Contact</Link>
+								<a href="#contact">Contact</a>
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 					</NavigationMenuList>
@@ -197,12 +197,12 @@ export function Navbar() {
 							</SheetClose>
 
 							<SheetClose asChild>
-								<Link
-									to="/contact"
+								<a
+									href="#contact"
 									className="text-muted-foreground hover:text-foreground transition"
 								>
 									Contact
-								</Link>
+								</a>
 							</SheetClose>
 						</nav>
 

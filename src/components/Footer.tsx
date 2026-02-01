@@ -10,7 +10,7 @@ export function Footer() {
 	const [showWechat, setShowWechat] = useState(false);
 
 	return (
-		<footer className="border-t bg-white">
+		<footer id="contact" className="border-t bg-white">
 			<div className="mx-auto max-w-6xl px-6 py-20">
 				{/* Brand */}
 				<div className="mb-10 text-center">
