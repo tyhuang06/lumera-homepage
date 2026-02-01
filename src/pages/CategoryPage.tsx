@@ -10,7 +10,7 @@ export default function CategoryPage() {
 
 	if (!slug) {
 		return (
-			<main className="mx-auto max-w-7xl px-4 pt-24 pb-16">
+			<main className="mx-auto max-w-7xl px-4 py-8">
 				<p className="text-sm text-muted-foreground">
 					Collection not found.
 				</p>
@@ -22,7 +22,7 @@ export default function CategoryPage() {
 	const categoryProducts = products.filter((p) => p.category === slug);
 
 	return (
-		<main className="mx-auto max-w-7xl px-4 pt-24 pb-16">
+		<main className="mx-auto max-w-7xl px-4 py-8">
 			<section className="mb-12">
 				<CategoryBreadcrumb category={title} />
 

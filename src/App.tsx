@@ -10,7 +10,7 @@ function App() {
 		<>
 			<Navbar />
 
-			<main className="pt-8">
+			<main className="pt-14">
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route

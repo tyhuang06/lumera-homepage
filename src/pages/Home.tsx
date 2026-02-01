@@ -3,7 +3,7 @@ import { CategoryTile } from '@/components/CategoryTile';
 
 export function Home() {
 	return (
-		<section className="mx-auto max-w-7xl px-4 py-16">
+		<section className="mx-auto max-w-7xl px-4 py-8">
 			<div className="mb-10">
 				<p className="text-xs tracking-[0.2em] text-muted-foreground mb-8">
 					Collections
