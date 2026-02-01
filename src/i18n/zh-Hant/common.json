@@ -1,0 +1,33 @@
+{
+	"nav": {
+		"home": "首頁",
+		"collections": "系列",
+		"ourStory": "品牌故事",
+		"faq": "常見問題",
+		"contact": "聯絡我們"
+	},
+
+	"categories": {
+		"necklaces": "項鍊",
+		"earrings": "耳環",
+		"bracelets": "手鍊"
+	},
+
+	"products": {
+		"akoya-necklace": "Akoya 珍珠項鍊",
+		"akoya-earrings": "Akoya 珍珠耳環"
+	},
+
+	"ui": {
+		"viewCollection": "查看系列",
+		"collectionNotFound": "找不到此系列"
+	},
+
+	"footer": {
+		"tagline": "暫定文字",
+		"wechatLabel": "微信",
+		"rednoteLabel": "小紅書",
+		"wechatHint": "使用微信掃描追蹤我們",
+		"close": "關閉"
+	}
+}

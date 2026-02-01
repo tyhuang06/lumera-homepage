@@ -4,8 +4,10 @@ import {
 	IconBrandInstagram,
 } from '@tabler/icons-react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export function Footer() {
+	const { t } = useTranslation();
 	const iconClass = 'h-4 w-4 text-muted-foreground';
 	const [showWechat, setShowWechat] = useState(false);
 
@@ -14,11 +16,11 @@ export function Footer() {
 			<div className="mx-auto max-w-6xl px-6 py-20">
 				{/* Brand */}
 				<div className="mb-10 text-center">
-					<h3 className="text-lg font-semibold tracking-wide">
+					<h3 className="text-lg font-didot font-semibold tracking-wide">
 						Lumera Fine Pearls
 					</h3>
 					<p className="mt-2 text-sm text-muted-foreground">
-						Some placeholder text
+						{t('footer.tagline')}
 					</p>
 				</div>
 
@@ -29,7 +31,7 @@ export function Footer() {
 						className="flex items-start gap-2.5 text-sm text-muted-foreground hover:text-foreground transition"
 					>
 						<IconBrandWechat className={`${iconClass} mt-0.5`} />
-						<span>WeChat: dollyzsca24</span>
+						<span>{t('footer.wechatLabel')}: dollyzsca24</span>
 					</button>
 
 					{showWechat && (
@@ -41,13 +43,13 @@ export function Footer() {
 									className="mx-auto h-48 w-48"
 								/>
 								<p className="mt-4 text-sm text-muted-foreground">
-									Scan with WeChat to follow
+									{t('footer.wechatHint')}
 								</p>
 								<button
 									onClick={() => setShowWechat(false)}
 									className="mt-4 text-sm underline"
 								>
-									Close
+									{t('footer.close')}
 								</button>
 							</div>
 						</div>
@@ -61,7 +63,7 @@ export function Footer() {
 					<FooterLink
 						href="https://www.xiaohongshu.com/user/profile/65720f9b000000001902f3f6"
 						icon={<IconBook2 className={iconClass} />}
-						label="小红书: dollyzsca24"
+						label={`${t('footer.rednoteLabel')}: dollyzsca24`}
 					/>
 
 					<FooterLink
