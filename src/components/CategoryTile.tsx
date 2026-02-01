@@ -27,7 +27,7 @@ export function CategoryTile({ category }: { category: Category }) {
 							<span className="text-sm tracking-wide">
 								{category.name}
 							</span>
-							<span className="text-xs tracking-wide opacity-0 group-hover:opacity-100 transition">
+							<span className="text-xs tracking-wide transition hover:text-white">
 								View collection
 							</span>
 						</div>

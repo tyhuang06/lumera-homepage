@@ -44,7 +44,7 @@ export function Navbar() {
 							</NavigationMenuTrigger>
 
 							<NavigationMenuContent>
-								<ul className="grid w-[200px] gap-2 p-4">
+								<ul className="grid w-200px gap-2 p-4">
 									<li>
 										<NavigationMenuLink asChild>
 											<Link to="/collections/necklaces">
@@ -90,7 +90,7 @@ export function Navbar() {
 								asChild
 								className={navigationMenuTriggerStyle()}
 							>
-								<Link to="/contact">Contact</Link>
+								<a href="#contact">Contact</a>
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 					</NavigationMenuList>
@@ -118,7 +118,7 @@ export function Navbar() {
                             pb-10
                         "
 					>
-						<nav className="mt-12 flex flex-col gap-5 text-base tracking-wide">
+						<nav className="mt-12 pt-4 flex flex-col gap-5 text-base tracking-wide">
 							<Accordion type="single" collapsible>
 								<AccordionItem
 									value="collections"
@@ -197,12 +197,12 @@ export function Navbar() {
 							</SheetClose>
 
 							<SheetClose asChild>
-								<Link
-									to="/contact"
+								<a
+									href="#contact"
 									className="text-muted-foreground hover:text-foreground transition"
 								>
 									Contact
-								</Link>
+								</a>
 							</SheetClose>
 						</nav>
 
