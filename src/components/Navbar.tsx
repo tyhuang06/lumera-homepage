@@ -44,35 +44,29 @@ export function Navbar() {
 					<NavigationMenuList>
 						<NavigationMenuItem>
 							<NavigationMenuTrigger className="text-sm">
-								<a>{t('nav.collections')}</a>
+								{t('nav.collections')}
 							</NavigationMenuTrigger>
 
 							<NavigationMenuContent>
-								<ul className="grid w-200px gap-2 p-4">
+								<ul className="grid w-50 gap-2 p-4">
 									<li>
 										<NavigationMenuLink asChild>
 											<Link to="/collections/necklaces">
-												<a>
-													{t('categories.necklaces')}
-												</a>
+												{t('categories.necklaces')}
 											</Link>
 										</NavigationMenuLink>
 									</li>
 									<li>
 										<NavigationMenuLink asChild>
 											<Link to="/collections/earrings">
-												<a>
-													{t('categories.earrings')}
-												</a>
+												{t('categories.earrings')}
 											</Link>
 										</NavigationMenuLink>
 									</li>
 									<li>
 										<NavigationMenuLink asChild>
 											<Link to="/collections/bracelets">
-												<a>
-													{t('categories.bracelets')}
-												</a>
+												{t('categories.bracelets')}
 											</Link>
 										</NavigationMenuLink>
 									</li>
@@ -84,9 +78,7 @@ export function Navbar() {
 								asChild
 								className={navigationMenuTriggerStyle()}
 							>
-								<Link to="/story">
-									<a>{t('nav.ourStory')}</a>
-								</Link>
+								<Link to="/story">{t('nav.ourStory')}</Link>
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem>
@@ -94,9 +86,7 @@ export function Navbar() {
 								asChild
 								className={navigationMenuTriggerStyle()}
 							>
-								<Link to="/faq">
-									<a>{t('nav.faq')}</a>
-								</Link>
+								<Link to="/faq">{t('nav.faq')}</Link>
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem>
@@ -154,7 +144,7 @@ export function Navbar() {
                                             hover:no-underline
                                         "
 										>
-											<a>{t('nav.collections')}</a>
+											{t('nav.collections')}
 										</AccordionTrigger>
 
 										<AccordionContent className="mt-4 flex flex-col gap-4 pl-2">
@@ -163,11 +153,7 @@ export function Navbar() {
 													to="/collections/necklaces"
 													className="text-muted-foreground hover:text-foreground transition"
 												>
-													<a>
-														{t(
-															'categories.necklaces'
-														)}
-													</a>
+													{t('categories.necklaces')}
 												</Link>
 											</SheetClose>
 
@@ -176,11 +162,7 @@ export function Navbar() {
 													to="/collections/earrings"
 													className="text-muted-foreground hover:text-foreground transition"
 												>
-													<a>
-														{t(
-															'categories.earrings'
-														)}
-													</a>
+													{t('categories.earrings')}
 												</Link>
 											</SheetClose>
 
@@ -189,11 +171,7 @@ export function Navbar() {
 													to="/collections/bracelets"
 													className="text-muted-foreground hover:text-foreground transition"
 												>
-													<a>
-														{t(
-															'categories.bracelets'
-														)}
-													</a>
+													{t('categories.bracelets')}
 												</Link>
 											</SheetClose>
 										</AccordionContent>
@@ -205,7 +183,7 @@ export function Navbar() {
 										to="/"
 										className="text-muted-foreground hover:text-foreground transition"
 									>
-										<a>{t('nav.home')}</a>
+										{t('nav.home')}
 									</Link>
 								</SheetClose>
 
@@ -214,7 +192,7 @@ export function Navbar() {
 										to="/story"
 										className="text-muted-foreground hover:text-foreground transition"
 									>
-										<a>{t('nav.ourStory')}</a>
+										{t('nav.ourStory')}
 									</Link>
 								</SheetClose>
 
@@ -223,7 +201,7 @@ export function Navbar() {
 										to="/faq"
 										className="text-muted-foreground hover:text-foreground transition"
 									>
-										<a>{t('nav.faq')}</a>
+										{t('nav.faq')}
 									</Link>
 								</SheetClose>
 
