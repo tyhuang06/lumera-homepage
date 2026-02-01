@@ -1,3 +1,16 @@
+@layer components {
+	/* Lumera Swiper pagination */
+	.product-gallery .swiper-pagination-progressbar {
+		top: auto !important;
+		bottom: 0px !important;
 
+		left: 12px;
+		right: 12px;
 
+		background: rgba(230, 216, 190, 0.35) !important;
+	}
 
+	.product-gallery .swiper-pagination-progressbar-fill {
+		background: rgba(230, 216, 190, 0.75) !important;
+	}
+}

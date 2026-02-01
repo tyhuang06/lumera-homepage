@@ -1,14 +1,15 @@
 import './App.css';
 import { Footer } from './components/Footer';
+import { Gallery } from './components/Gallery';
 import { Navbar } from './components/Navbar';
 
 function App() {
 	return (
 		<>
 			<Navbar />
-			<div className="pt-14 pl-4">
-				<div>Images</div>
-			</div>
+
+			<Gallery />
+
 			<Footer />
 		</>
 	);
