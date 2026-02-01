@@ -107,6 +107,9 @@ export function Navbar() {
 								<a href="#contact">{t('nav.contact')}</a>
 							</NavigationMenuLink>
 						</NavigationMenuItem>
+						<NavigationMenuItem>
+							<LanguageSwitcher />
+						</NavigationMenuItem>
 					</NavigationMenuList>
 				</NavigationMenu>
 
