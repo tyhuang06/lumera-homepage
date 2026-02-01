@@ -1,9 +1,4 @@
-import {
-	IconMail,
-	IconBrandInstagram,
-	IconBrandWechat,
-	IconBook2,
-} from '@tabler/icons-react';
+import { IconMail, IconBrandWechat, IconBook2 } from '@tabler/icons-react';
 
 export function Footer() {
 	const iconClass = 'h-4 w-4 text-muted-foreground';
