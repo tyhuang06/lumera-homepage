@@ -9,6 +9,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: '/lumera-homepage/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
