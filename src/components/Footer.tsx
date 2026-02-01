@@ -1,5 +1,4 @@
 import {
-	IconMail,
 	IconBrandWechat,
 	IconBook2,
 	IconBrandInstagram,
