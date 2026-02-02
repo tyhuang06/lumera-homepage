@@ -19,7 +19,7 @@
 	},
 
 	"footer": {
-		"tagline": "Some placeholder text",
+		"tagline": "Making the choice of pearls a little simpler.",
 		"wechatLabel": "WeChat",
 		"rednoteLabel": "RedNote",
 		"wechatHint": "Scan with WeChat to follow",
@@ -37,18 +37,42 @@
 		"title": "Frequently Asked Questions",
 
 		"q1": {
-			"question": "Where are your pearls sourced?",
-			"answer": "Our pearls are sourced from trusted farms known for quality and sustainability."
+			"question": "如何購買?",
+			"answer": [
+				{
+					"type": "list",
+					"items": [
+						"加入 WeChat (ID: dollyzsca24) 或 IG (ID: lumera_pearls)",
+						"私訊我們你有興趣的款式",
+						"我們會跟你討論需求、幫你挑、報價",
+						"確認後完成付款 (支援 Venmo, Zelle)",
+						"確認寄出時間，出貨後會提供追蹤號碼"
+					]
+				}
+			]
 		},
 
 		"q2": {
-			"question": "How should I care for pearl jewelry?",
-			"answer": "Pearls should be stored separately and wiped gently after wear to maintain their luster."
+			"question": "你們的飾品是什麼材質？",
+			"answer": [
+				"我們堅持使用 18K 金作為主要材質，確保飾品高品質、可長期佩戴、不易過敏，也具保值性．",
+				"目前販售中的品項包含項鏈、耳環、耳夾、手鏈與戒指．其中超過 50% 配件採用日本精工製作，只為確保整體質感與耐用度",
+				"如為鑲鑽款式，可依需求選擇鋯石、培育鑽或天然鑽石，價格將依所選材質而有所不同．"
+			]
 		},
 
 		"q3": {
-			"question": "Do you offer custom designs?",
-			"answer": "At the moment, we focus on curated collections, but custom options may be available in the future."
+			"question": "你們賣什麼珍珠種類，海水淡水差在哪？",
+			"answer": [
+				"海水珍珠光澤更亮、結構更穩定，適合長期佩戴; 淡水珍珠價格親民，但光澤與耐久度相對不同．",
+				"我們主要販售日本三重縣直送的高品質海水珍珠，",
+				{
+					"type": "list",
+					"items": ["Akoya (阿古屋)", "澳白珍珠", "大溪地黑蝶珍珠"]
+				},
+				"好的珍珠不只戴一季，而是可以陪你很多年，光澤穩、老化慢、越戴越美．",
+				"淡水珍珠當然也有他的可愛之處，但如果你在找的是耐看、耐戴、經的起時間的那種光，那我們會很誠實地推薦海水珍珠．"
+			]
 		}
 	},
 
