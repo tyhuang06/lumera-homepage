@@ -19,15 +19,53 @@
 	},
 
 	"footer": {
-		"tagline": "暫定文字",
+		"tagline": "幫你把選珍珠這件事，變簡單一點",
 		"wechatLabel": "微信",
 		"rednoteLabel": "小紅書",
 		"wechatHint": "使用微信掃描追蹤我們",
 		"close": "關閉"
 	},
 
+	"story": {
+		"title": "Our Story",
+		"p1": "Luméra was founded with a deep appreciation for the quiet beauty of pearls.",
+		"p2": "Each piece is thoughtfully designed to highlight the natural elegance of the pearl itself.",
+		"p3": "We believe fine jewelry should feel personal, timeless, and effortless to wear."
+	},
+
+	"faq": {
+		"title": "常見問題",
+
+		"q1": {
+			"question": "Where are your pearls sourced?",
+			"answer": "Our pearls are sourced from trusted farms known for quality and sustainability."
+		},
+
+		"q2": {
+			"question": "How should I care for pearl jewelry?",
+			"answer": "Pearls should be stored separately and wiped gently after wear to maintain their luster."
+		},
+
+		"q3": {
+			"question": "Do you offer custom designs?",
+			"answer": "At the moment, we focus on curated collections, but custom options may be available in the future."
+		}
+	},
+
 	"seo": {
-		"homeTitle": "Luméra Fine Pearls | 精選珍珠",
-		"homeDescription": "精選珍珠珠寶。"
+		"home": {
+			"title": "Luméra Fine Pearls | 精選珍珠",
+			"description": "精選珍珠珠寶。"
+		},
+
+		"story": {
+			"title": "Our Story | Luméra Fine Pearls",
+			"description": "Discover the inspiration and values behind Luméra Fine Pearls."
+		},
+
+		"faq": {
+			"title": "FAQ | Luméra Fine Pearls",
+			"description": "Answers to common questions about pearl jewelry and care."
+		}
 	}
 }
