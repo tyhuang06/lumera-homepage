@@ -7,7 +7,7 @@ export type Product = {
   images: string[];
 };
 
-
+// For images to add, use .webp format and use squoosh to convert properly
 export const products: Product[] = [
   {
     id: "akoya-necklace",
