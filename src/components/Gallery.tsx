@@ -12,7 +12,7 @@ export function Gallery({ products }: { products: Product[] }) {
 					<ProductGallery images={product.images} />
 
 					<p className="mt-2 text-sm text-muted-foreground">
-						{t(product.titleKey)}
+						{t(`products:${product.titleKey}`)}
 					</p>
 				</div>
 			))}

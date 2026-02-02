@@ -13,11 +13,6 @@
 		"bracelets": "Bracelets"
 	},
 
-	"products": {
-		"akoya-necklace": "Akoya Pearl Necklace",
-		"akoya-earrings": "Akoya Pearl Earrings"
-	},
-
 	"ui": {
 		"viewCollection": "View collection",
 		"collectionNotFound": "Collection not found."
@@ -29,5 +24,10 @@
 		"rednoteLabel": "RedNote",
 		"wechatHint": "Scan with WeChat to follow",
 		"close": "Close"
+	},
+
+	"seo": {
+		"homeTitle": "Luméra Fine Pearls",
+		"homeDescription": "Pearl jewelry."
 	}
 }

@@ -13,11 +13,6 @@
 		"bracelets": "手鍊"
 	},
 
-	"products": {
-		"akoya-necklace": "Akoya 珍珠項鍊",
-		"akoya-earrings": "Akoya 珍珠耳環"
-	},
-
 	"ui": {
 		"viewCollection": "查看系列",
 		"collectionNotFound": "找不到此系列"
@@ -29,5 +24,10 @@
 		"rednoteLabel": "小紅書",
 		"wechatHint": "使用微信掃描追蹤我們",
 		"close": "關閉"
+	},
+
+	"seo": {
+		"homeTitle": "Luméra Fine Pearls | 精選珍珠",
+		"homeDescription": "精選珍珠珠寶。"
 	}
 }
