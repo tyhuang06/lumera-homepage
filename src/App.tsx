@@ -4,6 +4,8 @@ import { Footer } from './components/Footer';
 import { Navbar } from './components/Navbar';
 import { Home } from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
+import StoryPage from '@/pages/StoryPage';
+import FaqPage from '@/pages/FaqPage';
 
 function App() {
 	return (
@@ -17,6 +19,8 @@ function App() {
 						path="/collections/:category"
 						element={<CategoryPage />}
 					/>
+					<Route path="/story" element={<StoryPage />} />
+					<Route path="/faq" element={<FaqPage />} />
 				</Routes>
 			</main>
 

@@ -9,8 +9,8 @@ export function Home() {
 	return (
 		<>
 			<Helmet>
-				<title>{t('seo.homeTitle')}</title>
-				<meta name="description" content={t('seo.homeDescription')} />
+				<title>{t('seo.home.title')}</title>
+				<meta name="description" content={t('seo.home.description')} />
 			</Helmet>
 			<section className="mx-auto max-w-7xl px-4 py-8">
 				<div className="mb-10">
