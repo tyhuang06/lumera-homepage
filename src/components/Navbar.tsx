@@ -29,8 +29,8 @@ export function Navbar() {
 	const { t } = useTranslation();
 
 	return (
-		<header className="fixed top-0 z-50 w-full border-b bg-white/80 backdrop-blur">
-			<div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4">
+		<header className="fixed top-0 z-50 w-full border-b bg-white/80 backdrop-blur pointer-events-none">
+			<div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 pointer-events-auto">
 				{/* Logo */}
 				<Link
 					to="/"
@@ -98,22 +98,35 @@ export function Navbar() {
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem>
-							<LanguageSwitcher />
+							<Button
+								variant="ghost"
+								size="icon-lg"
+								className="rounded-full"
+							>
+								<LanguageSwitcher />
+							</Button>
 						</NavigationMenuItem>
 					</NavigationMenuList>
 				</NavigationMenu>
 
 				{/* Mobile menu */}
 				<div className="flex items-center gap-1 md:hidden">
-					<LanguageSwitcher />
+					<Button
+						variant="ghost"
+						size="icon-lg"
+						className="rounded-full"
+					>
+						<LanguageSwitcher />
+					</Button>
+
 					<Sheet>
 						<SheetTrigger asChild>
 							<Button
 								variant="ghost"
-								size="icon"
-								className="md:hidden rounded-full"
+								size="icon-lg"
+								className="md:hidden rounded-full z-40"
 							>
-								<Menu className="h-5 w-5" />
+								<Menu className="h-4 w-4" />
 							</Button>
 						</SheetTrigger>
 

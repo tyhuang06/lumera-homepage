@@ -17,7 +17,7 @@ export function Footer() {
 				{/* Brand */}
 				<div className="mb-10 text-center">
 					<h3 className="text-lg font-didot font-semibold tracking-wide">
-						Lumera Fine Pearls
+						Luméra Fine Pearls
 					</h3>
 					<p className="mt-2 text-sm text-muted-foreground">
 						{t('footer.tagline')}
