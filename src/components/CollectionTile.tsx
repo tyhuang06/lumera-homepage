@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom';
-import type { Category } from '@/data/categories';
+import type { Collection } from '@/data/collections';
 import { useTranslation } from 'react-i18next';
 
-export function CategoryTile({ category }: { category: Category }) {
+export function CollectionTile({ collection }: { collection: Collection }) {
 	const { t } = useTranslation();
 
 	return (
 		<div className="group break-inside-avoid mb-12">
-			<Link to={`/categories/${category.slug}`}>
+			<Link to={`/collections/${collection.slug}`}>
 				<div className="relative aspect-4/5 overflow-hidden rounded-sm">
 					<img
-						src={category.cover}
-						alt={t(`categories.${category.slug}`)}
+						src={collection.cover}
+						alt={t(`collections.${collection.slug}`)}
 						className="
                             h-full w-full object-cover
                             transition-transform duration-700
@@ -28,7 +28,7 @@ export function CategoryTile({ category }: { category: Category }) {
 					>
 						<div className="flex items-end justify-between text-white/95">
 							<span className="text-sm tracking-wide">
-								{t(`categories.${category.slug}`)}
+								{t(`collections.${collection.slug}`)}
 							</span>
 							<span className="text-xs tracking-wide transition hover:text-white">
 								{t('ui.viewCollection')}

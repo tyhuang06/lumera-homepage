@@ -12,11 +12,11 @@ i18n
     resources: {
       en: {
         common: commonEN,
-        products: productsEN
+        products: productsEN,
       },
       "zh-Hant": {
         common: commonZH,
-        products: productsZH
+        products: productsZH,
       }
     },
     lng: localStorage.getItem("lang") || "zh-Hant",
