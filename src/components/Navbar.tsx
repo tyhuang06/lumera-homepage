@@ -51,21 +51,59 @@ export function Navbar() {
 								<ul className="grid w-50 gap-2 p-4">
 									<li>
 										<NavigationMenuLink asChild>
-											<Link to="/collections/necklaces">
+											<Link to="/collections/akoya">
+												{t('collections.akoya')}
+											</Link>
+										</NavigationMenuLink>
+									</li>
+									<li>
+										<NavigationMenuLink asChild>
+											<Link to="/collections/akoya-gray">
+												{t('collections.akoya-gray')}
+											</Link>
+										</NavigationMenuLink>
+									</li>
+									<li>
+										<NavigationMenuLink asChild>
+											<Link to="/collections/tahitian">
+												{t('collections.tahitian')}
+											</Link>
+										</NavigationMenuLink>
+									</li>
+									<li>
+										<NavigationMenuLink asChild>
+											<Link to="/collections/southsea">
+												{t('collections.southsea')}
+											</Link>
+										</NavigationMenuLink>
+									</li>
+								</ul>
+							</NavigationMenuContent>
+						</NavigationMenuItem>
+						<NavigationMenuItem>
+							<NavigationMenuTrigger className="text-sm">
+								{t('nav.categories')}
+							</NavigationMenuTrigger>
+
+							<NavigationMenuContent>
+								<ul className="grid w-50 gap-2 p-4">
+									<li>
+										<NavigationMenuLink asChild>
+											<Link to="/categories/necklaces">
 												{t('categories.necklaces')}
 											</Link>
 										</NavigationMenuLink>
 									</li>
 									<li>
 										<NavigationMenuLink asChild>
-											<Link to="/collections/earrings">
+											<Link to="/categories/earrings">
 												{t('categories.earrings')}
 											</Link>
 										</NavigationMenuLink>
 									</li>
 									<li>
 										<NavigationMenuLink asChild>
-											<Link to="/collections/bracelets">
+											<Link to="/categories/bracelets">
 												{t('categories.bracelets')}
 											</Link>
 										</NavigationMenuLink>
@@ -163,7 +201,68 @@ export function Navbar() {
 										<AccordionContent className="mt-4 flex flex-col gap-4 pl-2">
 											<SheetClose asChild>
 												<Link
-													to="/collections/necklaces"
+													to="/collections/akoya"
+													className="text-muted-foreground hover:text-foreground transition"
+												>
+													{t('collections.akoya')}
+												</Link>
+											</SheetClose>
+
+											<SheetClose asChild>
+												<Link
+													to="/collections/akoya-gray"
+													className="text-muted-foreground hover:text-foreground transition"
+												>
+													{t(
+														'collections.akoya-gray'
+													)}
+												</Link>
+											</SheetClose>
+
+											<SheetClose asChild>
+												<Link
+													to="/collections/tahitian"
+													className="text-muted-foreground hover:text-foreground transition"
+												>
+													{t('collections.tahitian')}
+												</Link>
+											</SheetClose>
+
+											<SheetClose asChild>
+												<Link
+													to="/collections/southsea"
+													className="text-muted-foreground hover:text-foreground transition"
+												>
+													{t('collections.southsea')}
+												</Link>
+											</SheetClose>
+										</AccordionContent>
+									</AccordionItem>
+								</Accordion>
+
+								<Accordion type="single" collapsible>
+									<AccordionItem
+										value="collections"
+										className="border-none"
+									>
+										<AccordionTrigger
+											className="
+                                            py-0
+                                            text-base
+                                            font-normal
+                                            tracking-wide
+                                            text-muted-foreground
+                                            hover:text-foreground
+                                            hover:no-underline
+                                        "
+										>
+											{t('nav.categories')}
+										</AccordionTrigger>
+
+										<AccordionContent className="mt-4 flex flex-col gap-4 pl-2">
+											<SheetClose asChild>
+												<Link
+													to="/categories/necklaces"
 													className="text-muted-foreground hover:text-foreground transition"
 												>
 													{t('categories.necklaces')}
@@ -172,7 +271,7 @@ export function Navbar() {
 
 											<SheetClose asChild>
 												<Link
-													to="/collections/earrings"
+													to="/categories/earrings"
 													className="text-muted-foreground hover:text-foreground transition"
 												>
 													{t('categories.earrings')}
@@ -181,7 +280,7 @@ export function Navbar() {
 
 											<SheetClose asChild>
 												<Link
-													to="/collections/bracelets"
+													to="/categories/bracelets"
 													className="text-muted-foreground hover:text-foreground transition"
 												>
 													{t('categories.bracelets')}
