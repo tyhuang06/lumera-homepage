@@ -1,8 +1,10 @@
 import type { CategorySlug } from "./categories";
+import type { CollectionSlug } from "./collections";
 
 export type Product = {
   id: string;
   titleKey: string;
+  collection: CollectionSlug,
   category: CategorySlug;
   images: string[];
 };
@@ -11,6 +13,7 @@ export type Product = {
 export const products: Product[] = [
   {
     id: "akoya-necklace",
+    collection: "akoya",
     category:"necklaces",
     titleKey: "products.akoya-necklace",
     images: [
@@ -21,6 +24,7 @@ export const products: Product[] = [
   },
   {
     id: "akoya-earrings",
+    collection: "akoya",
     category:"earrings",
     titleKey: "products.akoya-earrings",
     images: [

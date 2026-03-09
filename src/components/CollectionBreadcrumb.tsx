@@ -7,7 +7,7 @@ import {
 } from '@/components/ui/breadcrumb';
 import { useTranslation } from 'react-i18next';
 
-export function CategoryBreadcrumb({ category }: { category: string }) {
+export function CollectionBreadcrumb({ collection }: { collection: string }) {
 	const { t } = useTranslation();
 
 	return (
@@ -21,7 +21,7 @@ export function CategoryBreadcrumb({ category }: { category: string }) {
 
 				<BreadcrumbItem>
 					<BreadcrumbLink href="/">
-						{t(`nav.categories`)}
+						{t(`nav.collections`)}
 					</BreadcrumbLink>
 				</BreadcrumbItem>
 
@@ -29,7 +29,7 @@ export function CategoryBreadcrumb({ category }: { category: string }) {
 
 				<BreadcrumbItem>
 					<span className="text-muted-foreground">
-						{t(`categories.${category}`)}
+						{t(`collections.${collection}`)}
 					</span>
 				</BreadcrumbItem>
 			</BreadcrumbList>

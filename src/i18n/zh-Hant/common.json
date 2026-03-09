@@ -2,6 +2,7 @@
 	"nav": {
 		"home": "首頁",
 		"collections": "系列",
+		"categories": "飾品種類",
 		"ourStory": "品牌故事",
 		"faq": "常見問題",
 		"contact": "聯絡我們"
@@ -11,6 +12,13 @@
 		"necklaces": "項鍊",
 		"earrings": "耳環",
 		"bracelets": "手鍊"
+	},
+
+	"collections": {
+		"akoya": "浮誇的akoya collection title",
+		"akoya-gray": "浮誇的akoya-gray collection title",
+		"tahitian": "浮誇的tahitian collection title",
+		"southsea": "浮誇的southsea collection title"
 	},
 
 	"ui": {

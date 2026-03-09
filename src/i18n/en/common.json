@@ -2,6 +2,7 @@
 	"nav": {
 		"home": "Home",
 		"collections": "Collections",
+		"categories": "Categories",
 		"ourStory": "Our Story",
 		"faq": "FAQ",
 		"contact": "Contact"
@@ -11,6 +12,13 @@
 		"necklaces": "Necklaces",
 		"earrings": "Earrings",
 		"bracelets": "Bracelets"
+	},
+
+	"collections": {
+		"akoya": "fancy akoya collection title",
+		"akoya-gray": "fancy akoya-gray collection title",
+		"tahitian": "fancy tahitian collection title",
+		"southsea": "fancy southsea collection title"
 	},
 
 	"ui": {
