@@ -1,3 +1,8 @@
+import { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import {
 	Sheet,
@@ -5,8 +10,12 @@ import {
 	SheetContent,
 	SheetTrigger,
 } from '@/components/ui/sheet';
-import { Menu } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import {
+	Accordion,
+	AccordionContent,
+	AccordionItem,
+	AccordionTrigger,
+} from './ui/accordion';
 import {
 	NavigationMenu,
 	NavigationMenuContent,
@@ -14,322 +23,207 @@ import {
 	NavigationMenuLink,
 	NavigationMenuList,
 	NavigationMenuTrigger,
-	navigationMenuTriggerStyle,
 } from './ui/navigation-menu';
-import {
-	Accordion,
-	AccordionContent,
-	AccordionItem,
-	AccordionTrigger,
-} from './ui/accordion';
-import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from './LanguageSwitcher';
+
+const COLLECTIONS = [
+	{ slug: 'rings' },
+	{ slug: 'necklaces' },
+	{ slug: 'earrings' },
+	{ slug: 'bracelets' },
+] as const;
 
 export function Navbar() {
 	const { t } = useTranslation();
+	const { pathname } = useLocation();
+	const isHome = pathname === '/';
+	const [scrolled, setScrolled] = useState(false);
+
+	useEffect(() => {
+		if (!isHome) {
+			setScrolled(false);
+			return;
+		}
+		const handler = () => setScrolled(window.scrollY > 80);
+		window.addEventListener('scroll', handler, { passive: true });
+		handler();
+		return () => window.removeEventListener('scroll', handler);
+	}, [isHome]);
+
+	const solid = !isHome || scrolled;
 
 	return (
-		<header className="fixed top-0 z-50 w-full border-b bg-white/80 backdrop-blur pointer-events-none">
-			<div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 pointer-events-auto">
-				{/* Logo */}
+		<header
+			className={cn(
+				'fixed top-0 z-50 w-full transition-colors duration-300',
+				solid
+					? 'bg-charcoal/95 backdrop-blur-md'
+					: 'bg-transparent',
+			)}
+		>
+			<div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
+				{/* Left nav group */}
+				<div className="hidden md:flex items-center gap-1">
+					<NavLink to="/">{t('nav.home')}</NavLink>
+					<NavLink to="/icons">{t('nav.icons')}</NavLink>
+
+					{/* Collections dropdown */}
+					<NavigationMenu>
+						<NavigationMenuList>
+							<NavigationMenuItem>
+								<NavigationMenuTrigger
+									className={cn(
+										'bg-transparent text-white/80 hover:text-white hover:bg-white/10',
+										'text-xs font-normal tracking-[0.15em] uppercase h-auto px-3 py-1',
+										'data-[state=open]:bg-white/10',
+									)}
+								>
+									{t('nav.collections')}
+								</NavigationMenuTrigger>
+								<NavigationMenuContent>
+									<ul className="w-44 bg-charcoal border border-white/10 p-3 flex flex-col gap-1">
+										{COLLECTIONS.map(({ slug }) => (
+											<li key={slug}>
+												<NavigationMenuLink asChild>
+													<Link
+														to={`/collections/${slug}`}
+														className="block px-3 py-2 text-sm text-white/70 hover:text-white hover:bg-white/10 transition-colors"
+													>
+														{t(`categories.${slug}`)}
+													</Link>
+												</NavigationMenuLink>
+											</li>
+										))}
+									</ul>
+								</NavigationMenuContent>
+							</NavigationMenuItem>
+						</NavigationMenuList>
+					</NavigationMenu>
+				</div>
+
+				{/* Centered logo */}
 				<Link
 					to="/"
-					className="text-lg font-didot font-semibold leading-none tracking-[0.12em]"
+					className="absolute left-1/2 -translate-x-1/2 font-cormorant text-xl tracking-[0.15em] uppercase text-white select-none"
 				>
-					LUMÉRA
+					Luméra
 				</Link>
 
-				{/* Desktop nav */}
-				<NavigationMenu className="hidden md:flex">
-					<NavigationMenuList>
-						<NavigationMenuItem>
-							<NavigationMenuTrigger className="text-sm">
-								{t('nav.collections')}
-							</NavigationMenuTrigger>
-
-							<NavigationMenuContent>
-								<ul className="grid w-50 gap-2 p-4">
-									<li>
-										<NavigationMenuLink asChild>
-											<Link to="/collections/akoya">
-												{t('collections.akoya')}
-											</Link>
-										</NavigationMenuLink>
-									</li>
-									<li>
-										<NavigationMenuLink asChild>
-											<Link to="/collections/akoya-gray">
-												{t('collections.akoya-gray')}
-											</Link>
-										</NavigationMenuLink>
-									</li>
-									<li>
-										<NavigationMenuLink asChild>
-											<Link to="/collections/tahitian">
-												{t('collections.tahitian')}
-											</Link>
-										</NavigationMenuLink>
-									</li>
-									<li>
-										<NavigationMenuLink asChild>
-											<Link to="/collections/southsea">
-												{t('collections.southsea')}
-											</Link>
-										</NavigationMenuLink>
-									</li>
-								</ul>
-							</NavigationMenuContent>
-						</NavigationMenuItem>
-						<NavigationMenuItem>
-							<NavigationMenuTrigger className="text-sm">
-								{t('nav.categories')}
-							</NavigationMenuTrigger>
-
-							<NavigationMenuContent>
-								<ul className="grid w-50 gap-2 p-4">
-									<li>
-										<NavigationMenuLink asChild>
-											<Link to="/categories/necklaces">
-												{t('categories.necklaces')}
-											</Link>
-										</NavigationMenuLink>
-									</li>
-									<li>
-										<NavigationMenuLink asChild>
-											<Link to="/categories/earrings">
-												{t('categories.earrings')}
-											</Link>
-										</NavigationMenuLink>
-									</li>
-									<li>
-										<NavigationMenuLink asChild>
-											<Link to="/categories/bracelets">
-												{t('categories.bracelets')}
-											</Link>
-										</NavigationMenuLink>
-									</li>
-								</ul>
-							</NavigationMenuContent>
-						</NavigationMenuItem>
-						<NavigationMenuItem>
-							<NavigationMenuLink
-								asChild
-								className={navigationMenuTriggerStyle()}
-							>
-								<Link to="/story">{t('nav.ourStory')}</Link>
-							</NavigationMenuLink>
-						</NavigationMenuItem>
-						<NavigationMenuItem>
-							<NavigationMenuLink
-								asChild
-								className={navigationMenuTriggerStyle()}
-							>
-								<Link to="/faq">{t('nav.faq')}</Link>
-							</NavigationMenuLink>
-						</NavigationMenuItem>
-						<NavigationMenuItem>
-							<NavigationMenuLink
-								asChild
-								className={navigationMenuTriggerStyle()}
-							>
-								<a href="#contact">{t('nav.contact')}</a>
-							</NavigationMenuLink>
-						</NavigationMenuItem>
-						<NavigationMenuItem>
-							<Button
-								variant="ghost"
-								size="icon-lg"
-								className="rounded-full"
-							>
-								<LanguageSwitcher />
-							</Button>
-						</NavigationMenuItem>
-					</NavigationMenuList>
-				</NavigationMenu>
-
-				{/* Mobile menu */}
-				<div className="flex items-center gap-1 md:hidden">
-					<Button
-						variant="ghost"
-						size="icon-lg"
-						className="rounded-full"
+				{/* Right nav group */}
+				<div className="hidden md:flex items-center gap-1">
+					<NavLink to="/story">{t('nav.ourStory')}</NavLink>
+					<NavLink to="/materials">{t('nav.materials')}</NavLink>
+					<NavLink to="/faq">{t('nav.faq')}</NavLink>
+					<a
+						href="#contact"
+						className="px-3 py-1 text-xs font-normal tracking-[0.15em] uppercase text-white/80 hover:text-white transition-colors"
 					>
+						{t('nav.contact')}
+					</a>
+					<div className="ml-1 text-white/80 hover:text-white transition-colors">
 						<LanguageSwitcher />
-					</Button>
+					</div>
+				</div>
+
+				{/* Mobile right: language + hamburger */}
+				<div className="flex items-center gap-1 md:hidden ml-auto">
+					<div className="text-white/80 hover:text-white transition-colors">
+						<LanguageSwitcher />
+					</div>
 
 					<Sheet>
 						<SheetTrigger asChild>
 							<Button
 								variant="ghost"
 								size="icon-lg"
-								className="md:hidden rounded-full z-40"
+								className="rounded-full text-white/80 hover:text-white hover:bg-white/10"
 							>
-								<Menu className="h-4 w-4" />
+								<Menu className="h-5 w-5" />
 							</Button>
 						</SheetTrigger>
 
 						<SheetContent
 							side="right"
-							className="
-                            w-[75%] sm:w-[320px]
-                            bg-white/95 backdrop-blur
-                            border-l
-                            px-4
-                            pb-10
-                        "
+							className="w-[75%] sm:w-[320px] bg-charcoal border-l border-white/10 px-6 pb-10"
 						>
-							<nav className="mt-12 pt-4 flex flex-col gap-5 text-base tracking-wide">
-								<Accordion type="single" collapsible>
-									<AccordionItem
-										value="collections"
-										className="border-none"
-									>
-										<AccordionTrigger
-											className="
-                                            py-0
-                                            text-base
-                                            font-normal
-                                            tracking-wide
-                                            text-muted-foreground
-                                            hover:text-foreground
-                                            hover:no-underline
-                                        "
-										>
-											{t('nav.collections')}
-										</AccordionTrigger>
+							{/* Close button */}
+							<SheetClose asChild>
+								<Button
+									variant="ghost"
+									size="icon-lg"
+									className="absolute right-4 top-4 rounded-full text-white/60 hover:text-white hover:bg-white/10"
+								>
+									<X className="h-5 w-5" />
+								</Button>
+							</SheetClose>
 
-										<AccordionContent className="mt-4 flex flex-col gap-4 pl-2">
-											<SheetClose asChild>
-												<Link
-													to="/collections/akoya"
-													className="text-muted-foreground hover:text-foreground transition"
-												>
-													{t('collections.akoya')}
-												</Link>
-											</SheetClose>
+							<div className="mt-14 font-cormorant text-lg tracking-[0.15em] uppercase text-white mb-8">
+								Luméra
+							</div>
 
-											<SheetClose asChild>
-												<Link
-													to="/collections/akoya-gray"
-													className="text-muted-foreground hover:text-foreground transition"
-												>
-													{t(
-														'collections.akoya-gray'
-													)}
-												</Link>
-											</SheetClose>
-
-											<SheetClose asChild>
-												<Link
-													to="/collections/tahitian"
-													className="text-muted-foreground hover:text-foreground transition"
-												>
-													{t('collections.tahitian')}
-												</Link>
-											</SheetClose>
-
-											<SheetClose asChild>
-												<Link
-													to="/collections/southsea"
-													className="text-muted-foreground hover:text-foreground transition"
-												>
-													{t('collections.southsea')}
-												</Link>
-											</SheetClose>
-										</AccordionContent>
-									</AccordionItem>
-								</Accordion>
-
-								<Accordion type="single" collapsible>
-									<AccordionItem
-										value="collections"
-										className="border-none"
-									>
-										<AccordionTrigger
-											className="
-                                            py-0
-                                            text-base
-                                            font-normal
-                                            tracking-wide
-                                            text-muted-foreground
-                                            hover:text-foreground
-                                            hover:no-underline
-                                        "
-										>
-											{t('nav.categories')}
-										</AccordionTrigger>
-
-										<AccordionContent className="mt-4 flex flex-col gap-4 pl-2">
-											<SheetClose asChild>
-												<Link
-													to="/categories/necklaces"
-													className="text-muted-foreground hover:text-foreground transition"
-												>
-													{t('categories.necklaces')}
-												</Link>
-											</SheetClose>
-
-											<SheetClose asChild>
-												<Link
-													to="/categories/earrings"
-													className="text-muted-foreground hover:text-foreground transition"
-												>
-													{t('categories.earrings')}
-												</Link>
-											</SheetClose>
-
-											<SheetClose asChild>
-												<Link
-													to="/categories/bracelets"
-													className="text-muted-foreground hover:text-foreground transition"
-												>
-													{t('categories.bracelets')}
-												</Link>
-											</SheetClose>
-										</AccordionContent>
-									</AccordionItem>
-								</Accordion>
-
+							<nav className="flex flex-col gap-1 text-sm">
 								<SheetClose asChild>
-									<Link
-										to="/"
-										className="text-muted-foreground hover:text-foreground transition"
-									>
+									<Link to="/" className={mobileLink}>
 										{t('nav.home')}
 									</Link>
 								</SheetClose>
 
 								<SheetClose asChild>
-									<Link
-										to="/story"
-										className="text-muted-foreground hover:text-foreground transition"
-									>
+									<Link to="/icons" className={mobileLink}>
+										{t('nav.icons')}
+									</Link>
+								</SheetClose>
+
+								{/* Collections accordion */}
+								<Accordion type="single" collapsible className="w-full">
+									<AccordionItem value="collections" className="border-none">
+										<AccordionTrigger
+											className={cn(
+												mobileLink,
+												'py-3 hover:no-underline [&>svg]:text-white/40',
+											)}
+										>
+											{t('nav.collections')}
+										</AccordionTrigger>
+										<AccordionContent className="pb-0 pl-4 flex flex-col gap-1">
+											{COLLECTIONS.map(({ slug }) => (
+												<SheetClose key={slug} asChild>
+													<Link
+														to={`/collections/${slug}`}
+														className="block py-2 text-white/50 hover:text-white transition-colors tracking-[0.1em]"
+													>
+														{t(`categories.${slug}`)}
+													</Link>
+												</SheetClose>
+											))}
+										</AccordionContent>
+									</AccordionItem>
+								</Accordion>
+
+								<SheetClose asChild>
+									<Link to="/story" className={mobileLink}>
 										{t('nav.ourStory')}
 									</Link>
 								</SheetClose>
 
 								<SheetClose asChild>
-									<Link
-										to="/faq"
-										className="text-muted-foreground hover:text-foreground transition"
-									>
+									<Link to="/materials" className={mobileLink}>
+										{t('nav.materials')}
+									</Link>
+								</SheetClose>
+
+								<SheetClose asChild>
+									<Link to="/faq" className={mobileLink}>
 										{t('nav.faq')}
 									</Link>
 								</SheetClose>
 
 								<SheetClose asChild>
-									<a
-										href="#contact"
-										className="text-muted-foreground hover:text-foreground transition"
-									>
+									<a href="#contact" className={mobileLink}>
 										{t('nav.contact')}
 									</a>
 								</SheetClose>
 							</nav>
-
-							<div className="mt-auto pt-10 text-xs tracking-[0.2em] text-muted-foreground">
-								LUMÉRA
-							</div>
 						</SheetContent>
 					</Sheet>
 				</div>
@@ -337,3 +231,23 @@ export function Navbar() {
 		</header>
 	);
 }
+
+function NavLink({
+	to,
+	children,
+}: {
+	to: string;
+	children: React.ReactNode;
+}) {
+	return (
+		<Link
+			to={to}
+			className="px-3 py-1 text-xs font-normal tracking-[0.15em] uppercase text-white/80 hover:text-white transition-colors"
+		>
+			{children}
+		</Link>
+	);
+}
+
+const mobileLink =
+	'block py-3 text-sm tracking-[0.1em] uppercase text-white/70 hover:text-white transition-colors border-b border-white/5';

@@ -1,12 +1,23 @@
-import { categories } from '@/data/categories';
-import { collections } from '@/data/collections';
-import { CategoryTile } from '@/components/CategoryTile';
-import { CollectionTile } from '@/components/CollectionTile';
-import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
+import { ProductCard } from '@/components/Gallery';
+import { categories } from '@/data/categories';
+import { products } from '@/data/products';
 
 export function Home() {
 	const { t } = useTranslation();
+
+	const featuredProducts = products.filter((p) => p.featured).slice(0, 4);
+
+	// Scroll-reveal refs
+	const iconsHeaderRef = useScrollReveal<HTMLDivElement>();
+	const iconsGridRef = useScrollReveal<HTMLDivElement>();
+	const collectionsHeaderRef = useScrollReveal<HTMLDivElement>();
+	const collectionsGridRef = useScrollReveal<HTMLDivElement>();
+	const experienceHeaderRef = useScrollReveal<HTMLDivElement>();
+	const experienceGridRef = useScrollReveal<HTMLDivElement>();
 
 	return (
 		<>
@@ -14,34 +25,274 @@ export function Home() {
 				<title>{t('seo.home.title')}</title>
 				<meta name="description" content={t('seo.home.description')} />
 			</Helmet>
-			<section className="mx-auto max-w-7xl px-4 py-8">
-				<div className="mb-10">
-					<p className="text-sm tracking-[0.2em] text-muted-foreground mb-8">
-						{t('nav.collections')}
+
+			{/* ─── Hero ─── */}
+			<section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+				{/* Background gradient */}
+				<div
+					className="absolute inset-0"
+					style={{
+						background:
+							'radial-gradient(ellipse at 30% 40%, #3a2f28 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, #2a2520 0%, transparent 50%), linear-gradient(165deg, #1a1714 0%, #2d261f 40%, #1f1b17 100%)',
+					}}
+				/>
+
+				{/* Content */}
+				<div className="relative z-10 text-center px-6">
+					<p
+						className="animate-hero text-gold-light text-xs tracking-[0.35em] uppercase mb-6"
+						style={{ animationDelay: '200ms' }}
+					>
+						{t('home.hero.tagline')}
 					</p>
+
+					<h1
+						className="animate-hero font-cormorant font-light text-white leading-none tracking-[0.08em]"
+						style={{
+							animationDelay: '500ms',
+							fontSize: 'clamp(3.5rem, 10vw, 7rem)',
+						}}
+					>
+						Luméra
+					</h1>
+
+					<p
+						className="animate-hero font-cormorant italic text-gold-light mt-4"
+						style={{
+							animationDelay: '800ms',
+							fontSize: 'clamp(1rem, 2.5vw, 1.4rem)',
+						}}
+					>
+						{t('home.hero.subtitle')}
+					</p>
+
+					<div
+						className="animate-hero mt-10"
+						style={{ animationDelay: '1100ms' }}
+					>
+						<Link
+							to="/icons"
+							className="inline-block border border-gold px-10 py-3.5 text-xs tracking-[0.25em] uppercase text-white hover:bg-gold hover:text-charcoal transition-all duration-400"
+						>
+							{t('home.hero.cta')}
+						</Link>
+					</div>
 				</div>
 
-				<div className="columns-2 gap-8 lg:columns-4">
-					{collections.map((collection) => (
-						<CollectionTile
-							key={collection.slug}
-							collection={collection}
+				{/* Scroll indicator */}
+				<div
+					className="animate-hero absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
+					style={{ animationDelay: '1400ms' }}
+				>
+					<span className="text-[0.55rem] tracking-[0.3em] uppercase text-gold-light/60">
+						Scroll
+					</span>
+					<div
+						className="w-px bg-gradient-to-b from-transparent to-gold/50"
+						style={{ height: '50px' }}
+					/>
+				</div>
+			</section>
+
+			{/* ─── The Luméra Icons ─── */}
+			<section className="bg-white py-28 px-6">
+				<div className="mx-auto max-w-7xl">
+					{/* Header */}
+					<div ref={iconsHeaderRef} className="reveal text-center mb-14">
+						<p className="text-[0.65rem] tracking-[0.35em] uppercase text-gold mb-3">
+							{t('home.icons.label')}
+						</p>
+						<h2 className="font-cormorant text-4xl font-light tracking-wide text-charcoal mb-4">
+							{t('home.icons.title')}
+						</h2>
+						<div className="mx-auto w-10 h-px bg-gold mb-4" />
+						<p className="text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
+							{t('home.icons.desc')}
+						</p>
+					</div>
+
+					{/* Grid */}
+					{featuredProducts.length > 0 ? (
+						<div
+							ref={iconsGridRef}
+							className="reveal-stagger grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-8"
+						>
+							{featuredProducts.map((product) => (
+								<ProductCard key={product.id} product={product} />
+							))}
+						</div>
+					) : (
+						<p className="text-center text-sm text-muted-foreground py-10">
+							— Coming soon —
+						</p>
+					)}
+
+					{/* View all link */}
+					<div className="mt-12 text-center">
+						<Link
+							to="/icons"
+							className="text-xs tracking-[0.2em] uppercase text-gold hover:text-gold-dark transition-colors"
+						>
+							{t('home.icons.viewAll')} →
+						</Link>
+					</div>
+				</div>
+			</section>
+
+			{/* ─── Collections ─── */}
+			<section className="bg-cream py-28 px-6">
+				<div className="mx-auto max-w-7xl">
+					{/* Header */}
+					<div ref={collectionsHeaderRef} className="reveal text-center mb-14">
+						<p className="text-[0.65rem] tracking-[0.35em] uppercase text-gold mb-3">
+							{t('home.collections.label')}
+						</p>
+						<h2 className="font-cormorant text-4xl font-light tracking-wide text-charcoal mb-4">
+							{t('home.collections.title')}
+						</h2>
+						<div className="mx-auto w-10 h-px bg-gold mb-4" />
+						<p className="text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
+							{t('home.collections.desc')}
+						</p>
+					</div>
+
+					{/* 4 category cards */}
+					<div
+						ref={collectionsGridRef}
+						className="reveal-stagger grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6"
+					>
+						{categories.map((cat, index) => (
+							<CategoryCard key={cat.slug} slug={cat.slug} index={index} />
+						))}
+					</div>
+				</div>
+			</section>
+
+			{/* ─── The Luméra Experience ─── */}
+			<section className="bg-charcoal py-28 px-6">
+				<div className="mx-auto max-w-7xl">
+					{/* Header */}
+					<div ref={experienceHeaderRef} className="reveal text-center mb-14">
+						<p className="text-[0.65rem] tracking-[0.35em] uppercase text-gold-light mb-3">
+							{t('home.experience.label')}
+						</p>
+						<h2 className="font-cormorant text-4xl font-light tracking-wide text-white mb-4">
+							{t('home.experience.title')}
+						</h2>
+						<div className="mx-auto w-10 h-px bg-gold mb-4" />
+						<p className="text-sm text-white/50 max-w-md mx-auto leading-relaxed">
+							{t('home.experience.desc')}
+						</p>
+					</div>
+
+					{/* 3 experience cards */}
+					<div
+						ref={experienceGridRef}
+						className="reveal-stagger grid grid-cols-1 gap-6 md:grid-cols-3"
+					>
+						<ExperienceCard
+							title={t('home.experience.story.title')}
+							text={t('home.experience.story.text')}
+							cta={t('home.experience.story.cta')}
+							to="/story"
 						/>
-					))}
-				</div>
-
-				<div className="mb-10">
-					<p className="text-sm tracking-[0.2em] text-muted-foreground mb-8">
-						{t('nav.categories')}
-					</p>
-				</div>
-
-				<div className="columns-2 gap-8 lg:columns-4">
-					{categories.map((category) => (
-						<CategoryTile key={category.slug} category={category} />
-					))}
+						<ExperienceCard
+							title={t('home.experience.materials.title')}
+							text={t('home.experience.materials.text')}
+							cta={t('home.experience.materials.cta')}
+							to="/materials"
+						/>
+						<ExperienceCard
+							title={t('home.experience.visit.title')}
+							text={t('home.experience.visit.text')}
+							cta={t('home.experience.visit.cta')}
+							href="#contact"
+						/>
+					</div>
 				</div>
 			</section>
 		</>
+	);
+}
+
+// ─── Category card ────────────────────────────────────────────────────────────
+const categoryGradients = [
+	'linear-gradient(145deg, #2c2420, #4a3c32)',
+	'linear-gradient(145deg, #1e2a2a, #344040)',
+	'linear-gradient(145deg, #2a2535, #3d3548)',
+	'linear-gradient(145deg, #2c2828, #403838)',
+];
+
+function CategoryCard({ slug, index }: { slug: string; index: number }) {
+	const { t } = useTranslation();
+
+	return (
+		<Link to={`/collections/${slug}`} className="group block">
+			<div
+				className="relative aspect-square overflow-hidden"
+				style={{ background: categoryGradients[index % categoryGradients.length] }}
+			>
+				{/* Zoom overlay on hover */}
+				<div className="absolute inset-0 transition-transform duration-700 group-hover:scale-[1.05] origin-center" />
+
+				{/* Content */}
+				<div className="absolute inset-0 flex flex-col justify-end p-7">
+					<p className="font-cormorant text-2xl font-light text-white tracking-[0.04em] mb-1">
+						{t(`categories.${slug}`)}
+					</p>
+					<p className="text-[0.65rem] tracking-[0.15em] uppercase text-white/40 group-hover:text-gold-light transition-colors">
+						{t('ui.viewAll')} →
+					</p>
+				</div>
+			</div>
+		</Link>
+	);
+}
+
+// ─── Experience card ──────────────────────────────────────────────────────────
+function ExperienceCard({
+	title,
+	text,
+	cta,
+	to,
+	href,
+}: {
+	title: string;
+	text: string;
+	cta: string;
+	to?: string;
+	href?: string;
+}) {
+	const className =
+		'border border-white/8 p-8 transition-colors duration-400 hover:border-gold/25 group';
+
+	const inner = (
+		<>
+			{/* Placeholder image area */}
+			<div className="w-full aspect-[4/3] bg-white/[0.03] mb-7 flex items-center justify-center">
+				<div className="w-8 h-px bg-gold/30" />
+			</div>
+
+			<h3 className="font-cormorant text-2xl font-light text-white mb-3 tracking-[0.03em]">
+				{title}
+			</h3>
+			<p className="text-sm text-white/45 leading-relaxed mb-6">{text}</p>
+			<span className="text-xs tracking-[0.2em] uppercase text-gold group-hover:tracking-[0.25em] transition-all duration-300">
+				{cta} →
+			</span>
+		</>
+	);
+
+	if (to) {
+		return (
+			<Link to={to} className={className}>
+				{inner}
+			</Link>
+		);
+	}
+	return (
+		<a href={href} className={className}>
+			{inner}
+		</a>
 	);
 }
