@@ -6,6 +6,7 @@
 @theme {
 	--font-cormorant: 'Cormorant Garamond', Georgia, serif;
 	--font-jost: 'Jost', sans-serif;
+	--font-noto-tc: 'Noto Serif TC', serif;
 
 	/* Brand color palette */
 	--color-gold: #b8956a;
@@ -182,3 +183,9 @@
 .reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 100ms; }
 .reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 200ms; }
 .reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 300ms; }
+
+/* ─── Chinese font override ─── */
+/* When language is set to zh-Hant, swap Cormorant Garamond for Noto Serif TC */
+:lang(zh-Hant) .font-cormorant {
+	font-family: var(--font-noto-tc), serif;
+}

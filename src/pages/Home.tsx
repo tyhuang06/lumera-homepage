@@ -6,6 +6,36 @@ import { ProductCard } from '@/components/Gallery';
 import { categories } from '@/data/categories';
 import { products } from '@/data/products';
 
+// SVG icons matching the wireframe design
+const categoryIcons: Record<string, React.ReactNode> = {
+	rings: (
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-7 h-7">
+			<circle cx="12" cy="12" r="8" />
+			<circle cx="12" cy="12" r="3" />
+		</svg>
+	),
+	necklaces: (
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-7 h-7">
+			<path d="M12 2L8 8h8l-4-6z" />
+			<line x1="12" y1="8" x2="12" y2="22" />
+			<circle cx="12" cy="15" r="3" />
+		</svg>
+	),
+	earrings: (
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-7 h-7">
+			<path d="M6 12a6 6 0 0112 0" />
+			<line x1="6" y1="12" x2="6" y2="18" />
+			<line x1="18" y1="12" x2="18" y2="18" />
+		</svg>
+	),
+	bracelets: (
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-7 h-7">
+			<ellipse cx="12" cy="12" rx="10" ry="4" />
+			<path d="M2 12v2c0 2.2 4.5 4 10 4s10-1.8 10-4v-2" />
+		</svg>
+	),
+};
+
 export function Home() {
 	const { t } = useTranslation();
 
@@ -225,6 +255,7 @@ const categoryGradients = [
 
 function CategoryCard({ slug, index }: { slug: string; index: number }) {
 	const { t } = useTranslation();
+	const count = products.filter((p) => p.category === slug).length;
 
 	return (
 		<Link to={`/collections/${slug}`} className="group block">
@@ -232,16 +263,19 @@ function CategoryCard({ slug, index }: { slug: string; index: number }) {
 				className="relative aspect-square overflow-hidden"
 				style={{ background: categoryGradients[index % categoryGradients.length] }}
 			>
-				{/* Zoom overlay on hover */}
-				<div className="absolute inset-0 transition-transform duration-700 group-hover:scale-[1.05] origin-center" />
+				{/* Background zoom on hover */}
+				<div className="absolute inset-0 bg-inherit transition-transform duration-700 group-hover:scale-[1.05]" />
 
 				{/* Content */}
 				<div className="absolute inset-0 flex flex-col justify-end p-7">
+					<span className="text-gold-light/80 mb-3">
+						{categoryIcons[slug]}
+					</span>
 					<p className="font-cormorant text-2xl font-light text-white tracking-[0.04em] mb-1">
 						{t(`categories.${slug}`)}
 					</p>
-					<p className="text-[0.65rem] tracking-[0.15em] uppercase text-white/40 group-hover:text-gold-light transition-colors">
-						{t('ui.viewAll')} →
+					<p className="text-[0.65rem] tracking-[0.15em] uppercase text-white/40">
+						{count > 0 ? `${count} ${t('ui.pieces')}` : t('ui.viewAll')}
 					</p>
 				</div>
 			</div>

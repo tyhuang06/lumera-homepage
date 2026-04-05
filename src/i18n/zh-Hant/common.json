@@ -26,6 +26,7 @@
 	"ui": {
 		"viewPiece": "查看作品",
 		"viewAll": "查看全部",
+		"pieces": "件",
 		"enquire": "詢問購買",
 		"viewCollection": "查看系列",
 		"collectionNotFound": "找不到此系列",

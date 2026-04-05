@@ -26,6 +26,7 @@
 	"ui": {
 		"viewPiece": "View Piece",
 		"viewAll": "View All",
+		"pieces": "Pieces",
 		"enquire": "Enquire",
 		"viewCollection": "View collection",
 		"collectionNotFound": "Collection not found.",
