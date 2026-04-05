@@ -1,34 +1,17 @@
-import { useParams } from 'react-router';
-import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Gallery } from '@/components/Gallery';
-import type { CategorySlug } from '@/data/categories';
 import { products } from '@/data/products';
 
-export default function CategoryPage() {
+export default function IconsPage() {
 	const { t } = useTranslation();
-	const { type } = useParams<{ type: string }>();
-	const slug = type as CategorySlug | undefined;
-
-	if (!slug) {
-		return (
-			<main className="pt-20 min-h-screen bg-cream flex items-center justify-center">
-				<p className="text-sm text-muted-foreground">
-					{t('ui.collectionNotFound')}
-				</p>
-			</main>
-		);
-	}
-
-	const label = t(`categories.${slug}`);
-	const pageTitle = `${label} | Luméra Fine Pearls`;
-	const filtered = products.filter((p) => p.category === slug);
 
 	return (
 		<>
 			<Helmet>
-				<title>{pageTitle}</title>
+				<title>{t('seo.icons.title')}</title>
+				<meta name="description" content={t('seo.icons.description')} />
 			</Helmet>
 
 			<main className="pt-20 bg-cream min-h-screen">
@@ -39,21 +22,24 @@ export default function CategoryPage() {
 							{t('nav.home')}
 						</Link>
 						<span className="opacity-40">—</span>
-						<span className="text-foreground">{label}</span>
+						<span className="text-foreground">{t('nav.icons')}</span>
 					</nav>
 
 					{/* Header */}
 					<div className="mb-14 text-center">
 						<p className="text-[0.65rem] tracking-[0.35em] uppercase text-gold mb-3">
-							{t('home.collections.label')}
+							{t('home.icons.label')}
 						</p>
 						<h1 className="font-cormorant text-4xl font-light tracking-wide text-charcoal mb-4">
-							{label}
+							{t('icons.title')}
 						</h1>
 						<div className="mx-auto w-10 h-px bg-gold" />
+						<p className="mt-4 text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
+							{t('icons.desc')}
+						</p>
 					</div>
 
-					<Gallery products={filtered} />
+					<Gallery products={products} />
 				</div>
 			</main>
 		</>

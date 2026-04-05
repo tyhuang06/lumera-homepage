@@ -26,60 +26,57 @@ export default function FaqPage() {
 				<meta name="description" content={t('seo.faq.description')} />
 			</Helmet>
 
-			<main className="mx-auto max-w-3xl px-4 py-16">
-				<h1 className="text-3xl tracking-wide">{t('faq.title')}</h1>
+			<main className="pt-20 bg-cream min-h-screen">
+				<div className="mx-auto max-w-3xl px-6 py-16">
+					<h1 className="font-cormorant text-4xl font-light tracking-wide text-charcoal mb-10">
+						{t('faq.title')}
+					</h1>
 
-				<Accordion type="single" collapsible className="mt-10">
-					{FAQ_KEYS.map((key) => {
-						const answer = t(`faq.${key}.answer`, {
-							returnObjects: true,
-						}) as AnswerBlock[];
+					<Accordion type="single" collapsible className="mt-4">
+						{FAQ_KEYS.map((key) => {
+							const answer = t(`faq.${key}.answer`, {
+								returnObjects: true,
+							}) as AnswerBlock[];
 
-						return (
-							<AccordionItem key={key} value={key}>
-								<AccordionTrigger>
-									{t(`faq.${key}.question`)}
-								</AccordionTrigger>
+							return (
+								<AccordionItem key={key} value={key}>
+									<AccordionTrigger className="text-left">
+										{t(`faq.${key}.question`)}
+									</AccordionTrigger>
 
-								<AccordionContent>
-									<div className="space-y-4">
-										{answer.map((block, i) => {
-											if (typeof block === 'string') {
-												return (
-													<p
-														key={i}
-														className="text-sm text-muted-foreground"
-													>
-														{block}
-													</p>
-												);
-											}
+									<AccordionContent>
+										<div className="space-y-4">
+											{answer.map((block, i) => {
+												if (typeof block === 'string') {
+													return (
+														<p key={i} className="text-sm text-muted-foreground">
+															{block}
+														</p>
+													);
+												}
 
-											if (block.type === 'list') {
-												return (
-													<ul
-														key={i}
-														className="ml-4 list-disc space-y-2 text-sm text-muted-foreground"
-													>
-														{block.items.map(
-															(item, j) => (
-																<li key={j}>
+												if (block.type === 'list') {
+													return (
+														<ul key={i} className="space-y-2">
+															{block.items.map((item, j) => (
+																<li key={j} className="flex gap-3 text-sm text-muted-foreground">
+																	<span className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-gold/60" />
 																	{item}
 																</li>
-															)
-														)}
-													</ul>
-												);
-											}
+															))}
+														</ul>
+													);
+												}
 
-											return null;
-										})}
-									</div>
-								</AccordionContent>
-							</AccordionItem>
-						);
-					})}
-				</Accordion>
+												return null;
+											})}
+										</div>
+									</AccordionContent>
+								</AccordionItem>
+							);
+						})}
+					</Accordion>
+				</div>
 			</main>
 		</>
 	);

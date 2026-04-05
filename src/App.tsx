@@ -2,29 +2,29 @@ import { Route, Routes } from 'react-router';
 import './App.css';
 import { Footer } from './components/Footer';
 import { Navbar } from './components/Navbar';
+import { ScrollToTop } from './components/ScrollToTop';
 import { Home } from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
-import CollectionPage from './pages/CollectionPage';
+import IconsPage from './pages/IconsPage';
+import ProductPage from './pages/ProductPage';
+import MaterialsPage from './pages/MaterialsPage';
 import StoryPage from '@/pages/StoryPage';
 import FaqPage from '@/pages/FaqPage';
 
 function App() {
 	return (
 		<>
+			<ScrollToTop />
 			<Navbar />
 
-			<main className="pt-14">
+			<main>
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route
-						path="/categories/:category"
-						element={<CategoryPage />}
-					/>
-					<Route
-						path="/collections/:collection"
-						element={<CollectionPage />}
-					/>
+					<Route path="/icons" element={<IconsPage />} />
+					<Route path="/products/:id" element={<ProductPage />} />
+					<Route path="/collections/:type" element={<CategoryPage />} />
 					<Route path="/story" element={<StoryPage />} />
+					<Route path="/materials" element={<MaterialsPage />} />
 					<Route path="/faq" element={<FaqPage />} />
 				</Routes>
 			</main>

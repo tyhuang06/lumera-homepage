@@ -1,33 +1,119 @@
 {
 	"nav": {
 		"home": "首頁",
-		"collections": "系列",
-		"categories": "飾品種類",
+		"icons": "精選作品",
+		"collections": "飾品系列",
 		"ourStory": "品牌故事",
+		"materials": "材質工藝",
 		"faq": "常見問題",
 		"contact": "聯絡我們"
 	},
 
 	"categories": {
+		"rings": "戒指",
 		"necklaces": "項鍊",
 		"earrings": "耳環",
 		"bracelets": "手鍊"
 	},
 
 	"collections": {
-		"akoya": "浮誇的akoya collection title",
-		"akoya-gray": "浮誇的akoya-gray collection title",
-		"tahitian": "浮誇的tahitian collection title",
-		"southsea": "浮誇的southsea collection title"
+		"akoya": "Akoya 珍珠",
+		"akoya-gray": "灰色 Akoya",
+		"tahitian": "大溪地黑蝶",
+		"southsea": "澳白南洋珠"
 	},
 
 	"ui": {
+		"viewPiece": "查看作品",
+		"viewAll": "查看全部",
+		"pieces": "件",
+		"enquire": "詢問購買",
 		"viewCollection": "查看系列",
-		"collectionNotFound": "找不到此系列"
+		"collectionNotFound": "找不到此系列",
+		"productNotFound": "找不到此商品",
+		"backToIcons": "返回精選作品"
+	},
+
+	"home": {
+		"hero": {
+			"tagline": "西雅圖手工精製",
+			"subtitle": "光與貴金屬的邂逅",
+			"cta": "探索系列"
+		},
+		"icons": {
+			"label": "經典之作",
+			"title": "Luméra 精選作品",
+			"desc": "精心挑選的代表性設計——定義 Luméra 美學的作品。",
+			"viewAll": "查看所有作品"
+		},
+		"collections": {
+			"label": "探索",
+			"title": "飾品系列",
+			"desc": "每個系列都有它的故事——找到與你共鳴的那一個。"
+		},
+		"experience": {
+			"label": "超越珠寶",
+			"title": "Luméra 體驗",
+			"desc": "不只是飾品——是對光、材質與心意的哲學。",
+			"story": {
+				"title": "品牌故事",
+				"text": "源自對珍珠的熱愛與太平洋西北岸的光線。兩位朋友，一間工作室，對尋找世界最美珍珠的執著。",
+				"cta": "了解我們的故事"
+			},
+			"materials": {
+				"title": "材質工藝",
+				"text": "18K 金與道德來源的珍珠。從產地到最終拋光，我們追蹤每一個環節——不妥協。",
+				"cta": "認識我們的材質"
+			},
+			"visit": {
+				"title": "到西雅圖拜訪我們",
+				"text": "工作室採預約制——在親密的空間中，找到屬於你的那一件。",
+				"cta": "聯絡我們"
+			}
+		}
+	},
+
+	"icons": {
+		"title": "Luméra 精選作品",
+		"desc": "我們系列中的每一件作品，等你探索。"
+	},
+
+	"materials": {
+		"title": "我們的材質",
+		"subtitle": "為一生而製",
+		"sourcing": {
+			"title": "道德來源",
+			"text": "我們直接與日本、法屬玻里尼西亞和澳洲的信任供應商合作。每一顆珍珠都經手工挑選，確保光澤、表面品質和形狀達到標準。所有鑲嵌材料均使用 18K 金——不電鍍，不妥協。"
+		},
+		"gold": {
+			"title": "18K 金",
+			"text": "超過 50% 的配件採用日本精工製作。18K 金是我們的標準：純度、耐用度與溫潤色澤的完美平衡，正常佩戴下不會氧化或引起過敏反應。"
+		},
+		"pearls": {
+			"title": "珍珠種類",
+			"akoya": "來自日本三重縣的 Akoya 珍珠——以鏡面般的光澤和完美圓形著稱。",
+			"tahitian": "來自法屬玻里尼西亞的大溪地黑蝶珍珠——天然深色，從炭灰到深綠各有其美。",
+			"southsea": "來自澳洲的南洋白珠——最大、最稀有，帶有絲綢般的柔和光芒。"
+		},
+		"care": {
+			"title": "珍珠保養",
+			"intro": "珍珠是有機寶石，需要細心呵護。遵循以下建議，讓您的珍珠世代保持美麗。",
+			"tips": [
+				"最後再戴上珍珠——在噴香水、定型噴霧和化妝之後。",
+				"佩戴後用柔軟濕布輕輕擦拭。",
+				"平放存放於柔軟布袋或有內襯的珠寶盒中，遠離其他首飾。",
+				"避免使用超音波清洗機、蒸汽及刺激性化學品。",
+				"串珠項鍊若經常佩戴，建議每隔幾年重新打結。"
+			]
+		}
 	},
 
 	"footer": {
 		"tagline": "幫你把選珍珠這件事，變簡單一點",
+		"brandStatement": "精選珍珠，西雅圖手工製作。",
+		"explore": "探索",
+		"about": "關於",
+		"contact": "聯絡",
 		"wechatLabel": "微信",
 		"rednoteLabel": "小紅書",
 		"wechatHint": "使用微信掃描追蹤我們",
@@ -101,7 +187,7 @@
 			"question": "你們的飾品是什麼材質？",
 			"answer": [
 				"我們堅持使用 18K 金作為主要材質，確保飾品高品質、可長期佩戴、不易過敏，也具保值性．",
-				"目前販售中的品項包含項鏈、耳環、耳夾、手鏈與戒指．其中超過 50% 配件採用日本精工製作，只為確保整體質感與耐用度",
+				"目前販售中的品項包含項鍊、耳環、耳夾、手鍊與戒指．其中超過 50% 配件採用日本精工製作，只為確保整體質感與耐用度",
 				"如為鑲鑽款式，可依需求選擇鋯石、培育鑽或天然鑽石，價格將依所選材質而有所不同．"
 			]
 		},
@@ -124,17 +210,23 @@
 	"seo": {
 		"home": {
 			"title": "Luméra Fine Pearls | 精選珍珠",
-			"description": "精選珍珠珠寶。"
+			"description": "精選珍珠珠寶，西雅圖手工製作。"
 		},
-
+		"icons": {
+			"title": "精選作品 | Luméra Fine Pearls",
+			"description": "探索 Luméra 系列的每一件作品。"
+		},
+		"materials": {
+			"title": "材質工藝 | Luméra Fine Pearls",
+			"description": "了解我們的 18K 金鑲嵌、珍珠來源與保養指南。"
+		},
 		"story": {
-			"title": "Our Story | Luméra Fine Pearls",
-			"description": "Discover the inspiration and values behind Luméra Fine Pearls."
+			"title": "品牌故事 | Luméra Fine Pearls",
+			"description": "探索 Luméra Fine Pearls 背後的故事與理念。"
 		},
-
 		"faq": {
-			"title": "FAQ | Luméra Fine Pearls",
-			"description": "Answers to common questions about pearl jewelry and care."
+			"title": "常見問題 | Luméra Fine Pearls",
+			"description": "關於珍珠首飾與保養的常見問題解答。"
 		}
 	}
 }
