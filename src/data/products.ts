@@ -26,27 +26,102 @@ export type Product = {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const products: Product[] = [
-	{
-		id: "akoya-necklace",
-		featured: true,
-		collection: "akoya",
-		category: "necklaces",
-		titleKey: "products.akoya-necklace",
-		descriptionKey: "akoya-necklace",
-		images: [
-			"/gallery/placeholder.png",
-			"/gallery/placeholder.png",
-			"/gallery/placeholder.png",
-		],
-	},
-	{
-		id: "akoya-earrings",
-		featured: false,
-		collection: "akoya",
-		category: "earrings",
-		titleKey: "products.akoya-earrings",
-		images: [
-			"/gallery/placeholder.png",
-		],
-	},
-];
+  {
+    id: "akoya-earrings-hanadama",
+    featured: true,
+    collection: "akoya",
+    category:"earrings",
+    titleKey: "products.akoya-earrings-hanadama",
+    descriptionKey: "akoya-earrings-hanadama",
+    images: [
+     "/gallery/akoya/stud/hanadama/hanadama80-1.jpg",
+      "/gallery/akoya/stud/hanadama/hanadama80-2.jpg",
+      "/gallery/akoya/stud/hanadama/hanadama80-3.jpg",
+      "/gallery/akoya/stud/hanadama/hanadama80-4.jpg"
+    ],
+  },
+  {
+    id: "akoya-earrings-hanadama85",
+    featured: true,
+    collection: "akoya",
+    category:"earrings",
+    titleKey: "products.akoya-earrings-hanadama85",
+    descriptionKey: "akoya-earrings-hanadama85",
+    images: [
+     "/gallery/akoya/stud/hanadama/85/hanadama85-1.jpg",
+     "/gallery/akoya/stud/hanadama/85/hanadama85-2.jpg",
+     "/gallery/akoya/stud/hanadama/85/hanadama85-3.jpg",
+     "/gallery/akoya/stud/hanadama/85/hanadama85-4.jpg",
+     "/gallery/akoya/stud/hanadama/85/hanadama85-5.jpg",
+     "/gallery/akoya/stud/hanadama/85/hanadama85-6.jpg"
+    ],
+  },
+  {
+    id: "akoya-earrings-tennyo",  
+    featured: true,
+    collection: "akoya",
+    category:"earrings",
+    titleKey: "products.akoya-earrings-tennyo",
+    descriptionKey: "akoya-earrings-tennyo",
+    images: [
+      "/gallery/akoya/stud/tennyo/tennyo1.jpg",
+      "/gallery/akoya/stud/tennyo/tennyo2.jpg",
+      "/gallery/akoya/stud/tennyo/tennyo3.jpg"
+    ],
+  },
+  {
+    id: "akoya-earrings-diana",
+    featured: true,
+    collection: "akoya",
+    category:"earrings",
+    titleKey: "products.akoya-earrings-diana",
+    descriptionKey: "akoya-earrings-diana",
+    images: [
+      "/gallery/akoya/stud/diana/diana0.jpg",
+      "/gallery/akoya/stud/diana/diana1.jpg",
+      "/gallery/akoya/stud/diana/diana2.jpg",
+      "/gallery/akoya/stud/diana/diana3.jpg",
+      "/gallery/akoya/stud/diana/diana4.jpg"
+    ],
+  },
+  {
+    id: "akoya-necklace-tennyo",
+    featured: false,
+    collection: "akoya",
+    category:"necklaces",
+    titleKey: "products.akoya-necklace-tennyo",
+    descriptionKey: "akoya-necklace-tennyo",
+    images: [
+      "/gallery/akoya/necklace/classic/classic1.jpg",
+      "/gallery/akoya/necklace/classic/classic2.jpg",
+      "/gallery/akoya/necklace/classic/classic3.jpg",
+      "/gallery/akoya/necklace/classic/classic4.jpg"
+    ],
+  },
+  {
+    id: "akoya-necklace-diana",
+    featured: false,
+    collection: "akoya",
+    category:"necklaces",
+    titleKey: "products.akoya-necklace-diana",
+    descriptionKey: "akoya-necklace-diana",
+    images: [
+      "/gallery/akoya/necklace/diana/diananecklace1.jpg",
+      "/gallery/akoya/necklace/diana/diananecklace2.jpg",
+      "/gallery/akoya/necklace/diana/diananecklace3.jpg",
+      "/gallery/akoya/necklace/diana/diananecklace4.jpg"
+    ],
+  },
+  {
+    id: "akoya-necklace-diana-y",
+    featured: false,
+    collection: "akoya",
+    category:"necklaces",
+    titleKey: "products.akoya-necklace-diana-y",
+    descriptionKey: "akoya-necklace-diana-y",
+    images: [
+      "/gallery/akoya/necklace/diana-y/dianaynecklace1.jpg",
+      "/gallery/akoya/necklace/diana-y/dianaynecklace2.jpg"
+    ],
+  },
+]
