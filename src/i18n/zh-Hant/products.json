@@ -1,10 +1,20 @@
 {
 	"products": {
-		"akoya-earrings-hanadama": "Akoya 經典珍珠耳釘-花珠",
-		"akoya-earrings-tennyo": "Akoya 經典珍珠耳釘-天女",
-		"akoya-earrings-diana": "Akoya 經典黛妃耳釘",
-		"akoya-necklace-tennyo": "Akoya 天女光經典項鍊",
-		"akoya-necklace-diana": "Akoya 經典黛妃項鍊",
-		"akoya-necklace-diana-y": "Akoya 經典Y字黛妃項鍊"
+		"akoya-earrings-hanadama": "Akoya 經典花珠耳釘-8.0-8.5mm",
+		"akoya-earrings-hanadama85": "Akoya 經典花珠耳釘-8.5-9.0mm",
+		"akoya-earrings-tennyo": "Akoya 經典天女耳釘-8.5-9.0mm",
+		"akoya-earrings-diana": "Akoya 經典黛妃耳釘 8.0-8.5mm",
+		"akoya-necklace-tennyo": "Akoya 天女光經典項鍊 8.0-8.5mm",
+		"akoya-necklace-diana": "Akoya 經典黛妃項鍊 8.0-8.5mm",
+		"akoya-necklace-diana-y": "Akoya 經典Y字黛妃項鍊 8.0-8.5mm"
+	},
+	"descriptions": {
+		"akoya-earrings-hanadama": "Akoya 經典花珠耳釘-8.0-8.5mm",
+		"akoya-earrings-hanadama85": "Akoya 經典花珠耳釘-8.5-9.0mm",
+		"akoya-earrings-tennyo": "Akoya 經典天女耳釘-8.5-9.0mm",
+		"akoya-earrings-diana": "Akoya 經典黛妃耳釘 8.0-8.5mm",
+		"akoya-necklace-tennyo": "Akoya 天女光經典項鍊 8.0-8.5mm",
+		"akoya-necklace-diana": "Akoya 經典黛妃項鍊 8.0-8.5mm",
+		"akoya-necklace-diana-y": "Akoya 經典Y字黛妃項鍊 8.0-8.5mm"
 	}
 }
