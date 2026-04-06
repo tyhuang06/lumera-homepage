@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { ProductCard } from '@/components/Gallery';
 import { categories } from '@/data/categories';
@@ -141,15 +143,23 @@ export function Home() {
 						</p>
 					</div>
 
-					{/* Grid */}
+					{/* Carousel */}
 					{featuredProducts.length > 0 ? (
-						<div
-							ref={iconsGridRef}
-							className="reveal-stagger grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-8"
-						>
-							{featuredProducts.map((product) => (
-								<ProductCard key={product.id} product={product} />
-							))}
+						<div ref={iconsGridRef} className="reveal -mx-6 px-6 md:mx-0 md:px-0">
+							<Swiper
+								spaceBetween={16}
+								slidesPerView={1.5}
+								breakpoints={{
+									640: { slidesPerView: 2, spaceBetween: 20 },
+									1024: { slidesPerView: 4, spaceBetween: 32 },
+								}}
+							>
+								{featuredProducts.map((product) => (
+									<SwiperSlide key={product.id}>
+										<ProductCard product={product} />
+									</SwiperSlide>
+								))}
+							</Swiper>
 						</div>
 					) : (
 						<p className="text-center text-sm text-muted-foreground py-10">

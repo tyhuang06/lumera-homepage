@@ -1,8 +1,11 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import type { Swiper as SwiperType } from 'swiper';
+import 'swiper/css';
 import { cn } from '@/lib/utils';
 import { products } from '@/data/products';
 
@@ -11,6 +14,7 @@ export default function ProductPage() {
 	const { id } = useParams<{ id: string }>();
 	const product = products.find((p) => p.id === id);
 	const [activeIndex, setActiveIndex] = useState(0);
+	const swiperRef = useRef<SwiperType | null>(null);
 
 	if (!product) {
 		return (
@@ -27,11 +31,6 @@ export default function ProductPage() {
 
 	const { images } = product;
 	const title = t(`products:${product.titleKey}`);
-
-	const prev = () =>
-		setActiveIndex((i) => (i - 1 + images.length) % images.length);
-	const next = () =>
-		setActiveIndex((i) => (i + 1) % images.length);
 
 	return (
 		<>
@@ -56,30 +55,41 @@ export default function ProductPage() {
 
 					{/* Product layout */}
 					<div className="lg:grid lg:grid-cols-2 lg:gap-16">
-						{/* Left: image carousel */}
+						{/* Left: swipeable image carousel */}
 						<div>
-							{/* Main image */}
-							<div className="relative aspect-[3/4] overflow-hidden bg-[#f0ebe3]">
-								<img
-									key={activeIndex}
-									src={images[activeIndex]}
-									alt={title}
-									className="h-full w-full object-cover"
-								/>
+							{/* Main swiper */}
+							<div className="relative product-swiper">
+								<Swiper
+									slidesPerView={1}
+									onSwiper={(swiper) => { swiperRef.current = swiper; }}
+									onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+									className="aspect-[3/4] overflow-hidden bg-[#f0ebe3]"
+								>
+									{images.map((src, i) => (
+										<SwiperSlide key={i} className="!h-auto">
+											<img
+												src={src}
+												alt={`${title} ${i + 1}`}
+												className="h-full w-full object-cover"
+											/>
+										</SwiperSlide>
+									))}
+								</Swiper>
 
+								{/* Arrow buttons — only shown when multiple images */}
 								{images.length > 1 && (
 									<>
 										<button
-											onClick={prev}
+											onClick={() => swiperRef.current?.slidePrev()}
 											aria-label="Previous image"
-											className="absolute left-3 top-1/2 -translate-y-1/2 flex h-9 w-9 items-center justify-center bg-white/80 hover:bg-white transition-colors"
+											className="absolute left-3 top-[calc(50%-2rem)] -translate-y-1/2 z-10 flex h-9 w-9 items-center justify-center bg-white/80 hover:bg-white transition-colors"
 										>
 											<ChevronLeft className="h-4 w-4 text-charcoal" />
 										</button>
 										<button
-											onClick={next}
+											onClick={() => swiperRef.current?.slideNext()}
 											aria-label="Next image"
-											className="absolute right-3 top-1/2 -translate-y-1/2 flex h-9 w-9 items-center justify-center bg-white/80 hover:bg-white transition-colors"
+											className="absolute right-3 top-[calc(50%-2rem)] -translate-y-1/2 z-10 flex h-9 w-9 items-center justify-center bg-white/80 hover:bg-white transition-colors"
 										>
 											<ChevronRight className="h-4 w-4 text-charcoal" />
 										</button>
@@ -89,11 +99,11 @@ export default function ProductPage() {
 
 							{/* Thumbnail strip */}
 							{images.length > 1 && (
-								<div className="mt-3 flex gap-2">
+								<div className="mt-3 flex gap-2 flex-wrap">
 									{images.map((src, i) => (
 										<button
 											key={i}
-											onClick={() => setActiveIndex(i)}
+											onClick={() => swiperRef.current?.slideTo(i)}
 											className={cn(
 												'h-16 w-16 overflow-hidden border-2 transition-all',
 												i === activeIndex
