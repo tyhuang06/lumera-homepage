@@ -86,7 +86,7 @@ export const products: Product[] = [
   },
   {
     id: "akoya-necklace-tennyo",
-    featured: false,
+    featured: true,
     collection: "akoya",
     category:"necklaces",
     titleKey: "products.akoya-necklace-tennyo",

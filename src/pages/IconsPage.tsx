@@ -39,7 +39,7 @@ export default function IconsPage() {
 						</p>
 					</div>
 
-					<Gallery products={products} />
+					<Gallery products={products.filter((p) => p.featured)} />
 				</div>
 			</main>
 		</>

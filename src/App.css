@@ -1,10 +1,32 @@
 @layer components {
-	/* Lumera Swiper pagination */
+	/* Product page image swiper */
 	.product-gallery .swiper-pagination-bullet {
 		background: rgba(230, 216, 190, 0.35) !important;
 	}
-
 	.product-gallery .swiper-pagination-bullet-active {
 		background: rgba(230, 216, 190, 0.75) !important;
+	}
+
+	/* Home icons carousel */
+	.icons-carousel .swiper-pagination-bullet {
+		background: #b8956a;
+		opacity: 0.35;
+	}
+	.icons-carousel .swiper-pagination-bullet-active {
+		background: #b8956a;
+		opacity: 1;
+	}
+
+	/* Product page image swiper — full-width */
+	.product-swiper {
+		width: 100%;
+	}
+	.product-swiper .swiper-pagination-bullet {
+		background: #b8956a;
+		opacity: 0.35;
+	}
+	.product-swiper .swiper-pagination-bullet-active {
+		background: #b8956a;
+		opacity: 1;
 	}
 }
