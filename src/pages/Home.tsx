@@ -6,7 +6,7 @@ import 'swiper/css';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { ProductCard } from '@/components/Gallery';
 import { categories } from '@/data/categories';
-import { products } from '@/data/products';
+import { products, homeIcons } from '@/data/products';
 
 // SVG icons matching the wireframe design
 const categoryIcons: Record<string, React.ReactNode> = {
@@ -41,7 +41,9 @@ const categoryIcons: Record<string, React.ReactNode> = {
 export function Home() {
 	const { t } = useTranslation();
 
-	const featuredProducts = products.filter((p) => p.featured).slice(0, 4);
+	const featuredProducts = homeIcons
+		.map((id) => products.find((p) => p.id === id))
+		.filter((p) => p !== undefined);
 
 	// Scroll-reveal refs
 	const iconsHeaderRef = useScrollReveal<HTMLDivElement>();
