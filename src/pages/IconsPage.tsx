@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Gallery } from '@/components/Gallery';
-import { products } from '@/data/products';
+import { products, homeIcons } from '@/data/products';
 
 export default function IconsPage() {
 	const { t } = useTranslation();
