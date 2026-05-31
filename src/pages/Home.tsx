@@ -237,18 +237,21 @@ export function Home() {
 							text={t('home.experience.story.text')}
 							cta={t('home.experience.story.cta')}
 							to="/story"
+							image="/experience/story.jpg"
 						/>
 						<ExperienceCard
 							title={t('home.experience.materials.title')}
 							text={t('home.experience.materials.text')}
 							cta={t('home.experience.materials.cta')}
 							to="/materials"
+							image="/experience/materials.jpg"
 						/>
 						<ExperienceCard
 							title={t('home.experience.visit.title')}
 							text={t('home.experience.visit.text')}
 							cta={t('home.experience.visit.cta')}
 							href="#contact"
+							image="/experience/visit.jpg"
 						/>
 					</div>
 				</div>
@@ -302,21 +305,32 @@ function ExperienceCard({
 	cta,
 	to,
 	href,
+	image,
 }: {
 	title: string;
 	text: string;
 	cta: string;
 	to?: string;
 	href?: string;
+	image?: string;
 }) {
 	const className =
 		'border border-white/8 p-8 transition-colors duration-400 hover:border-gold/25 group';
 
 	const inner = (
 		<>
-			{/* Placeholder image area */}
-			<div className="w-full aspect-[4/3] bg-white/[0.03] mb-7 flex items-center justify-center">
-				<div className="w-8 h-px bg-gold/30" />
+			<div className="w-full aspect-[4/3] mb-7 overflow-hidden">
+				{image ? (
+					<img
+						src={image}
+						alt={title}
+						className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+					/>
+				) : (
+					<div className="w-full h-full bg-white/3 flex items-center justify-center">
+						<div className="w-8 h-px bg-gold/30" />
+					</div>
+				)}
 			</div>
 
 			<h3 className="font-cormorant text-2xl font-light text-white mb-3 tracking-[0.03em]">
