@@ -2,6 +2,23 @@
 <html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // Restore path encoded by 404.html redirect (GitHub Pages SPA routing).
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var p = params.get('p');
+        if (p) {
+          var h = params.get('h') || '';
+          params.delete('p');
+          params.delete('h');
+          var qs = params.toString();
+          window.history.replaceState(
+            null, null,
+            p + (qs ? '?' + qs : '') + h
+          );
+        }
+      })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="/brand.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lumera Fine Pearls</title>
