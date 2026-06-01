@@ -1,4 +1,4 @@
-export type CollectionSlug = "akoya" | "akoya-gray" | "tahitian" | "southsea";
+export type CollectionSlug = "akoya" | "akoya-gray" | "tahitian" | "southsea" | "keshi" | "freshwater";
 
 export type Collection = {
     slug: CollectionSlug,
@@ -20,6 +20,14 @@ export const collections: Collection[] = [
     },
     {
         slug: "southsea",
+        cover: "/collections/placeholder.png",
+    },
+    {
+        slug: "keshi",
+        cover: "/collections/placeholder.png",
+    },
+    {
+        slug: "freshwater",
         cover: "/collections/placeholder.png",
     },
 
