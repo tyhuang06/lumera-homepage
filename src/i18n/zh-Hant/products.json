@@ -1,16 +1,10 @@
 {
 	"products": {
-		"akoya-earrings-hanadama": "Akoya 經典花珠耳釘-8.0-8.5mm",
 		"akoya-earrings-hanadama85": "Akoya 經典花珠耳釘-8.5-9.0mm",
-		"akoya-earrings-tennyo": "Akoya 經典天女耳釘-8.5-9.0mm",
 		"akoya-earrings-diana": "Akoya 經典黛妃耳釘 8.0-8.5mm",
-		"akoya-necklace-tennyo": "Akoya 天女光經典項鍊 8.0-8.5mm",
 		"akoya-necklace-diana": "Akoya 經典黛妃項鍊 8.0-8.5mm",
-		"akoya-necklace-diana-y": "Akoya 經典Y字黛妃項鍊 8.0-8.5mm",
-		"southsea-necklace-flower": "Southsea Y字lariat項鍊",
 		"earrings-akoya-bluerose": "Akoya 藍玫瑰耳釘",
   "earrings-akoya-diamnond-drop": "Akoya 三鑽流星耳環",
-  "earrings-akoya-diana": "Akoya 黛妃耳釘",
   "earrings-akoya-flower": "Akoya 花型耳釘",
   "earrings-akoya-hanadama-8.0mm": "Akoya 花珠耳釘 8.0mm",
   "earrings-akoya-loveshaped": "Akoya 花瓣耳釘",
@@ -46,18 +40,27 @@
   "pendant-akoya-y": "Akoya Y字墜飾",
   "pendant-southsea-blue-y": "南洋藍色Y字墜飾",
   "pendant-southsea-flower": "南洋花型墜飾",
-  "pendant-southsea-rainbow-y": "南洋彩虹Y字墜飾"
+  "pendant-southsea-rainbow-y": "南洋彩虹Y字墜飾",
+  "earrings-akoya-bluerose-diana": "Akoya 藍玫瑰黛妃耳釘",
+  "earrings-akoya-bluerose-drop": "Akoya 藍玫瑰垂墜耳環",
+  "earrings-akoya-diana-8.5mm": "Akoya 黛妃耳釘 8.5mm",
+  "earclip-8.0mm": "Akoya 珍珠耳夾 8.0mm",
+  "earclip-bluerose": "Akoya 藍玫瑰耳夾",
+  "earclip-hanadama-8.5mm": "Akoya 花珠耳夾 8.5mm",
+  "earclip-tahitian": "大溪地珍珠耳夾",
+  "earrings-southsea-pheonex-11mm": "南洋鳳凰耳釘 11mm",
+  "earrings-southsea-pheonix-12mm": "南洋鳳凰耳環 12mm",
+  "earrings-tahitian": "大溪地珍珠耳釘",
+  "earrings-tahitian-ocenblue": "大溪地海藍耳環",
+  "earrings-tahitian-ocenblue2": "大溪地海藍耳環 II",
+  "bracelets-candy": "Akoya 糖果珍珠手鍊",
+  "pendant-southsea-apple": "南洋蘋果型墜飾",
+  "pendant-tahitian-necklace": "大溪地珍珠項鍊"
 		
 	},
 	"descriptions": {
-		"akoya-earrings-hanadama": "Akoya 經典花珠耳釘-8.0-8.5mm",
 		"akoya-earrings-hanadama85": "Akoya 經典花珠耳釘-8.5-9.0mm",
-		"akoya-earrings-tennyo": "Akoya 經典天女耳釘-8.5-9.0mm",
 		"akoya-earrings-diana": "Akoya 經典黛妃耳釘 8.0-8.5mm",
-		"akoya-necklace-tennyo": "Akoya 天女光經典項鍊 8.0-8.5mm",
-		"akoya-necklace-diana": "Akoya 經典黛妃項鍊 8.0-8.5mm",
-		"akoya-necklace-diana-y": "Akoya 經典Y字黛妃項鍊 8.0-8.5mm",
-		"southsea-necklace-flower": "Southsea Y字lariat項鍊"
-		
+		"akoya-necklace-diana": "Akoya 經典黛妃項鍊 8.0-8.5mm"
 	}
 }
