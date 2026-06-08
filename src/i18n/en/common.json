@@ -39,7 +39,7 @@
 	"home": {
 		"hero": {
 			"tagline": "Handcrafted in Seattle",
-			"subtitle": "Where light meets precious metal",
+			"subtitle": "For every version of you.",
 			"cta": "Explore the Collection"
 		},
 		"icons": {
@@ -56,20 +56,20 @@
 		"experience": {
 			"label": "Beyond Jewelry",
 			"title": "The Luméra Experience",
-			"desc": "More than adornment — a philosophy of light, material, and intention.",
+			"desc": "Not just jewelry — the feeling of being taken care of.",
 			"story": {
 				"title": "Our Story",
-				"text": "Born from a love of pearls and Pacific Northwest light. Two friends, one studio, an obsession with finding the world's finest pieces.",
+				"text": "Two people. One studio. We know how hard it is to choose — which is exactly why we do it for you.",
 				"cta": "Read Our Story"
 			},
 			"materials": {
 				"title": "Materials",
-				"text": "18K gold and ethically sourced pearls. We trace every element from origin to final polish — no exceptions.",
+				"text": "Japanese craftsmanship, obsessed with every detail — that's the difference you feel.",
 				"cta": "Our Materials"
 			},
 			"visit": {
 				"title": "Visit Us in Seattle",
-				"text": "Our atelier welcomes you by appointment — an intimate setting to discover your piece.",
+				"text": "We're in Seattle, by appointment. No rush — come find the piece that's yours.",
 				"cta": "Get in Touch"
 			}
 		}

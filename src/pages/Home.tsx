@@ -39,7 +39,8 @@ const categoryIcons: Record<string, React.ReactNode> = {
 };
 
 export function Home() {
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
+	const isZh = i18n.language === 'zh-Hant';
 
 	const featuredProducts = homeIcons
 		.map((id) => products.find((p) => p.id === id))
@@ -74,24 +75,26 @@ export function Home() {
 				{/* Content */}
 				<div className="relative z-10 text-center px-6">
 					<p
-						className="animate-hero text-gold-light text-xs tracking-[0.35em] uppercase mb-6"
+						className={`animate-hero text-gold-light text-xs tracking-[0.35em] uppercase mb-6 ${isZh ? 'font-noto-tc font-light' : ''}`}
 						style={{ animationDelay: '200ms' }}
 					>
 						{t('home.hero.tagline')}
 					</p>
 
 					<h1
-						className="animate-hero font-cormorant font-light text-white leading-none tracking-[0.08em]"
+						lang="en"
+						className="animate-hero font-light text-white leading-none tracking-[0.08em]"
 						style={{
 							animationDelay: '500ms',
 							fontSize: 'clamp(3.5rem, 10vw, 7rem)',
+							fontFamily: "'Cormorant Garamond', Georgia, serif",
 						}}
 					>
 						Luméra
 					</h1>
 
 					<p
-						className="animate-hero font-cormorant italic text-gold-light mt-4"
+						className={`animate-hero text-gold-light mt-4 ${isZh ? 'font-noto-tc font-light tracking-[0.08em]' : 'font-cormorant italic'}`}
 						style={{
 							animationDelay: '800ms',
 							fontSize: 'clamp(1rem, 2.5vw, 1.4rem)',
