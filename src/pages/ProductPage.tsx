@@ -136,6 +136,14 @@ export default function ProductPage() {
 								</p>
 							)}
 
+							{t(`products:sidenotes.${product.id}`, '') && (
+								<div className="mt-6 pt-5 border-t border-gold/20">
+									<p className="text-xs text-muted-foreground/60 tracking-wide leading-loose">
+										{t(`products:sidenotes.${product.id}`, '')}
+									</p>
+								</div>
+							)}
+
 							<a
 								href="#contact"
 								className="mt-10 inline-block border border-gold px-10 py-3.5 text-xs tracking-[0.25em] uppercase text-charcoal hover:bg-gold hover:text-white transition-all duration-300"
