@@ -94,20 +94,6 @@ export const products: Product[] = [
       "/gallery/earrings/akoya-diana-8.5mm/akoya-diana-8.5mm-5.jpg",
     ],
   },
-  {
-    id: "akoya-necklace-diana",
-    featured: false,
-    collection: "akoya",
-    category:"necklaces",
-    titleKey: "products.akoya-necklace-diana",
-    descriptionKey: "akoya-necklace-diana",
-    images: [
-      "/gallery/akoya/necklace/diana/diananecklace1.jpg",
-      "/gallery/akoya/necklace/diana/diananecklace2.jpg",
-      "/gallery/akoya/necklace/diana/diananecklace3.jpg",
-      "/gallery/akoya/necklace/diana/diananecklace4.jpg"
-    ],
-  },
 
   {
     id: "earrings-akoya-diamnond-drop",
@@ -498,6 +484,21 @@ export const products: Product[] = [
     ],
   },
   {
+    id: "pendant-akoya-wg-diana",
+    featured: false,
+    collection: "akoya",
+    category: "necklaces",
+    titleKey: "products.pendant-akoya-wg-diana",
+    descriptionKey: "pendant-akoya-wg-diana",
+    images: [
+      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-1.jpeg",
+      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-2.jpeg",
+      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-3.jpeg",
+      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-4.jpeg",
+      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-5.jpeg",
+    ],
+  },
+  {
     id: "pendant-akoya-classic",
     featured: false,
     collection: "akoya",
@@ -511,21 +512,6 @@ export const products: Product[] = [
       "/gallery/necklace/pendant/akoya-classic/akoya-classic-4.jpg",
       "/gallery/necklace/pendant/akoya-classic/akoya-classic-5.jpeg",
       "/gallery/necklace/pendant/akoya-classic/akoya-classic-6.jpeg",
-    ],
-  },
-  {
-    id: "pendant-akoya-wg-diana",
-    featured: false,
-    collection: "akoya",
-    category: "necklaces",
-    titleKey: "products.pendant-akoya-wg-diana",
-    descriptionKey: "pendant-akoya-wg-diana",
-    images: [
-      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-1.jpeg",
-      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-2.jpeg",
-      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-3.jpeg",
-      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-4.jpeg",
-      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-5.jpeg",
     ],
   },
   {
