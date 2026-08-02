@@ -9,6 +9,7 @@ import 'swiper/css';
 import { cn } from '@/lib/utils';
 import { products } from '@/data/products';
 import { LazyImage } from '@/components/LazyImage';
+import { Breadcrumb } from '@/components/Breadcrumb';
 
 export default function ProductPage() {
 	const { t } = useTranslation();
@@ -41,18 +42,12 @@ export default function ProductPage() {
 
 			<main className="pt-20 bg-cream min-h-screen">
 				<div className="mx-auto max-w-6xl px-6 py-12">
-					{/* Breadcrumb */}
-					<nav className="mb-10 flex items-center gap-2 text-xs tracking-[0.15em] uppercase text-muted-foreground">
-						<Link to="/" className="hover:text-foreground transition-colors">
-							{t('nav.home')}
-						</Link>
-						<span className="opacity-40">—</span>
-						<Link to="/icons" className="hover:text-foreground transition-colors">
-							{t('nav.icons')}
-						</Link>
-						<span className="opacity-40">—</span>
-						<span className="text-foreground truncate max-w-[140px]">{title}</span>
-					</nav>
+					<Breadcrumb
+						items={[
+							{ label: t('nav.icons'), to: '/icons' },
+							{ label: title },
+						]}
+					/>
 
 					{/* Product layout */}
 					<div className="lg:grid lg:grid-cols-2 lg:gap-16">

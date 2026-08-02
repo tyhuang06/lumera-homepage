@@ -1,8 +1,9 @@
 import { useParams } from 'react-router';
-import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { Gallery } from '@/components/Gallery';
+import { Breadcrumb } from '@/components/Breadcrumb';
+import { PageHeader } from '@/components/PageHeader';
 import type { CategorySlug } from '@/data/categories';
 import { products } from '@/data/products';
 
@@ -33,25 +34,9 @@ export default function CategoryPage() {
 
 			<main className="pt-20 bg-cream min-h-screen">
 				<div className="mx-auto max-w-7xl px-6 py-12">
-					{/* Breadcrumb */}
-					<nav className="mb-10 flex items-center gap-2 text-xs tracking-[0.15em] uppercase text-muted-foreground">
-						<Link to="/" className="hover:text-foreground transition-colors">
-							{t('nav.home')}
-						</Link>
-						<span className="opacity-40">—</span>
-						<span className="text-foreground">{label}</span>
-					</nav>
+					<Breadcrumb items={[{ label }]} />
 
-					{/* Header */}
-					<div className="mb-14 text-center">
-						<p className="text-[0.65rem] tracking-[0.35em] uppercase text-gold mb-3">
-							{t('home.collections.label')}
-						</p>
-						<h1 className="font-cormorant text-4xl font-light tracking-wide text-charcoal mb-4">
-							{label}
-						</h1>
-						<div className="mx-auto w-10 h-px bg-gold" />
-					</div>
+					<PageHeader eyebrow={t('home.collections.label')} title={label} />
 
 					<Gallery products={filtered} />
 				</div>
