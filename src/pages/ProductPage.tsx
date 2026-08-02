@@ -8,6 +8,7 @@ import type { Swiper as SwiperType } from 'swiper';
 import 'swiper/css';
 import { cn } from '@/lib/utils';
 import { products } from '@/data/products';
+import { LazyImage } from '@/components/LazyImage';
 
 export default function ProductPage() {
 	const { t } = useTranslation();
@@ -67,9 +68,10 @@ export default function ProductPage() {
 								>
 									{images.map((src, i) => (
 										<SwiperSlide key={i} className="!h-auto">
-											<img
+											<LazyImage
 												src={src}
 												alt={`${title} ${i + 1}`}
+												priority={i === 0}
 												className="h-full w-full object-cover"
 											/>
 										</SwiperSlide>
@@ -111,7 +113,7 @@ export default function ProductPage() {
 													: 'border-transparent opacity-50 hover:opacity-80',
 											)}
 										>
-											<img
+											<LazyImage
 												src={src}
 												alt=""
 												className="h-full w-full object-cover"

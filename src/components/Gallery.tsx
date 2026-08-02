@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import type { Product } from '@/data/products';
+import { LazyImage } from '@/components/LazyImage';
 
 export function Gallery({ products }: { products: Product[] }) {
 	const { t } = useTranslation();
@@ -32,10 +33,10 @@ export function ProductCard({ product }: { product: Product }) {
 		>
 			{/* Image */}
 			<div className="relative aspect-[3/4] overflow-hidden bg-cream-dark">
-				<img
+				<LazyImage
 					src={product.images[0]}
 					alt={t(`products:${product.titleKey}`)}
-					className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+					className="h-full w-full object-cover group-hover:scale-[1.04]"
 				/>
 				{/* Hover overlay */}
 				<div className="absolute inset-0 flex items-end justify-center pb-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
