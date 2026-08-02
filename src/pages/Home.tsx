@@ -8,6 +8,7 @@ import 'swiper/css/scrollbar';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { ProductCard } from '@/components/Gallery';
 import { LazyImage } from '@/components/LazyImage';
+import { PageHeader } from '@/components/PageHeader';
 import { categories } from '@/data/categories';
 import { products, homeIcons } from '@/data/products';
 
@@ -137,18 +138,13 @@ export function Home() {
 			{/* ─── The Luméra Icons ─── */}
 			<section className="bg-white py-28 px-6">
 				<div className="mx-auto max-w-7xl">
-					{/* Header */}
-					<div ref={iconsHeaderRef} className="reveal text-center mb-14">
-						<p className="text-[0.65rem] tracking-[0.35em] uppercase text-gold mb-3">
-							{t('home.icons.label')}
-						</p>
-						<h2 className="font-cormorant text-4xl font-light tracking-wide text-charcoal mb-4">
-							{t('home.icons.title')}
-						</h2>
-						<div className="mx-auto w-10 h-px bg-gold mb-4" />
-						<p className="text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
-							{t('home.icons.desc')}
-						</p>
+					<div ref={iconsHeaderRef} className="reveal">
+						<PageHeader
+							as="h2"
+							eyebrow={t('home.icons.label')}
+							title={t('home.icons.title')}
+							description={t('home.icons.desc')}
+						/>
 					</div>
 
 					{/* Carousel */}
@@ -192,18 +188,13 @@ export function Home() {
 			{/* ─── Collections ─── */}
 			<section className="bg-cream py-28 px-6">
 				<div className="mx-auto max-w-7xl">
-					{/* Header */}
-					<div ref={collectionsHeaderRef} className="reveal text-center mb-14">
-						<p className="text-[0.65rem] tracking-[0.35em] uppercase text-gold mb-3">
-							{t('home.collections.label')}
-						</p>
-						<h2 className="font-cormorant text-4xl font-light tracking-wide text-charcoal mb-4">
-							{t('home.collections.title')}
-						</h2>
-						<div className="mx-auto w-10 h-px bg-gold mb-4" />
-						<p className="text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
-							{t('home.collections.desc')}
-						</p>
+					<div ref={collectionsHeaderRef} className="reveal">
+						<PageHeader
+							as="h2"
+							eyebrow={t('home.collections.label')}
+							title={t('home.collections.title')}
+							description={t('home.collections.desc')}
+						/>
 					</div>
 
 					{/* 4 category cards */}
@@ -221,18 +212,14 @@ export function Home() {
 			{/* ─── The Luméra Experience ─── */}
 			<section className="bg-charcoal py-28 px-6">
 				<div className="mx-auto max-w-7xl">
-					{/* Header */}
-					<div ref={experienceHeaderRef} className="reveal text-center mb-14">
-						<p className="text-[0.65rem] tracking-[0.35em] uppercase text-gold-light mb-3">
-							{t('home.experience.label')}
-						</p>
-						<h2 className="font-cormorant text-4xl font-light tracking-wide text-white mb-4">
-							{t('home.experience.title')}
-						</h2>
-						<div className="mx-auto w-10 h-px bg-gold mb-4" />
-						<p className="text-sm text-white/50 max-w-md mx-auto leading-relaxed">
-							{t('home.experience.desc')}
-						</p>
+					<div ref={experienceHeaderRef} className="reveal">
+						<PageHeader
+							as="h2"
+							variant="dark"
+							eyebrow={t('home.experience.label')}
+							title={t('home.experience.title')}
+							description={t('home.experience.desc')}
+						/>
 					</div>
 
 					{/* 3 experience cards */}

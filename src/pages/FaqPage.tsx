@@ -6,15 +6,11 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from '@/components/ui/accordion';
+import { ContentListBlock, type ListBlock } from '@/components/ContentBlocks';
 
 const FAQ_KEYS = ['q1', 'q2', 'q3'] as const;
 
-type AnswerBlock =
-	| string
-	| {
-			type: 'list';
-			items: string[];
-	  };
+type AnswerBlock = string | ListBlock;
 
 export default function FaqPage() {
 	const { t } = useTranslation();
@@ -56,16 +52,7 @@ export default function FaqPage() {
 												}
 
 												if (block.type === 'list') {
-													return (
-														<ul key={i} className="space-y-2">
-															{block.items.map((item, j) => (
-																<li key={j} className="flex gap-3 text-sm text-muted-foreground">
-																	<span className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-gold/60" />
-																	{item}
-																</li>
-															))}
-														</ul>
-													);
+													return <ContentListBlock key={i} block={block} />;
 												}
 
 												return null;

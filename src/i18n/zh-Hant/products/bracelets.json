@@ -1,0 +1,17 @@
+{
+	"products": {
+		"bracelets-akoya-double": "Lumie Layer - Akoya 滿天星雙層手鍊",
+		"bracelets-candy": "Lumie Signature - Akoya 糖果手鍊",
+		"bracelets-southsea": "Soul Forever - 澳白 K金手鍊"
+	},
+	"descriptions": {
+		"bracelets-akoya-double": "設計感滿滿的一條手鍊，細緻的日本 18K 金配上光澤水潤的 Akoya 珍珠，珍珠像是星辰灑落在手腕，屬於自己看得到的美麗",
+		"bracelets-candy": "明亮、活潑、怎麼戴都好看——糖果手鍊聚集了各種天然無調色的Akoya珍珠。單獨佩戴或是搭配 K 金或銀鍊配戴，是自己看得到的美麗",
+		"bracelets-southsea": "佩戴澳白最低調的方式。一顆珍珠配一條精緻K金手鍊——手腕上的靜靜自信。真正懂首飾的人，一眼就會注意到你。"
+	},
+	"sidenotes": {
+		"bracelets-akoya-double": "材質：14K/18K金 / 類型：雙層手鍊 / 設計：星星點綴",
+		"bracelets-candy": "材質：14K/18K金 / 類型：單層手鍊 / 珠色：天然混彩",
+		"bracelets-southsea": "材質：K金（14K或18K）/ 類型：手鍊 / 珠種：澳白"
+	}
+}

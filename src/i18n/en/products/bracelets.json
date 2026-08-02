@@ -1,0 +1,17 @@
+{
+	"products": {
+		"bracelets-akoya-double": "Lumie Layer - Akoya Duo Star Bracelet",
+		"bracelets-candy": "Lumie Signature - Akoya Confetti Bracelet",
+		"bracelets-southsea": "Soul Forever - South Sea Classic Bracelet"
+	},
+	"descriptions": {
+		"bracelets-akoya-double": "a bracelet rich in design detail — refined japanese 18K gold paired with lustrous akoya pearls, as though stars had scattered across the wrist. a beauty that's yours alone to notice.",
+		"bracelets-candy": "bright, spirited, and beautiful worn any way — this confetti bracelet gathers akoya pearls in every natural hue. wear it alone or layered with a gold or silver chain — a beauty that's yours alone to notice.",
+		"bracelets-southsea": "the most understated way to wear a south sea pearl. a single pearl on a delicate gold chain — quiet confidence at the wrist. those who truly understand fine jewelry will notice it immediately."
+	},
+	"sidenotes": {
+		"bracelets-akoya-double": "material: 14K/18K gold / type: double-strand bracelet / design: star accents",
+		"bracelets-candy": "material: 14K/18K gold / type: single-strand bracelet / pearl tones: natural mixed colours",
+		"bracelets-southsea": "material: K gold (14K or 18K) / type: bracelet / pearl: south sea"
+	}
+}
