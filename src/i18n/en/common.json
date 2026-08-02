@@ -33,7 +33,9 @@
 		"viewCollection": "View collection",
 		"collectionNotFound": "Collection not found.",
 		"productNotFound": "Product not found.",
-		"backToIcons": "Back to Icons"
+		"backToIcons": "Back to Icons",
+		"previous": "Previous",
+		"next": "Next"
 	},
 
 	"home": {

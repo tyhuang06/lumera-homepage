@@ -33,7 +33,9 @@
 		"viewCollection": "查看系列",
 		"collectionNotFound": "找不到此系列",
 		"productNotFound": "找不到此商品",
-		"backToIcons": "返回精選作品"
+		"backToIcons": "返回精選作品",
+		"previous": "上一個",
+		"next": "下一個"
 	},
 
 	"home": {

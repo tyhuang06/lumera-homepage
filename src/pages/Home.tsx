@@ -2,9 +2,10 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Scrollbar } from 'swiper/modules';
+import { Scrollbar, Navigation, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
+import 'swiper/css/navigation';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { ProductCard } from '@/components/Gallery';
 import { LazyImage } from '@/components/LazyImage';
@@ -111,12 +112,12 @@ export function Home() {
 						className="animate-hero mt-10"
 						style={{ animationDelay: '1100ms' }}
 					>
-						<Link
-							to="/icons"
+						<a
+							href="#collections"
 							className="inline-block border border-gold px-10 py-3.5 text-xs tracking-[0.25em] uppercase text-white hover:bg-gold hover:text-charcoal transition-all duration-400"
 						>
 							{t('home.hero.cta')}
-						</Link>
+						</a>
 					</div>
 				</div>
 
@@ -149,15 +150,17 @@ export function Home() {
 
 					{/* Carousel */}
 					{featuredProducts.length > 0 ? (
-						<div ref={iconsGridRef} className="reveal -mx-6 px-6 pb-10 md:mx-0 md:px-0">
+						<div ref={iconsGridRef} className="reveal relative -mx-6 px-6 pb-10 md:mx-0 md:px-0">
 							<Swiper
-								modules={[Scrollbar]}
+								modules={[Scrollbar, Navigation, Keyboard]}
 								spaceBetween={16}
 								slidesPerView={1.5}
 								scrollbar={{ draggable: true, hide: false }}
+								keyboard={{ enabled: true }}
+								navigation={{ prevEl: '.icons-nav-prev', nextEl: '.icons-nav-next' }}
 								breakpoints={{
 									640: { slidesPerView: 2, spaceBetween: 20 },
-									1024: { slidesPerView: 4, spaceBetween: 32 },
+									1024: { slidesPerView: 4, spaceBetween: 32, slidesPerGroup: 4 },
 								}}
 							>
 								{featuredProducts.map((product) => (
@@ -166,6 +169,25 @@ export function Home() {
 									</SwiperSlide>
 								))}
 							</Swiper>
+
+							<button
+								type="button"
+								aria-label={t('ui.previous')}
+								className="icons-nav-prev absolute left-0 top-[calc(50%-3rem)] z-10 hidden h-14 w-14 -translate-x-1/2 items-center justify-center rounded-full border border-gold bg-white text-gold shadow-md transition-all duration-300 hover:scale-105 hover:bg-gold hover:text-white lg:flex [&.swiper-button-disabled]:opacity-0 [&.swiper-button-disabled]:pointer-events-none"
+							>
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5">
+									<path d="M15 5l-7 7 7 7" strokeLinecap="round" strokeLinejoin="round" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								aria-label={t('ui.next')}
+								className="icons-nav-next absolute right-0 top-[calc(50%-3rem)] z-10 hidden h-14 w-14 translate-x-1/2 items-center justify-center rounded-full border border-gold bg-white text-gold shadow-md transition-all duration-300 hover:scale-105 hover:bg-gold hover:text-white lg:flex [&.swiper-button-disabled]:opacity-0 [&.swiper-button-disabled]:pointer-events-none"
+							>
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5">
+									<path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+								</svg>
+							</button>
 						</div>
 					) : (
 						<p className="text-center text-sm text-muted-foreground py-10">
@@ -186,7 +208,7 @@ export function Home() {
 			</section>
 
 			{/* ─── Collections ─── */}
-			<section className="bg-cream py-28 px-6">
+			<section id="collections" className="bg-cream py-28 px-6 scroll-mt-16">
 				<div className="mx-auto max-w-7xl">
 					<div ref={collectionsHeaderRef} className="reveal">
 						<PageHeader
