@@ -33,6 +33,8 @@ export default function ProductPage() {
 
 	const { images } = product;
 	const title = t(`products:${product.titleKey}`);
+	const sidenote = t(`products:sidenotes.${product.id}`, '');
+	const sidenoteLines = sidenote.split('\n').filter(Boolean);
 
 	return (
 		<>
@@ -133,13 +135,23 @@ export default function ProductPage() {
 								</p>
 							)}
 
-							{t(`products:sidenotes.${product.id}`, '') && (
+							{sidenoteLines.length > 1 ? (
+								<div className="mt-6 pt-5 border-t border-gold/20">
+									<div className="grid gap-2.5 rounded-lg border border-gold/15 bg-gold/5 px-4 py-4">
+										{sidenoteLines.map((line, i) => (
+											<p key={i} className="text-xs text-charcoal/70 tracking-wide leading-relaxed">
+												{line}
+											</p>
+										))}
+									</div>
+								</div>
+							) : sidenote ? (
 								<div className="mt-6 pt-5 border-t border-gold/20">
 									<p className="text-xs text-muted-foreground/60 tracking-wide leading-loose">
-										{t(`products:sidenotes.${product.id}`, '')}
+										{sidenote}
 									</p>
 								</div>
-							)}
+							) : null}
 
 							<a
 								href="#contact"
