@@ -29,18 +29,23 @@ export const homeIcons: string[] = [
 ];
 
 // ─── How to add a new product ────────────────────────────────────────────────
-// 1. Copy an existing entry below and fill in the details
-// 2. Set a unique id (e.g. "tahitian-necklace")
-// 3. Set featured: true  → shows on the /icons page
+// 1. Drop your photos (any format: .jpg/.jpeg/.png straight from your phone)
+//    into a new folder under public/gallery/...
+// 2. Run: npm run optimize-images
+//    This resizes + converts everything under public/gallery to .webp in
+//    place (originals are replaced). Skip this step and photos will load
+//    very slowly on the live site.
+// 3. Copy an existing entry below and fill in the details
+// 4. Set a unique id (e.g. "tahitian-necklace")
+// 5. Set featured: true  → shows on the /icons page
 //    Set featured: false → hidden from /icons (still accessible via category pages)
-// 4. Set collection to one of: "akoya" | "akoya-gray" | "tahitian" | "southsea" | "keshi" | "freshwater"
-// 5. Set category to one of: "rings" | "necklaces" | "earrings" | "bracelets"
-// 6. Add product images to public/gallery/...
-//    Use squoosh.app to convert photos to .webp for smaller file sizes
-// 7. Add the product title to src/i18n/en/products.json under "products"
+// 6. Set collection to one of: "akoya" | "akoya-gray" | "tahitian" | "southsea" | "keshi" | "freshwater"
+// 7. Set category to one of: "rings" | "necklaces" | "earrings" | "bracelets"
+// 8. Reference the new .webp image paths in the images array below
+// 9. Add the product title to src/i18n/en/products.json under "products"
 //    and src/i18n/zh-Hant/products.json
-// 8. Optionally add a description under "descriptions" in the same files
-// 9. To show it on the HOME PAGE carousel, add its id to homeIcons above
+// 10. Optionally add a description under "descriptions" in the same files
+// 11. To show it on the HOME PAGE carousel, add its id to homeIcons above
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const products: Product[] = [
@@ -52,8 +57,8 @@ export const products: Product[] = [
     titleKey: "products.earrings-akoya-hanadama-8.0mm",
     descriptionKey: "earrings-akoya-hanadama-8.0mm",
     images: [
-      "/gallery/earrings/akoya-hanadama-8.0mm/akoya-hanadama-8.0mm-1.jpeg",
-      "/gallery/earrings/akoya-hanadama-8.0mm/akoya-hanadama-8.0mm-2.jpeg",
+      "/gallery/earrings/akoya-hanadama-8.0mm/akoya-hanadama-8.0mm-1.webp",
+      "/gallery/earrings/akoya-hanadama-8.0mm/akoya-hanadama-8.0mm-2.webp",
     ],
   },
   {
@@ -64,11 +69,11 @@ export const products: Product[] = [
     titleKey: "products.akoya-earrings-hanadama85",
     descriptionKey: "akoya-earrings-hanadama85",
     images: [
-     "/gallery/akoya/stud/hanadama/85/hanadama85-2.jpg",
-     "/gallery/akoya/stud/hanadama/85/hanadama85-3.jpg",
-     "/gallery/akoya/stud/hanadama/85/hanadama85-4.jpg",
-     "/gallery/akoya/stud/hanadama/85/hanadama85-5.jpg",
-     "/gallery/akoya/stud/hanadama/85/hanadama85-6.jpg"
+     "/gallery/akoya/stud/hanadama/85/hanadama85-2.webp",
+     "/gallery/akoya/stud/hanadama/85/hanadama85-3.webp",
+     "/gallery/akoya/stud/hanadama/85/hanadama85-4.webp",
+     "/gallery/akoya/stud/hanadama/85/hanadama85-5.webp",
+     "/gallery/akoya/stud/hanadama/85/hanadama85-6.webp"
     ],
   },
   {
@@ -79,11 +84,11 @@ export const products: Product[] = [
     titleKey: "products.akoya-earrings-diana",
     descriptionKey: "akoya-earrings-diana",
     images: [
-      "/gallery/akoya/stud/diana/diana0.jpg",
-      "/gallery/akoya/stud/diana/diana1.jpg",
-      "/gallery/akoya/stud/diana/diana2.jpg",
-      "/gallery/akoya/stud/diana/diana3.jpg",
-      "/gallery/akoya/stud/diana/diana4.jpg"
+      "/gallery/akoya/stud/diana/diana0.webp",
+      "/gallery/akoya/stud/diana/diana1.webp",
+      "/gallery/akoya/stud/diana/diana2.webp",
+      "/gallery/akoya/stud/diana/diana3.webp",
+      "/gallery/akoya/stud/diana/diana4.webp"
     ],
   },
   {
@@ -94,11 +99,11 @@ export const products: Product[] = [
     titleKey: "products.earrings-akoya-diana-8.5mm",
     descriptionKey: "earrings-akoya-diana-8.5mm",
     images: [
-      "/gallery/earrings/akoya-diana-8.5mm/akoya-diana-8.5mm-1.jpeg",
-      "/gallery/earrings/akoya-diana-8.5mm/akoya-diana-8.5mm-2.jpeg",
-      "/gallery/earrings/akoya-diana-8.5mm/akoya-diana-8.5mm-3.jpeg",
-      "/gallery/earrings/akoya-diana-8.5mm/akoya-diana-8.5mm-4.jpeg",
-      "/gallery/earrings/akoya-diana-8.5mm/akoya-diana-8.5mm-5.jpeg",
+      "/gallery/earrings/akoya-diana-8.5mm/akoya-diana-8.5mm-1.webp",
+      "/gallery/earrings/akoya-diana-8.5mm/akoya-diana-8.5mm-2.webp",
+      "/gallery/earrings/akoya-diana-8.5mm/akoya-diana-8.5mm-3.webp",
+      "/gallery/earrings/akoya-diana-8.5mm/akoya-diana-8.5mm-4.webp",
+      "/gallery/earrings/akoya-diana-8.5mm/akoya-diana-8.5mm-5.webp",
     ],
   },
 
@@ -110,8 +115,8 @@ export const products: Product[] = [
     titleKey: "products.earrings-akoya-diamnond-drop",
     descriptionKey: "earrings-akoya-diamnond-drop",
     images: [
-      "/gallery/earrings/akoya-diamnond-drop/akoya-diamnond-drop-1.jpeg",
-      "/gallery/earrings/akoya-diamnond-drop/akoya-diamnond-drop-2.jpeg",
+      "/gallery/earrings/akoya-diamnond-drop/akoya-diamnond-drop-1.webp",
+      "/gallery/earrings/akoya-diamnond-drop/akoya-diamnond-drop-2.webp",
     ],
   },
   {
@@ -122,10 +127,10 @@ export const products: Product[] = [
     titleKey: "products.earrings-akoya-flower",
     descriptionKey: "earrings-akoya-flower",
     images: [
-      "/gallery/earrings/akoya-flower/akoya-flower-1.jpeg",
-      "/gallery/earrings/akoya-flower/akoya-flower-3.jpeg",
-      "/gallery/earrings/akoya-flower/akoya-flower-4.jpeg",
-      "/gallery/earrings/akoya-flower/akoya-flower-5.jpeg",
+      "/gallery/earrings/akoya-flower/akoya-flower-1.webp",
+      "/gallery/earrings/akoya-flower/akoya-flower-3.webp",
+      "/gallery/earrings/akoya-flower/akoya-flower-4.webp",
+      "/gallery/earrings/akoya-flower/akoya-flower-5.webp",
     ],
   },
   {
@@ -136,9 +141,9 @@ export const products: Product[] = [
     titleKey: "products.earrings-akoya-tie",
     descriptionKey: "earrings-akoya-tie",
     images: [
-      "/gallery/earrings/akoya-tie/akoya-tie-1.jpeg",
-      "/gallery/earrings/akoya-tie/akoya-tie-2.jpeg",
-      "/gallery/earrings/akoya-tie/akoya-tie-3.jpeg",
+      "/gallery/earrings/akoya-tie/akoya-tie-1.webp",
+      "/gallery/earrings/akoya-tie/akoya-tie-2.webp",
+      "/gallery/earrings/akoya-tie/akoya-tie-3.webp",
     ],
   },
   {
@@ -149,8 +154,8 @@ export const products: Product[] = [
     titleKey: "products.earrings-p-southsea-11.0mm",
     descriptionKey: "earrings-p-southsea-11.0mm",
     images: [
-      "/gallery/earrings/p-southsea-11.0mm/p-southsea-11.0mm-1.jpeg",
-      "/gallery/earrings/p-southsea-11.0mm/p-southsea-11.0mm-2.jpeg",
+      "/gallery/earrings/p-southsea-11.0mm/p-southsea-11.0mm-1.webp",
+      "/gallery/earrings/p-southsea-11.0mm/p-southsea-11.0mm-2.webp",
     ],
   },
   {
@@ -161,9 +166,9 @@ export const products: Product[] = [
     titleKey: "products.earrings-southsea-9.0mm-feather",
     descriptionKey: "earrings-southsea-9.0mm-feather",
     images: [
-      "/gallery/earrings/southsea-9.0mm-feather/southsea-9.0mm-feather-1.jpg",
-      "/gallery/earrings/southsea-9.0mm-feather/southsea-9.0mm-feather-2.jpeg",
-      "/gallery/earrings/southsea-9.0mm-feather/southsea-9.0mm-feather-3.jpeg",
+      "/gallery/earrings/southsea-9.0mm-feather/southsea-9.0mm-feather-1.webp",
+      "/gallery/earrings/southsea-9.0mm-feather/southsea-9.0mm-feather-2.webp",
+      "/gallery/earrings/southsea-9.0mm-feather/southsea-9.0mm-feather-3.webp",
     ],
   },
   {
@@ -174,9 +179,9 @@ export const products: Product[] = [
     titleKey: "products.earrings-southsea-drop",
     descriptionKey: "earrings-southsea-drop",
     images: [
-      "/gallery/earrings/southsea-drop/southsea-drop-1.jpeg",
-      "/gallery/earrings/southsea-drop/southsea-drop-2.jpeg",
-      "/gallery/earrings/southsea-drop/southsea-drop-3.jpeg",
+      "/gallery/earrings/southsea-drop/southsea-drop-1.webp",
+      "/gallery/earrings/southsea-drop/southsea-drop-2.webp",
+      "/gallery/earrings/southsea-drop/southsea-drop-3.webp",
     ],
   },
   {
@@ -187,8 +192,8 @@ export const products: Product[] = [
     titleKey: "products.earrings-keshi-southsea-drop",
     descriptionKey: "earrings-keshi-southsea-drop",
     images: [
-      "/gallery/earrings/keshi-southsea-drop/keshi-southsea-drop-1.jpeg",
-      "/gallery/earrings/keshi-southsea-drop/keshi-southsea-drop-2.jpeg",
+      "/gallery/earrings/keshi-southsea-drop/keshi-southsea-drop-1.webp",
+      "/gallery/earrings/keshi-southsea-drop/keshi-southsea-drop-2.webp",
     ],
   },
   {
@@ -199,8 +204,8 @@ export const products: Product[] = [
     titleKey: "products.earrings-akoya-bluerose",
     descriptionKey: "earrings-akoya-bluerose",
     images: [
-      "/gallery/earrings/akoya-bluerose/akoya-bluerose-1.jpeg",
-      "/gallery/earrings/akoya-bluerose/akoya-bluerose-2.jpeg",
+      "/gallery/earrings/akoya-bluerose/akoya-bluerose-1.webp",
+      "/gallery/earrings/akoya-bluerose/akoya-bluerose-2.webp",
     ],
   },
   {
@@ -211,10 +216,10 @@ export const products: Product[] = [
     titleKey: "products.earrings-akoya-loveshaped",
     descriptionKey: "earrings-akoya-loveshaped",
     images: [
-      "/gallery/earrings/akoya-loveshaped/akoya-loveshaped-1.jpeg",
-      "/gallery/earrings/akoya-loveshaped/akoya-loveshaped-2.jpeg",
-      "/gallery/earrings/akoya-loveshaped/akoya-loveshaped-3.jpeg",
-      "/gallery/earrings/akoya-loveshaped/akoya-loveshaped-4.jpeg",
+      "/gallery/earrings/akoya-loveshaped/akoya-loveshaped-1.webp",
+      "/gallery/earrings/akoya-loveshaped/akoya-loveshaped-2.webp",
+      "/gallery/earrings/akoya-loveshaped/akoya-loveshaped-3.webp",
+      "/gallery/earrings/akoya-loveshaped/akoya-loveshaped-4.webp",
     ],
   },
   {
@@ -225,7 +230,7 @@ export const products: Product[] = [
     titleKey: "products.earrings-keshi-southsea-diana",
     descriptionKey: "earrings-keshi-southsea-diana",
     images: [
-      "/gallery/earrings/keshi-southsea-diana/keshi-southsea-diana-1.jpeg",
+      "/gallery/earrings/keshi-southsea-diana/keshi-southsea-diana-1.webp",
     ],
   },
   {
@@ -236,8 +241,8 @@ export const products: Product[] = [
     titleKey: "products.earrings-keshi-southsea-gold",
     descriptionKey: "earrings-keshi-southsea-gold",
     images: [
-      "/gallery/earrings/keshi-southsea-gold/keshi-southsea-gold-1.jpeg",
-      "/gallery/earrings/keshi-southsea-gold/keshi-southsea-gold-2.jpeg",
+      "/gallery/earrings/keshi-southsea-gold/keshi-southsea-gold-1.webp",
+      "/gallery/earrings/keshi-southsea-gold/keshi-southsea-gold-2.webp",
     ],
   },
   {
@@ -248,9 +253,9 @@ export const products: Product[] = [
     titleKey: "products.earrings-keshi-tahitian-10mm",
     descriptionKey: "earrings-keshi-tahitian-10mm",
     images: [
-      "/gallery/earrings/keshi-tahitian-10mm/keshi-tahitian-10mm-2.jpeg",
-      "/gallery/earrings/keshi-tahitian-10mm/keshi-tahitian-10mm-1.jpeg",
-      "/gallery/earrings/keshi-tahitian-10mm/keshi-tahitian-10mm-3.jpeg",
+      "/gallery/earrings/keshi-tahitian-10mm/keshi-tahitian-10mm-2.webp",
+      "/gallery/earrings/keshi-tahitian-10mm/keshi-tahitian-10mm-1.webp",
+      "/gallery/earrings/keshi-tahitian-10mm/keshi-tahitian-10mm-3.webp",
     ],
   },
   {
@@ -261,11 +266,11 @@ export const products: Product[] = [
     titleKey: "products.earrings-keshi-tahitian-12mm",
     descriptionKey: "earrings-keshi-tahitian-12mm",
     images: [
-      "/gallery/earrings/keshi-tahitian-12mm/keshi-tahitian-12mm-1.jpeg",
-      "/gallery/earrings/keshi-tahitian-12mm/keshi-tahitian-12mm-2.jpeg",
-      "/gallery/earrings/keshi-tahitian-12mm/keshi-tahitian-12mm-3.jpeg",
-      "/gallery/earrings/keshi-tahitian-12mm/keshi-tahitian-12mm-4.jpeg",
-      "/gallery/earrings/keshi-tahitian-12mm/keshi-tahitian-12mm-5.jpeg",
+      "/gallery/earrings/keshi-tahitian-12mm/keshi-tahitian-12mm-1.webp",
+      "/gallery/earrings/keshi-tahitian-12mm/keshi-tahitian-12mm-2.webp",
+      "/gallery/earrings/keshi-tahitian-12mm/keshi-tahitian-12mm-3.webp",
+      "/gallery/earrings/keshi-tahitian-12mm/keshi-tahitian-12mm-4.webp",
+      "/gallery/earrings/keshi-tahitian-12mm/keshi-tahitian-12mm-5.webp",
     ],
   },
   {
@@ -276,9 +281,9 @@ export const products: Product[] = [
     titleKey: "products.earrings-keshi-tahitian-three",
     descriptionKey: "earrings-keshi-tahitian-three",
     images: [
-      "/gallery/earrings/keshi-tahitian-three/keshi-tahitian-three-1.jpeg",
-      "/gallery/earrings/keshi-tahitian-three/keshi-tahitian-three-2.jpeg",
-      "/gallery/earrings/keshi-tahitian-three/keshi-tahitian-three-3.jpeg",
+      "/gallery/earrings/keshi-tahitian-three/keshi-tahitian-three-1.webp",
+      "/gallery/earrings/keshi-tahitian-three/keshi-tahitian-three-2.webp",
+      "/gallery/earrings/keshi-tahitian-three/keshi-tahitian-three-3.webp",
     ],
   },
   {
@@ -289,11 +294,11 @@ export const products: Product[] = [
     titleKey: "products.earrings-akoya-bluerose-diana",
     descriptionKey: "earrings-akoya-bluerose-diana",
     images: [
-      "/gallery/earrings/akoya-bluerose-diana/akoya-bluerose-diana-1.jpeg",
-      "/gallery/earrings/akoya-bluerose-diana/akoya-bluerose-diana-2.jpeg",
-      "/gallery/earrings/akoya-bluerose-diana/akoya-bluerose-diana-3.jpeg",
-      "/gallery/earrings/akoya-bluerose-diana/akoya-bluerose-diana-4.jpeg",
-      "/gallery/earrings/akoya-bluerose-diana/akoya-bluerose-diana-5.jpeg",
+      "/gallery/earrings/akoya-bluerose-diana/akoya-bluerose-diana-1.webp",
+      "/gallery/earrings/akoya-bluerose-diana/akoya-bluerose-diana-2.webp",
+      "/gallery/earrings/akoya-bluerose-diana/akoya-bluerose-diana-3.webp",
+      "/gallery/earrings/akoya-bluerose-diana/akoya-bluerose-diana-4.webp",
+      "/gallery/earrings/akoya-bluerose-diana/akoya-bluerose-diana-5.webp",
     ],
   },
   {
@@ -304,11 +309,11 @@ export const products: Product[] = [
     titleKey: "products.earrings-akoya-bluerose-drop",
     descriptionKey: "earrings-akoya-bluerose-drop",
     images: [
-      "/gallery/earrings/akoya-bluerose-drop/akoya-bluerose-drop-1.jpeg",
-      "/gallery/earrings/akoya-bluerose-drop/akoya-bluerose-drop-2.jpeg",
-      "/gallery/earrings/akoya-bluerose-drop/akoya-bluerose-drop-3.jpeg",
-      "/gallery/earrings/akoya-bluerose-drop/akoya-bluerose-drop-4.jpeg",
-      "/gallery/earrings/akoya-bluerose-drop/akoya-bluerose-drop-5.jpeg",
+      "/gallery/earrings/akoya-bluerose-drop/akoya-bluerose-drop-1.webp",
+      "/gallery/earrings/akoya-bluerose-drop/akoya-bluerose-drop-2.webp",
+      "/gallery/earrings/akoya-bluerose-drop/akoya-bluerose-drop-3.webp",
+      "/gallery/earrings/akoya-bluerose-drop/akoya-bluerose-drop-4.webp",
+      "/gallery/earrings/akoya-bluerose-drop/akoya-bluerose-drop-5.webp",
     ],
   },
   {
@@ -319,9 +324,9 @@ export const products: Product[] = [
     titleKey: "products.earclip-8.0mm",
     descriptionKey: "earclip-8.0mm",
     images: [
-      "/gallery/earrings/earclip-8.0mm/earclip-8.0mm-1.jpeg",
-      "/gallery/earrings/earclip-8.0mm/earclip-8.0mm-2.jpeg",
-      "/gallery/earrings/earclip-8.0mm/earclip-8.0mm-3.jpeg",
+      "/gallery/earrings/earclip-8.0mm/earclip-8.0mm-1.webp",
+      "/gallery/earrings/earclip-8.0mm/earclip-8.0mm-2.webp",
+      "/gallery/earrings/earclip-8.0mm/earclip-8.0mm-3.webp",
     ],
   },
   {
@@ -332,9 +337,9 @@ export const products: Product[] = [
     titleKey: "products.earclip-bluerose",
     descriptionKey: "earclip-bluerose",
     images: [
-      "/gallery/earrings/earclip-bluerose/earclip-bluerose-1.jpeg",
-      "/gallery/earrings/earclip-bluerose/earclip-bluerose-2.jpeg",
-      "/gallery/earrings/earclip-bluerose/earclip-bluerose-3.jpeg",
+      "/gallery/earrings/earclip-bluerose/earclip-bluerose-1.webp",
+      "/gallery/earrings/earclip-bluerose/earclip-bluerose-2.webp",
+      "/gallery/earrings/earclip-bluerose/earclip-bluerose-3.webp",
     ],
   },
   {
@@ -345,9 +350,9 @@ export const products: Product[] = [
     titleKey: "products.earclip-hanadama-8.5mm",
     descriptionKey: "earclip-hanadama-8.5mm",
     images: [
-      "/gallery/earrings/earclip-hanadama-8.5mm/earclip-hanadama-8.5mm-1.jpeg",
-      "/gallery/earrings/earclip-hanadama-8.5mm/earclip-hanadama-8.5mm-2.jpeg",
-      "/gallery/earrings/earclip-hanadama-8.5mm/earclip-hanadama-8.5mm-3.jpeg",
+      "/gallery/earrings/earclip-hanadama-8.5mm/earclip-hanadama-8.5mm-1.webp",
+      "/gallery/earrings/earclip-hanadama-8.5mm/earclip-hanadama-8.5mm-2.webp",
+      "/gallery/earrings/earclip-hanadama-8.5mm/earclip-hanadama-8.5mm-3.webp",
     ],
   },
   {
@@ -358,10 +363,10 @@ export const products: Product[] = [
     titleKey: "products.earclip-tahitian",
     descriptionKey: "earclip-tahitian",
     images: [
-      "/gallery/earrings/earclip-tahitian/earclip-tahitian-01.jpeg",
-      "/gallery/earrings/earclip-tahitian/earclip-tahitian-2.jpeg",
-      "/gallery/earrings/earclip-tahitian/earclip-tahitian-3.jpeg",
-      "/gallery/earrings/earclip-tahitian/earclip-tahitian-4.jpeg",
+      "/gallery/earrings/earclip-tahitian/earclip-tahitian-01.webp",
+      "/gallery/earrings/earclip-tahitian/earclip-tahitian-2.webp",
+      "/gallery/earrings/earclip-tahitian/earclip-tahitian-3.webp",
+      "/gallery/earrings/earclip-tahitian/earclip-tahitian-4.webp",
     ],
   },
   {
@@ -372,11 +377,11 @@ export const products: Product[] = [
     titleKey: "products.earrings-southsea-pheonex-11mm",
     descriptionKey: "earrings-southsea-pheonex-11mm",
     images: [
-      "/gallery/earrings/southsea-pheonex-11mm/southsea-pheonex-11mm-1.JPG",
-      "/gallery/earrings/southsea-pheonex-11mm/southsea-pheonex-11mm-2.jpeg",
-      "/gallery/earrings/southsea-pheonex-11mm/southsea-pheonex-11mm-3.jpeg",
-      "/gallery/earrings/southsea-pheonex-11mm/southsea-pheonex-11mm-4.jpeg",
-      "/gallery/earrings/southsea-pheonex-11mm/southsea-pheonex-11mm-5.jpeg",
+      "/gallery/earrings/southsea-pheonex-11mm/southsea-pheonex-11mm-1.webp",
+      "/gallery/earrings/southsea-pheonex-11mm/southsea-pheonex-11mm-2.webp",
+      "/gallery/earrings/southsea-pheonex-11mm/southsea-pheonex-11mm-3.webp",
+      "/gallery/earrings/southsea-pheonex-11mm/southsea-pheonex-11mm-4.webp",
+      "/gallery/earrings/southsea-pheonex-11mm/southsea-pheonex-11mm-5.webp",
     ],
   },
   {
@@ -387,8 +392,8 @@ export const products: Product[] = [
     titleKey: "products.earrings-southsea-pheonix-12mm",
     descriptionKey: "earrings-southsea-pheonix-12mm",
     images: [
-      "/gallery/earrings/southsea-pheonix-12mm/southsea-pheonix-12mm-1.jpeg",
-      "/gallery/earrings/southsea-pheonix-12mm/southsea-pheonix-12mm-2.jpeg",
+      "/gallery/earrings/southsea-pheonix-12mm/southsea-pheonix-12mm-1.webp",
+      "/gallery/earrings/southsea-pheonix-12mm/southsea-pheonix-12mm-2.webp",
     ],
   },
   {
@@ -399,11 +404,11 @@ export const products: Product[] = [
     titleKey: "products.earrings-southsea-pheonix-13mm",
     descriptionKey: "earrings-southsea-pheonix-13mm",
     images: [
-      "/gallery/earrings/southsea-pheonix-13mm/southsea-pheonix-13mm-1.jpeg",
-      "/gallery/earrings/southsea-pheonix-13mm/southsea-pheonix-13mm-2.jpeg",
-      "/gallery/earrings/southsea-pheonix-13mm/southsea-pheonix-13mm-3.jpeg",
-      "/gallery/earrings/southsea-pheonix-13mm/southsea-pheonix-13mm-4.jpeg",
-      "/gallery/earrings/southsea-pheonix-13mm/southsea-pheonix-13mm-5.jpeg",
+      "/gallery/earrings/southsea-pheonix-13mm/southsea-pheonix-13mm-1.webp",
+      "/gallery/earrings/southsea-pheonix-13mm/southsea-pheonix-13mm-2.webp",
+      "/gallery/earrings/southsea-pheonix-13mm/southsea-pheonix-13mm-3.webp",
+      "/gallery/earrings/southsea-pheonix-13mm/southsea-pheonix-13mm-4.webp",
+      "/gallery/earrings/southsea-pheonix-13mm/southsea-pheonix-13mm-5.webp",
     ],
   },
   {
@@ -414,9 +419,9 @@ export const products: Product[] = [
     titleKey: "products.earrings-tahitian",
     descriptionKey: "earrings-tahitian",
     images: [
-      "/gallery/earrings/tahitian/tahitian-1.jpeg",
-      "/gallery/earrings/tahitian/tahitian-2.jpeg",
-      "/gallery/earrings/tahitian/tahitian-3.jpeg",
+      "/gallery/earrings/tahitian/tahitian-1.webp",
+      "/gallery/earrings/tahitian/tahitian-2.webp",
+      "/gallery/earrings/tahitian/tahitian-3.webp",
     ],
   },
   {
@@ -427,9 +432,9 @@ export const products: Product[] = [
     titleKey: "products.earrings-tahitian-ocenblue",
     descriptionKey: "earrings-tahitian-ocenblue",
     images: [
-      "/gallery/earrings/tahitian-ocenblue/tahitian-ocenblue-1.jpeg",
-      "/gallery/earrings/tahitian-ocenblue/tahitian-ocenblue-2.jpeg",
-      "/gallery/earrings/tahitian-ocenblue/tahitian-ocenblue-3.jpeg",
+      "/gallery/earrings/tahitian-ocenblue/tahitian-ocenblue-1.webp",
+      "/gallery/earrings/tahitian-ocenblue/tahitian-ocenblue-2.webp",
+      "/gallery/earrings/tahitian-ocenblue/tahitian-ocenblue-3.webp",
     ],
   },
   {
@@ -440,13 +445,13 @@ export const products: Product[] = [
     titleKey: "products.ring-akoya-5mm",
     descriptionKey: "ring-akoya-5mm",
     images: [
-      "/gallery/ring/akoya-5mm/akoya-5mm-1.jpeg",
-      "/gallery/ring/akoya-5mm/akoya-5mm-2.jpeg",
-      "/gallery/ring/akoya-5mm/akoya-5mm-3.jpeg",
-      "/gallery/ring/akoya-5mm/akoya-5mm-4.jpeg",
-      "/gallery/ring/akoya-5mm/akoya-5mm-5.jpeg",
-      "/gallery/ring/akoya-5mm/akoya-5mm-6.jpeg",
-      "/gallery/ring/akoya-5mm/akoya-5mm-7.jpeg",
+      "/gallery/ring/akoya-5mm/akoya-5mm-1.webp",
+      "/gallery/ring/akoya-5mm/akoya-5mm-2.webp",
+      "/gallery/ring/akoya-5mm/akoya-5mm-3.webp",
+      "/gallery/ring/akoya-5mm/akoya-5mm-4.webp",
+      "/gallery/ring/akoya-5mm/akoya-5mm-5.webp",
+      "/gallery/ring/akoya-5mm/akoya-5mm-6.webp",
+      "/gallery/ring/akoya-5mm/akoya-5mm-7.webp",
     ],
   },
   {
@@ -457,12 +462,12 @@ export const products: Product[] = [
     titleKey: "products.ring-akoya-balance",
     descriptionKey: "ring-akoya-balance",
     images: [
-      "/gallery/ring/akoya-balance/akoya-balance-1.jpeg",
-      "/gallery/ring/akoya-balance/akoya-balance-2.jpeg",
-      "/gallery/ring/akoya-balance/akoya-balance-3.jpeg",
-      "/gallery/ring/akoya-balance/akoya-balance-4.jpeg",
-      "/gallery/ring/akoya-balance/akoya-balance-5.jpeg",
-      "/gallery/ring/akoya-balance/akoya-balance-6.jpeg",
+      "/gallery/ring/akoya-balance/akoya-balance-1.webp",
+      "/gallery/ring/akoya-balance/akoya-balance-2.webp",
+      "/gallery/ring/akoya-balance/akoya-balance-3.webp",
+      "/gallery/ring/akoya-balance/akoya-balance-4.webp",
+      "/gallery/ring/akoya-balance/akoya-balance-5.webp",
+      "/gallery/ring/akoya-balance/akoya-balance-6.webp",
     ],
   },
   {
@@ -473,11 +478,11 @@ export const products: Product[] = [
     titleKey: "products.ring-southsea-marine",
     descriptionKey: "ring-southsea-marine",
     images: [
-      "/gallery/ring/southsea-marine/southsea-marine-1.jpeg",
-      "/gallery/ring/southsea-marine/southsea-marine-2.jpeg",
-      "/gallery/ring/southsea-marine/southsea-marine-3.jpeg",
-      "/gallery/ring/southsea-marine/southsea-marine-4.jpeg",
-      "/gallery/ring/southsea-marine/southsea-marine-5.jpeg",
+      "/gallery/ring/southsea-marine/southsea-marine-1.webp",
+      "/gallery/ring/southsea-marine/southsea-marine-2.webp",
+      "/gallery/ring/southsea-marine/southsea-marine-3.webp",
+      "/gallery/ring/southsea-marine/southsea-marine-4.webp",
+      "/gallery/ring/southsea-marine/southsea-marine-5.webp",
     ],
   },
   {
@@ -488,10 +493,10 @@ export const products: Product[] = [
     titleKey: "products.ring-southsea-catier",
     descriptionKey: "ring-southsea-catier",
     images: [
-      "/gallery/ring/southsea-catier/southsea-catier-1.jpeg",
-      "/gallery/ring/southsea-catier/southsea-catier-2.jpeg",
-      "/gallery/ring/southsea-catier/southsea-catier-3.jpeg",
-      "/gallery/ring/southsea-catier/southsea-catier-4.jpeg",
+      "/gallery/ring/southsea-catier/southsea-catier-1.webp",
+      "/gallery/ring/southsea-catier/southsea-catier-2.webp",
+      "/gallery/ring/southsea-catier/southsea-catier-3.webp",
+      "/gallery/ring/southsea-catier/southsea-catier-4.webp",
     ],
   },
   {
@@ -502,9 +507,9 @@ export const products: Product[] = [
     titleKey: "products.ring-southsea-feather-12.5",
     descriptionKey: "ring-southsea-feather-12.5",
     images: [
-      "/gallery/ring/southsea-feather-12.5/southsea-12.5-1.jpeg",
-      "/gallery/ring/southsea-feather-12.5/southsea-12.5-2.jpeg",
-      "/gallery/ring/southsea-feather-12.5/southsea-12.5-3.jpeg",
+      "/gallery/ring/southsea-feather-12.5/southsea-12.5-1.webp",
+      "/gallery/ring/southsea-feather-12.5/southsea-12.5-2.webp",
+      "/gallery/ring/southsea-feather-12.5/southsea-12.5-3.webp",
     ],
   },
   {
@@ -515,11 +520,11 @@ export const products: Product[] = [
     titleKey: "products.ring-tahitian",
     descriptionKey: "ring-tahitian",
     images: [
-      "/gallery/ring/tahitian/tahitian-1.jpeg",
-      "/gallery/ring/tahitian/tahitian-2.jpeg",
-      "/gallery/ring/tahitian/tahitian-3.jpeg",
-      "/gallery/ring/tahitian/tahitian-4.jpeg",
-      "/gallery/ring/tahitian/tahitian-5.jpeg",
+      "/gallery/ring/tahitian/tahitian-1.webp",
+      "/gallery/ring/tahitian/tahitian-2.webp",
+      "/gallery/ring/tahitian/tahitian-3.webp",
+      "/gallery/ring/tahitian/tahitian-4.webp",
+      "/gallery/ring/tahitian/tahitian-5.webp",
     ],
   },
   {
@@ -530,11 +535,11 @@ export const products: Product[] = [
     titleKey: "products.ring-keshi",
     descriptionKey: "ring-keshi",
     images: [
-      "/gallery/ring/keshi/keshi-1.jpeg",
-      "/gallery/ring/keshi/keshi-2.jpeg",
-      "/gallery/ring/keshi/keshi-3.jpeg",
-      "/gallery/ring/keshi/keshi-4.jpeg",
-      "/gallery/ring/keshi/keshi-5.jpeg",
+      "/gallery/ring/keshi/keshi-1.webp",
+      "/gallery/ring/keshi/keshi-2.webp",
+      "/gallery/ring/keshi/keshi-3.webp",
+      "/gallery/ring/keshi/keshi-4.webp",
+      "/gallery/ring/keshi/keshi-5.webp",
     ],
   },
   {
@@ -545,8 +550,8 @@ export const products: Product[] = [
     titleKey: "products.bracelets-akoya-double",
     descriptionKey: "bracelets-akoya-double",
     images: [
-      "/gallery/bracelets/akoya-double/akoya-double-1.jpeg",
-      "/gallery/bracelets/akoya-double/akoya-double-2.jpeg",
+      "/gallery/bracelets/akoya-double/akoya-double-1.webp",
+      "/gallery/bracelets/akoya-double/akoya-double-2.webp",
     ],
   },
   {
@@ -557,10 +562,10 @@ export const products: Product[] = [
     titleKey: "products.bracelets-southsea",
     descriptionKey: "bracelets-southsea",
     images: [
-      "/gallery/bracelets/southsea/southsea-1.jpeg",
-      "/gallery/bracelets/southsea/southsea-2.jpeg",
-      "/gallery/bracelets/southsea/southsea-3.jpeg",
-      "/gallery/bracelets/southsea/southsea-4.jpg",
+      "/gallery/bracelets/southsea/southsea-1.webp",
+      "/gallery/bracelets/southsea/southsea-2.webp",
+      "/gallery/bracelets/southsea/southsea-3.webp",
+      "/gallery/bracelets/southsea/southsea-4.webp",
     ],
   },
   {
@@ -571,10 +576,10 @@ export const products: Product[] = [
     titleKey: "products.bracelets-candy",
     descriptionKey: "bracelets-candy",
     images: [
-      "/gallery/bracelets/candy/candy-1.jpeg",
-      "/gallery/bracelets/candy/candy-2.jpeg",
-      "/gallery/bracelets/candy/candy-3.jpeg",
-      "/gallery/bracelets/candy/candy-4.jpeg",
+      "/gallery/bracelets/candy/candy-1.webp",
+      "/gallery/bracelets/candy/candy-2.webp",
+      "/gallery/bracelets/candy/candy-3.webp",
+      "/gallery/bracelets/candy/candy-4.webp",
     ],
   },
   {
@@ -585,11 +590,11 @@ export const products: Product[] = [
     titleKey: "products.pendant-akoya-wg-diana",
     descriptionKey: "pendant-akoya-wg-diana",
     images: [
-      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-1.jpeg",
-      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-2.jpeg",
-      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-3.jpeg",
-      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-4.jpeg",
-      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-5.jpeg",
+      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-1.webp",
+      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-2.webp",
+      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-3.webp",
+      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-4.webp",
+      "/gallery/necklace/pendant/akoya-wg-diana/akoya-wg-diana-5.webp",
     ],
   },
   {
@@ -600,12 +605,12 @@ export const products: Product[] = [
     titleKey: "products.pendant-akoya-classic",
     descriptionKey: "pendant-akoya-classic",
     images: [
-      "/gallery/necklace/pendant/akoya-classic/akoya-classic-1.jpg",
-      "/gallery/necklace/pendant/akoya-classic/akoya-classic-2.jpg",
-      "/gallery/necklace/pendant/akoya-classic/akoya-classic-3.jpg",
-      "/gallery/necklace/pendant/akoya-classic/akoya-classic-4.jpg",
-      "/gallery/necklace/pendant/akoya-classic/akoya-classic-5.jpeg",
-      "/gallery/necklace/pendant/akoya-classic/akoya-classic-6.jpeg",
+      "/gallery/necklace/pendant/akoya-classic/akoya-classic-1.webp",
+      "/gallery/necklace/pendant/akoya-classic/akoya-classic-2.webp",
+      "/gallery/necklace/pendant/akoya-classic/akoya-classic-3.webp",
+      "/gallery/necklace/pendant/akoya-classic/akoya-classic-4.webp",
+      "/gallery/necklace/pendant/akoya-classic/akoya-classic-5.webp",
+      "/gallery/necklace/pendant/akoya-classic/akoya-classic-6.webp",
     ],
   },
   {
@@ -616,7 +621,7 @@ export const products: Product[] = [
     titleKey: "products.pendant-akoya-y",
     descriptionKey: "pendant-akoya-y",
     images: [
-      "/gallery/necklace/pendant/akoya-y/akoya-y-1.jpeg",
+      "/gallery/necklace/pendant/akoya-y/akoya-y-1.webp",
     ],
   },
   {
@@ -627,9 +632,9 @@ export const products: Product[] = [
     titleKey: "products.pendant-tahitian-necklace",
     descriptionKey: "pendant-tahitian-necklace",
     images: [
-      "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-1.jpeg",
-      "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-2.jpeg",
-      "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-3.jpeg",
+      "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-1.webp",
+      "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-2.webp",
+      "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-3.webp",
     ],
   },
   {
@@ -640,10 +645,10 @@ export const products: Product[] = [
     titleKey: "products.necklace-m-akoya-3.5",
     descriptionKey: "necklace-m-akoya-3.5",
     images: [
-      "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-1.jpeg",
-      "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-2.jpeg",
-      "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-3.jpeg",
-      "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-4.jpeg",
+      "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-1.webp",
+      "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-2.webp",
+      "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-3.webp",
+      "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-4.webp",
     ],
   },
   {
@@ -654,9 +659,9 @@ export const products: Product[] = [
     titleKey: "products.necklace-akoya-5.5mm",
     descriptionKey: "necklace-akoya-5.5mm",
     images: [
-      "/gallery/necklace/necklace/akoya-5.5mm/akoya-5.5mm-1.jpeg",
-      "/gallery/necklace/necklace/akoya-5.5mm/akoya-5.5mm-2.jpeg",
-      "/gallery/necklace/necklace/akoya-5.5mm/akoya-5.5mm-3.jpeg",
+      "/gallery/necklace/necklace/akoya-5.5mm/akoya-5.5mm-1.webp",
+      "/gallery/necklace/necklace/akoya-5.5mm/akoya-5.5mm-2.webp",
+      "/gallery/necklace/necklace/akoya-5.5mm/akoya-5.5mm-3.webp",
     ],
   },
   {
@@ -667,9 +672,9 @@ export const products: Product[] = [
     titleKey: "products.necklace-t-akoya-3.5",
     descriptionKey: "necklace-t-akoya-3.5",
     images: [
-      "/gallery/necklace/necklace/t-akoya-3.5/t-akoya-3.5-1.jpeg",
-      "/gallery/necklace/necklace/t-akoya-3.5/t-akoya-3.5-2.jpeg",
-      "/gallery/necklace/necklace/t-akoya-3.5/t-akoya-3.5-3.jpeg",
+      "/gallery/necklace/necklace/t-akoya-3.5/t-akoya-3.5-1.webp",
+      "/gallery/necklace/necklace/t-akoya-3.5/t-akoya-3.5-2.webp",
+      "/gallery/necklace/necklace/t-akoya-3.5/t-akoya-3.5-3.webp",
     ],
   },
   {
@@ -680,11 +685,11 @@ export const products: Product[] = [
     titleKey: "products.necklace-akoya-7.5mm",
     descriptionKey: "necklace-akoya-7.5mm",
     images: [
-      "/gallery/necklace/necklace/akoya-7.5mm/akoya-7.5mm-1.jpeg",
-      "/gallery/necklace/necklace/akoya-7.5mm/akoya-7.5mm-2.jpeg",
-      "/gallery/necklace/necklace/akoya-7.5mm/akoya-7.5mm-3.jpeg",
-      "/gallery/necklace/necklace/akoya-7.5mm/akoya-7.5mm-4.jpeg",
-      "/gallery/necklace/necklace/akoya-7.5mm/akoya-7.5mm-5.jpeg",
+      "/gallery/necklace/necklace/akoya-7.5mm/akoya-7.5mm-1.webp",
+      "/gallery/necklace/necklace/akoya-7.5mm/akoya-7.5mm-2.webp",
+      "/gallery/necklace/necklace/akoya-7.5mm/akoya-7.5mm-3.webp",
+      "/gallery/necklace/necklace/akoya-7.5mm/akoya-7.5mm-4.webp",
+      "/gallery/necklace/necklace/akoya-7.5mm/akoya-7.5mm-5.webp",
     ],
   },
   {
@@ -695,13 +700,13 @@ export const products: Product[] = [
     titleKey: "products.necklace-m-akoya-8.5mm",
     descriptionKey: "necklace-m-akoya-8.5mm",
     images: [
-      "/gallery/necklace/necklace/m-akoya-8.5mm/m-akoya-8.5mm-1.jpeg",
-      "/gallery/necklace/necklace/m-akoya-8.5mm/m-akoya-8.5mm-2.jpeg",
-      "/gallery/necklace/necklace/m-akoya-8.5mm/m-akoya-8.5mm-3.jpeg",
-      "/gallery/necklace/necklace/m-akoya-8.5mm/m-akoya-8.5mm-4.jpeg",
-      "/gallery/necklace/necklace/m-akoya-8.5mm/m-akoya-8.5mm-5.jpeg",
-      "/gallery/necklace/necklace/m-akoya-8.5mm/m-akoya-8.5mm-6.jpeg",
-      "/gallery/necklace/necklace/m-akoya-8.5mm/m-akoya-8.5mm-7.jpeg",
+      "/gallery/necklace/necklace/m-akoya-8.5mm/m-akoya-8.5mm-1.webp",
+      "/gallery/necklace/necklace/m-akoya-8.5mm/m-akoya-8.5mm-2.webp",
+      "/gallery/necklace/necklace/m-akoya-8.5mm/m-akoya-8.5mm-3.webp",
+      "/gallery/necklace/necklace/m-akoya-8.5mm/m-akoya-8.5mm-4.webp",
+      "/gallery/necklace/necklace/m-akoya-8.5mm/m-akoya-8.5mm-5.webp",
+      "/gallery/necklace/necklace/m-akoya-8.5mm/m-akoya-8.5mm-6.webp",
+      "/gallery/necklace/necklace/m-akoya-8.5mm/m-akoya-8.5mm-7.webp",
     ],
   },
   {
@@ -712,11 +717,11 @@ export const products: Product[] = [
     titleKey: "products.necklace-m-akoya-candy-8.0",
     descriptionKey: "necklace-m-akoya-candy-8.0",
     images: [
-      "/gallery/necklace/necklace/m-akoya-candy-8.0/m-akoya-candy-8.0-1.jpeg",
-      "/gallery/necklace/necklace/m-akoya-candy-8.0/m-akoya-candy-8.0-2.jpeg",
-      "/gallery/necklace/necklace/m-akoya-candy-8.0/m-akoya-candy-8.0-3.jpeg",
-      "/gallery/necklace/necklace/m-akoya-candy-8.0/m-akoya-candy-8.0-4.jpeg",
-      "/gallery/necklace/necklace/m-akoya-candy-8.0/m-akoya-candy-8.0-5.jpeg",
+      "/gallery/necklace/necklace/m-akoya-candy-8.0/m-akoya-candy-8.0-1.webp",
+      "/gallery/necklace/necklace/m-akoya-candy-8.0/m-akoya-candy-8.0-2.webp",
+      "/gallery/necklace/necklace/m-akoya-candy-8.0/m-akoya-candy-8.0-3.webp",
+      "/gallery/necklace/necklace/m-akoya-candy-8.0/m-akoya-candy-8.0-4.webp",
+      "/gallery/necklace/necklace/m-akoya-candy-8.0/m-akoya-candy-8.0-5.webp",
     ],
   },
   {
@@ -727,14 +732,14 @@ export const products: Product[] = [
     titleKey: "products.necklace-southsea-8.0-10.0",
     descriptionKey: "necklace-southsea-8.0-10.0",
     images: [
-      "/gallery/necklace/necklace/southsea-8.0-10.0/southsea-8.0-10.0-1.jpeg",
-      "/gallery/necklace/necklace/southsea-8.0-10.0/southsea-8.0-10.0-2.jpeg",
-      "/gallery/necklace/necklace/southsea-8.0-10.0/southsea-8.0-10.0-3.jpeg",
-      "/gallery/necklace/necklace/southsea-8.0-10.0/southsea-8.0-10.0-4.jpeg",
-      "/gallery/necklace/necklace/southsea-8.0-10.0/southsea-8.0-10.0-5.jpeg",
-      "/gallery/necklace/necklace/southsea-8.0-10.0/southsea-8.0-10.0-6.jpeg",
-      "/gallery/necklace/necklace/southsea-8.0-10.0/southsea-8.0-10.0-7.jpeg",
-      "/gallery/necklace/necklace/southsea-8.0-10.0/southsea-8.0-10.0-8.jpeg",
+      "/gallery/necklace/necklace/southsea-8.0-10.0/southsea-8.0-10.0-1.webp",
+      "/gallery/necklace/necklace/southsea-8.0-10.0/southsea-8.0-10.0-2.webp",
+      "/gallery/necklace/necklace/southsea-8.0-10.0/southsea-8.0-10.0-3.webp",
+      "/gallery/necklace/necklace/southsea-8.0-10.0/southsea-8.0-10.0-4.webp",
+      "/gallery/necklace/necklace/southsea-8.0-10.0/southsea-8.0-10.0-5.webp",
+      "/gallery/necklace/necklace/southsea-8.0-10.0/southsea-8.0-10.0-6.webp",
+      "/gallery/necklace/necklace/southsea-8.0-10.0/southsea-8.0-10.0-7.webp",
+      "/gallery/necklace/necklace/southsea-8.0-10.0/southsea-8.0-10.0-8.webp",
     ],
   },
   {
@@ -745,12 +750,12 @@ export const products: Product[] = [
     titleKey: "products.necklace-tahitian",
     descriptionKey: "necklace-tahitian",
     images: [
-      "/gallery/necklace/necklace/tahitian/tahitian-1.jpeg",
-      "/gallery/necklace/necklace/tahitian/tahitian-2.jpeg",
-      "/gallery/necklace/necklace/tahitian/tahitian-3.jpeg",
-      "/gallery/necklace/necklace/tahitian/tahitian-4.jpeg",
-      "/gallery/necklace/necklace/tahitian/tahitian-5.jpeg",
-      "/gallery/necklace/necklace/tahitian/tahitian-6.jpeg",
+      "/gallery/necklace/necklace/tahitian/tahitian-1.webp",
+      "/gallery/necklace/necklace/tahitian/tahitian-2.webp",
+      "/gallery/necklace/necklace/tahitian/tahitian-3.webp",
+      "/gallery/necklace/necklace/tahitian/tahitian-4.webp",
+      "/gallery/necklace/necklace/tahitian/tahitian-5.webp",
+      "/gallery/necklace/necklace/tahitian/tahitian-6.webp",
     ],
   },
   {
@@ -761,10 +766,10 @@ export const products: Product[] = [
     titleKey: "products.pendant-southsea-blue-y",
     descriptionKey: "pendant-southsea-blue-y",
     images: [
-      "/gallery/necklace/pendant/southsea-blue-y/southsea-blue-y-1.jpeg",
-      "/gallery/necklace/pendant/southsea-blue-y/southsea-blue-y-2.jpeg",
-      "/gallery/necklace/pendant/southsea-blue-y/southsea-blue-y-3.jpg",
-      "/gallery/necklace/pendant/southsea-blue-y/southsea-blue-y-4.jpeg",
+      "/gallery/necklace/pendant/southsea-blue-y/southsea-blue-y-1.webp",
+      "/gallery/necklace/pendant/southsea-blue-y/southsea-blue-y-2.webp",
+      "/gallery/necklace/pendant/southsea-blue-y/southsea-blue-y-3.webp",
+      "/gallery/necklace/pendant/southsea-blue-y/southsea-blue-y-4.webp",
     ],
   },
   {
@@ -775,11 +780,11 @@ export const products: Product[] = [
     titleKey: "products.pendant-southsea-rainbow-y",
     descriptionKey: "pendant-southsea-rainbow-y",
     images: [
-      "/gallery/necklace/pendant/southsea-rainbow-y/southsea-rainbow-y-1.jpeg",
-      "/gallery/necklace/pendant/southsea-rainbow-y/southsea-rainbow-y-2.jpeg",
-      "/gallery/necklace/pendant/southsea-rainbow-y/southsea-rainbow-y-3.jpeg",
-      "/gallery/necklace/pendant/southsea-rainbow-y/southsea-rainbow-y-4.jpeg",
-      "/gallery/necklace/pendant/southsea-rainbow-y/southsea-rainbow-y-5.jpeg",
+      "/gallery/necklace/pendant/southsea-rainbow-y/southsea-rainbow-y-1.webp",
+      "/gallery/necklace/pendant/southsea-rainbow-y/southsea-rainbow-y-2.webp",
+      "/gallery/necklace/pendant/southsea-rainbow-y/southsea-rainbow-y-3.webp",
+      "/gallery/necklace/pendant/southsea-rainbow-y/southsea-rainbow-y-4.webp",
+      "/gallery/necklace/pendant/southsea-rainbow-y/southsea-rainbow-y-5.webp",
     ],
   },
   {
@@ -790,12 +795,12 @@ export const products: Product[] = [
     titleKey: "products.pendant-southsea-apple",
     descriptionKey: "pendant-southsea-apple",
     images: [
-      "/gallery/necklace/pendant/southsea-apple/southsea-apple-1.jpeg",
-      "/gallery/necklace/pendant/southsea-apple/southsea-apple-2.jpeg",
-      "/gallery/necklace/pendant/southsea-apple/southsea-apple-3.jpeg",
-      "/gallery/necklace/pendant/southsea-apple/southsea-apple-4.jpeg",
-      "/gallery/necklace/pendant/southsea-apple/southsea-apple-5.jpeg",
-      "/gallery/necklace/pendant/southsea-apple/southsea-apple-6.jpeg",
+      "/gallery/necklace/pendant/southsea-apple/southsea-apple-1.webp",
+      "/gallery/necklace/pendant/southsea-apple/southsea-apple-2.webp",
+      "/gallery/necklace/pendant/southsea-apple/southsea-apple-3.webp",
+      "/gallery/necklace/pendant/southsea-apple/southsea-apple-4.webp",
+      "/gallery/necklace/pendant/southsea-apple/southsea-apple-5.webp",
+      "/gallery/necklace/pendant/southsea-apple/southsea-apple-6.webp",
     ],
   },
   {
@@ -806,7 +811,7 @@ export const products: Product[] = [
     titleKey: "products.necklace-akoya-keshi",
     descriptionKey: "necklace-akoya-keshi",
     images: [
-      "/gallery/necklace/necklace/akoya-keshi/akoya-keshi-1.jpeg",
+      "/gallery/necklace/necklace/akoya-keshi/akoya-keshi-1.webp",
     ],
   },
   {
@@ -817,12 +822,12 @@ export const products: Product[] = [
     titleKey: "products.necklace-akoya-star",
     descriptionKey: "necklace-akoya-star",
     images: [
-      "/gallery/necklace/necklace/akoya-star/akoya-star-1.jpeg",
-      "/gallery/necklace/necklace/akoya-star/akoya-star-2.jpeg",
-      "/gallery/necklace/necklace/akoya-star/akoya-star-3.jpeg",
-      "/gallery/necklace/necklace/akoya-star/akoya-star-4.jpeg",
-      "/gallery/necklace/necklace/akoya-star/akoya-star-6.jpeg",
-      "/gallery/necklace/necklace/akoya-star/akoya-star-7.jpg",
+      "/gallery/necklace/necklace/akoya-star/akoya-star-1.webp",
+      "/gallery/necklace/necklace/akoya-star/akoya-star-2.webp",
+      "/gallery/necklace/necklace/akoya-star/akoya-star-3.webp",
+      "/gallery/necklace/necklace/akoya-star/akoya-star-4.webp",
+      "/gallery/necklace/necklace/akoya-star/akoya-star-6.webp",
+      "/gallery/necklace/necklace/akoya-star/akoya-star-7.webp",
     ],
   },
   {
@@ -833,9 +838,9 @@ export const products: Product[] = [
     titleKey: "products.necklace-bluebarouque",
     descriptionKey: "necklace-bluebarouque",
     images: [
-      "/gallery/necklace/necklace/bluebarouque/bluebarouque-1.jpg",
-      "/gallery/necklace/necklace/bluebarouque/bluebarouque-2.jpeg",
-      "/gallery/necklace/necklace/bluebarouque/bluebarouque-3.jpeg",
+      "/gallery/necklace/necklace/bluebarouque/bluebarouque-1.webp",
+      "/gallery/necklace/necklace/bluebarouque/bluebarouque-2.webp",
+      "/gallery/necklace/necklace/bluebarouque/bluebarouque-3.webp",
     ],
   },
   {
@@ -846,13 +851,13 @@ export const products: Product[] = [
     titleKey: "products.pendant-akoya-mermaid",
     descriptionKey: "pendant-akoya-mermaid",
     images: [
-      "/gallery/necklace/pendant/akoya-mermaid/akoya-mermaid-1.jpeg",
-      "/gallery/necklace/pendant/akoya-mermaid/akoya-mermaid-2.jpeg",
-      "/gallery/necklace/pendant/akoya-mermaid/akoya-mermaid-3.jpeg",
-      "/gallery/necklace/pendant/akoya-mermaid/akoya-mermaid-4.jpeg",
-      "/gallery/necklace/pendant/akoya-mermaid/akoya-mermaid-5.jpeg",
-      "/gallery/necklace/pendant/akoya-mermaid/akoya-mermaid-6.jpeg",
-      "/gallery/necklace/pendant/akoya-mermaid/akoya-mermaid-7.jpeg",
+      "/gallery/necklace/pendant/akoya-mermaid/akoya-mermaid-1.webp",
+      "/gallery/necklace/pendant/akoya-mermaid/akoya-mermaid-2.webp",
+      "/gallery/necklace/pendant/akoya-mermaid/akoya-mermaid-3.webp",
+      "/gallery/necklace/pendant/akoya-mermaid/akoya-mermaid-4.webp",
+      "/gallery/necklace/pendant/akoya-mermaid/akoya-mermaid-5.webp",
+      "/gallery/necklace/pendant/akoya-mermaid/akoya-mermaid-6.webp",
+      "/gallery/necklace/pendant/akoya-mermaid/akoya-mermaid-7.webp",
     ],
   },
   {
@@ -863,11 +868,11 @@ export const products: Product[] = [
     titleKey: "products.pendant-southsea-flower",
     descriptionKey: "pendant-southsea-flower",
     images: [
-      "/gallery/necklace/pendant/southsea-flower/southsea-flower-1.png",
-      "/gallery/necklace/pendant/southsea-flower/southsea-flower-2.png",
-      "/gallery/necklace/pendant/southsea-flower/southsea-flower-3.jpg",
-      "/gallery/necklace/pendant/southsea-flower/southsea-flower-4.jpg",
-      "/gallery/necklace/pendant/southsea-flower/southsea-flower-5.jpg",
+      "/gallery/necklace/pendant/southsea-flower/southsea-flower-1.webp",
+      "/gallery/necklace/pendant/southsea-flower/southsea-flower-2.webp",
+      "/gallery/necklace/pendant/southsea-flower/southsea-flower-3.webp",
+      "/gallery/necklace/pendant/southsea-flower/southsea-flower-4.webp",
+      "/gallery/necklace/pendant/southsea-flower/southsea-flower-5.webp",
     ],
   },
   {
@@ -878,11 +883,11 @@ export const products: Product[] = [
     titleKey: "products.ring-akoya-ring-3.0mm",
     descriptionKey: "ring-akoya-ring-3.0mm",
     images: [
-      "/gallery/ring/akoya-ring-3.0mm/akoya-ring-3.0mm-1.jpg",
-      "/gallery/ring/akoya-ring-3.0mm/akoya-ring-3.0mm-2.jpg",
-      "/gallery/ring/akoya-ring-3.0mm/akoya-ring-3.0mm-3.jpg",
-      "/gallery/ring/akoya-ring-3.0mm/akoya-ring-3.0mm-4.jpeg",
-      "/gallery/ring/akoya-ring-3.0mm/akoya-ring-3.0mm-5.jpeg",
+      "/gallery/ring/akoya-ring-3.0mm/akoya-ring-3.0mm-1.webp",
+      "/gallery/ring/akoya-ring-3.0mm/akoya-ring-3.0mm-2.webp",
+      "/gallery/ring/akoya-ring-3.0mm/akoya-ring-3.0mm-3.webp",
+      "/gallery/ring/akoya-ring-3.0mm/akoya-ring-3.0mm-4.webp",
+      "/gallery/ring/akoya-ring-3.0mm/akoya-ring-3.0mm-5.webp",
     ],
   },
 ]
