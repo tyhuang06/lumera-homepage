@@ -189,3 +189,12 @@
 :lang(zh-Hant) .font-cormorant {
 	font-family: var(--font-noto-tc), serif;
 }
+
+/* ─── Swiper scrollbar (Luméra Icons carousel) ─── */
+.swiper-scrollbar {
+	background: var(--color-cream-dark);
+}
+
+.swiper-scrollbar-drag {
+	background: var(--color-gold);
+}

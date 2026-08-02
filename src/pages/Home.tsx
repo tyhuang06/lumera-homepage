@@ -2,7 +2,9 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Scrollbar } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/scrollbar';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { ProductCard } from '@/components/Gallery';
 import { categories } from '@/data/categories';
@@ -150,10 +152,12 @@ export function Home() {
 
 					{/* Carousel */}
 					{featuredProducts.length > 0 ? (
-						<div ref={iconsGridRef} className="reveal -mx-6 px-6 md:mx-0 md:px-0">
+						<div ref={iconsGridRef} className="reveal -mx-6 px-6 pb-10 md:mx-0 md:px-0">
 							<Swiper
+								modules={[Scrollbar]}
 								spaceBetween={16}
 								slidesPerView={1.5}
+								scrollbar={{ draggable: true, hide: false }}
 								breakpoints={{
 									640: { slidesPerView: 2, spaceBetween: 20 },
 									1024: { slidesPerView: 4, spaceBetween: 32 },
