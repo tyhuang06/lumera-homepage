@@ -31,7 +31,7 @@ export const homeIcons: string[] = [
 // ─── How to add a new product ────────────────────────────────────────────────
 // 1. Drop your photos (any format: .jpg/.jpeg/.png straight from your phone)
 //    into a new folder under public/gallery/...
-// 2. Run: npm run optimize-images
+// 2. Run: yarn optimize-images
 //    This resizes + converts everything under public/gallery to .webp in
 //    place (originals are replaced). Skip this step and photos will load
 //    very slowly on the live site.
