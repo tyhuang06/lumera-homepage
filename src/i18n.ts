@@ -19,8 +19,8 @@ i18n
         products: productsZH,
       }
     },
-    lng: localStorage.getItem("lang") || "zh-Hant",
-    fallbackLng: "zh-Hant",
+    lng: localStorage.getItem("lang") || "en",
+    fallbackLng: "en",
 
     // 👇 THIS PART MATTERS
     ns: ["common", "products"],
