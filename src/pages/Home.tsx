@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/scrollbar';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { ProductCard } from '@/components/Gallery';
+import { LazyImage } from '@/components/LazyImage';
 import { categories } from '@/data/categories';
 import { products, homeIcons } from '@/data/products';
 
@@ -328,10 +329,10 @@ function ExperienceCard({
 		<>
 			<div className="w-full aspect-[4/3] mb-7 overflow-hidden">
 				{image ? (
-					<img
+					<LazyImage
 						src={image}
 						alt={title}
-						className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+						className="w-full h-full object-cover group-hover:scale-105"
 					/>
 				) : (
 					<div className="w-full h-full bg-white/3 flex items-center justify-center">
