@@ -1,0 +1,32 @@
+{
+	"products": {
+		"ring-akoya-5mm": "Lumie Signature - Akoya Double Ring",
+		"ring-akoya-ring-3.0mm": "Lumie Signature - Akoya Smile Ring",
+		"ring-southsea-marine": "Soul Signature - South Sea Marine Duo Ring",
+		"ring-tahitian": "Eclipse Signature - Tahitian Classic Ring",
+		"ring-southsea-catier": "Soul Signature - South Sea Wave Ring",
+		"ring-southsea-feather-12.5": "Soul Movement - South Sea Feather Ring (12.5mm)",
+		"ring-akoya-balance": "Lumie Signature - Akoya Balance Ring",
+		"ring-keshi": "Nature Movement - Keshi Cluster Ring"
+	},
+	"descriptions": {
+		"ring-akoya-5mm": "two akoya pearls set side by side on an 18K gold band — modern, versatile, and just distinctive enough to set it apart from the usual single-pearl ring.",
+		"ring-akoya-ring-3.0mm": "a row of small akoya pearls with a soft rosy luster, arcing across the finger like the gentlest smile. delicate, easy to layer, and the kind of ring that lifts your mood each time you wear it.",
+		"ring-southsea-marine": "a south sea pearl paired with a vivid aquamarine, set side by side in polished white gold — two elements of the sea, brought together in one refined silhouette.",
+		"ring-tahitian": "a single tahitian pearl set on a clean, polished band — understated, timeless, and entirely self-assured.",
+		"ring-southsea-catier": "a south sea pearl cradled in a sculptural wave of polished gold — fluid, modern, and quietly striking from every angle.",
+		"ring-southsea-feather-12.5": "a 12.5mm south sea pearl crowned with a spray of diamonds, like frost caught mid-motion — substantial in presence, delicate in detail.",
+		"ring-akoya-balance": "three akoya pearls set in gentle succession across the finger — perfectly balanced, effortlessly elegant, made to be worn every day.",
+		"ring-keshi": "freeform keshi pearls clustered together with delicate diamond accents — organic, sculptural, and entirely one of a kind, like every keshi pearl itself."
+	},
+	"sidenotes": {
+		"ring-akoya-5mm": "material: 14K/18K gold or white gold / type: ring / setting: double pearl",
+		"ring-akoya-ring-3.0mm": "material: 14K/18K gold or white gold / type: ring / setting: three-pearl arc",
+		"ring-southsea-marine": "material: 18K white gold / type: ring / gemstone: aquamarine / pearl: white south sea",
+		"ring-tahitian": "material: 14K/18K gold or white gold / type: ring / pearl: tahitian",
+		"ring-southsea-catier": "material: 14K/18K gold or white gold / type: ring / design: wave band / pearl: white south sea",
+		"ring-southsea-feather-12.5": "size: 12.5mm / material: 14K/18K gold or white gold / type: ring / setting: diamond spray / pearl: white south sea",
+		"ring-akoya-balance": "material: 14K/18K gold or white gold / type: ring / setting: three-pearl row / pearl: akoya",
+		"ring-keshi": "material: 14K/18K gold or white gold / type: ring / setting: pearl cluster with diamond accents / pearl: keshi (organic form)"
+	}
+}

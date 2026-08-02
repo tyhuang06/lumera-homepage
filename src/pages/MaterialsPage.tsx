@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Breadcrumb } from '@/components/Breadcrumb';
+import { PageHeader } from '@/components/PageHeader';
 
 export default function MaterialsPage() {
 	const { t } = useTranslation();
@@ -18,25 +19,13 @@ export default function MaterialsPage() {
 
 			<main className="pt-20 bg-cream min-h-screen">
 				<div className="mx-auto max-w-3xl px-6 py-16">
-					{/* Breadcrumb */}
-					<nav className="mb-12 flex items-center gap-2 text-xs tracking-[0.15em] uppercase text-muted-foreground">
-						<Link to="/" className="hover:text-foreground transition-colors">
-							{t('nav.home')}
-						</Link>
-						<span className="opacity-40">—</span>
-						<span className="text-foreground">{t('nav.materials')}</span>
-					</nav>
+					<Breadcrumb items={[{ label: t('nav.materials') }]} className="mb-12" />
 
-					{/* Page header */}
-					<div className="mb-16 text-center">
-						<p className="text-[0.65rem] tracking-[0.35em] uppercase text-gold mb-3">
-							{t('materials.subtitle')}
-						</p>
-						<h1 className="font-cormorant text-4xl font-light tracking-wide text-charcoal mb-4">
-							{t('materials.title')}
-						</h1>
-						<div className="mx-auto w-10 h-px bg-gold" />
-					</div>
+					<PageHeader
+						eyebrow={t('materials.subtitle')}
+						title={t('materials.title')}
+						className="mb-16"
+					/>
 
 					{/* Sourcing */}
 					<section className="mb-14">

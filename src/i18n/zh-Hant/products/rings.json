@@ -1,0 +1,32 @@
+{
+	"products": {
+		"ring-akoya-5mm": "Lumie Signature - Akoya Double 戒指",
+		"ring-akoya-ring-3.0mm": "Lumie Signature - Akoya 微笑戒指",
+		"ring-southsea-marine": "Soul Signature - 澳白 海洋雙石戒",
+		"ring-tahitian": "Eclipse Signature - 大溪地 經典戒指",
+		"ring-southsea-catier": "Soul Signature - 澳白 波浪戒",
+		"ring-southsea-feather-12.5": "Soul Movement - 澳白 羽翎戒指 (12.5mm)",
+		"ring-akoya-balance": "Lumie Signature - Akoya 平衡戒指",
+		"ring-keshi": "Nature Movement - Keshi 簇形戒指"
+	},
+	"descriptions": {
+		"ring-akoya-5mm": "Akoya珍珠並排在 18K 金戒環上，現代、好搭配，比普通單珠戒指多了一點與眾不同。",
+		"ring-akoya-ring-3.0mm": "一整排青粉光的小Akoya珍珠像最溫柔的微笑橫跨手指，精緻小巧，適合疊戴，一枚每天戴上都會讓心情好一點點的戒指。",
+		"ring-southsea-marine": "澳白珍珠與剔透海藍寶並肩而立，鑲嵌於拋光白金之上——大海的兩種面貌，凝聚於一枚戒指。",
+		"ring-tahitian": "一顆大溪地珍珠鑲嵌於簡約拋光戒環上——低調、雋永，自信不言而喻。",
+		"ring-southsea-catier": "澳白珍珠棲於流線波浪金環之中——線條靈動、現代，從任何角度看都優雅奪目。",
+		"ring-southsea-feather-12.5": "12.5mm澳白珍珠上綴以羽翎般散開的鑽石，宛如凝結的霜花——氣勢十足，細節卻極盡精緻。",
+		"ring-akoya-balance": "三顆Akoya珍珠依序排列橫跨指間——平衡優雅，毫不費力，適合每日佩戴。",
+		"ring-keshi": "自由形態的Keshi珍珠簇擁而生，綴以精緻鑽石點綴——有機、雕塑感十足，如每一顆Keshi珍珠一樣獨一無二。"
+	},
+	"sidenotes": {
+		"ring-akoya-5mm": "材質：18K金 / 類型：戒指 / 適合場合：日常配戴",
+		"ring-akoya-ring-3.0mm": "材質：10K金 / 類型：戒指 / 適合場合：日常配戴",
+		"ring-southsea-marine": "材質：18K白金 / 類型：戒指 / 寶石：海藍寶 / 珠種：白色澳白",
+		"ring-tahitian": "材質：14K/18K金或白金 / 類型：戒指 / 珠種：大溪地",
+		"ring-southsea-catier": "材質：14K/18K金或白金 / 類型：戒指 / 設計：波浪戒環 / 珠種：白色澳白",
+		"ring-southsea-feather-12.5": "珍珠尺寸：12.5mm / 材質：14K/18K金或白金 / 類型：戒指 / 鑲嵌：羽翎鑽石 / 珠種：白色澳白",
+		"ring-akoya-balance": "材質：14K/18K金或白金 / 類型：戒指 / 鑲嵌：三珠排列 / 珠種：Akoya",
+		"ring-keshi": "材質：14K/18K金或白金 / 類型：戒指 / 鑲嵌：珍珠簇配鑽石點綴 / 珠種：Keshi（有機形態）"
+	}
+}

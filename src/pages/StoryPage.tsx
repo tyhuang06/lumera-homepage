@@ -1,9 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
+import { ContentListBlock, type ListBlock } from '@/components/ContentBlocks';
 
 type StoryBlock =
 	| string
-	| { type: 'list'; items: string[] }
+	| ListBlock
 	| {
 			type: 'quotes';
 			items: {
@@ -39,16 +40,7 @@ export default function StoryPage() {
 							}
 
 							if (block.type === 'list') {
-								return (
-									<ul key={i} className="space-y-3">
-										{block.items.map((item, j) => (
-											<li key={j} className="flex gap-3">
-												<span className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-gold/60" />
-												<span className="leading-relaxed">{item}</span>
-											</li>
-										))}
-									</ul>
-								);
+								return <ContentListBlock key={i} block={block} />;
 							}
 
 							if (block.type === 'quotes') {
