@@ -98,7 +98,7 @@ export const products: Product[] = [
       "/gallery/earrings/akoya-diana-8.5mm/akoya-diana-8.5mm-2.jpeg",
       "/gallery/earrings/akoya-diana-8.5mm/akoya-diana-8.5mm-3.jpeg",
       "/gallery/earrings/akoya-diana-8.5mm/akoya-diana-8.5mm-4.jpeg",
-      "/gallery/earrings/akoya-diana-8.5mm/akoya-diana-8.5mm-5.jpg",
+      "/gallery/earrings/akoya-diana-8.5mm/akoya-diana-8.5mm-5.jpeg",
     ],
   },
 
@@ -575,7 +575,6 @@ export const products: Product[] = [
       "/gallery/bracelets/candy/candy-2.jpeg",
       "/gallery/bracelets/candy/candy-3.jpeg",
       "/gallery/bracelets/candy/candy-4.jpeg",
-      "/gallery/bracelets/candy/candy-5.jpeg",
     ],
   },
   {
