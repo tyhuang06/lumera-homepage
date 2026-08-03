@@ -24,6 +24,7 @@ const GIFT_PICK_IDS = [
 	'earrings-akoya-tie', // Lumie Signature - Akoya Ribbon Earrings
 	'earrings-southsea-9.0mm-feather', // Soul Signature - South Sea Plume Earrings
 	'earclip-bluerose', // Lumie Signature - Akoya Blue Rose Ear Clip
+	'ring-southsea-feather-12.5', // Soul Movement - South Sea Feather Ring (12.5mm)
 ];
 
 // Premium necklace picks, shown below the best-value section.
@@ -32,6 +33,7 @@ const PREMIUM_PICK_IDS = [
 	'necklace-m-akoya-8.5mm', // Lumie Forever - Akoya Classic Necklace (8.0-8.5mm)
 	'necklace-southsea-8.0-10.0', // Soul Forever - South Sea Classic Necklace (8.0-10.0mm)
 	'necklace-m-akoya-3.5', // Lumie Forever - Baby Akoya Necklace (Hanadama 3.5mm)
+	'bracelets-southsea', // Soul Forever - South Sea Classic Bracelet
 ];
 
 export default function GiftingPage() {
