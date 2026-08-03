@@ -58,6 +58,9 @@ export const necklacesProducts: Product[] = [
       "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-1.webp",
       "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-2.webp",
       "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-3.webp",
+      "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-4.webp",
+      "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-5.webp",
+      "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-6.webp",
     ],
   },
   {
@@ -116,7 +119,6 @@ export const necklacesProducts: Product[] = [
       "/gallery/necklace/necklace/akoya-7.5mm/akoya-7.5mm-2.webp",
       "/gallery/necklace/necklace/akoya-7.5mm/akoya-7.5mm-3.webp",
       "/gallery/necklace/necklace/akoya-7.5mm/akoya-7.5mm-4.webp",
-      "/gallery/necklace/necklace/akoya-7.5mm/akoya-7.5mm-5.webp",
     ],
   },
   {
@@ -264,6 +266,9 @@ export const necklacesProducts: Product[] = [
     descriptionKey: "necklace-akoya-keshi",
     images: [
       "/gallery/necklace/necklace/akoya-keshi/akoya-keshi-1.webp",
+      "/gallery/necklace/necklace/akoya-keshi/akoya-keshi-2.webp",
+      "/gallery/necklace/necklace/akoya-keshi/akoya-keshi-3.webp",
+      "/gallery/necklace/necklace/akoya-keshi/akoya-keshi-4.webp",
     ],
   },
   {
