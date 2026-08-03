@@ -1,10 +1,25 @@
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
-import { ContentListBlock, type ListBlock } from '@/components/ContentBlocks';
+import {
+	ContentHeadingBlock,
+	ContentImagesBlock,
+	ContentListBlock,
+	type HeadingBlock,
+	type ImagesBlock,
+	type ListBlock,
+} from '@/components/ContentBlocks';
+
+const STORY_IMAGES = [
+	'/gallery/our-story/ourstory-1.webp',
+	'/gallery/our-story/ourstory-2.webp',
+	'/gallery/our-story/ourstory-3.webp',
+];
 
 type StoryBlock =
 	| string
 	| ListBlock
+	| HeadingBlock
+	| ImagesBlock
 	| {
 			type: 'quotes';
 			items: {
@@ -41,6 +56,14 @@ export default function StoryPage() {
 
 							if (block.type === 'list') {
 								return <ContentListBlock key={i} block={block} />;
+							}
+
+							if (block.type === 'heading') {
+								return <ContentHeadingBlock key={i} block={block} />;
+							}
+
+							if (block.type === 'images') {
+								return <ContentImagesBlock key={i} block={block} images={STORY_IMAGES} />;
 							}
 
 							if (block.type === 'quotes') {

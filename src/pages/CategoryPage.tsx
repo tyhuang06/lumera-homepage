@@ -52,9 +52,13 @@ export default function CategoryPage() {
 					{useLineSections ? (
 						<div className="flex flex-col gap-24">
 							{LINE_ORDER.map((line) => {
-								const lineProducts = sortByCollectionSequence(
-									filtered.filter((p) => p.line === line),
-								);
+								const lineFiltered = filtered.filter((p) => p.line === line);
+								// Necklace Forever is a small, curated set — keep its authored order
+								// instead of the collection-chunking used for larger line sections.
+								const lineProducts =
+									slug === 'necklaces' && line === 'forever'
+										? lineFiltered
+										: sortByCollectionSequence(lineFiltered);
 								if (lineProducts.length === 0) return null;
 
 								return (

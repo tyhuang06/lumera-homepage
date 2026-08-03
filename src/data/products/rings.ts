@@ -74,6 +74,8 @@ export const ringsProducts: Product[] = [
       "/gallery/ring/southsea-feather-12.5/southsea-12.5-1.webp",
       "/gallery/ring/southsea-feather-12.5/southsea-12.5-2.webp",
       "/gallery/ring/southsea-feather-12.5/southsea-12.5-3.webp",
+      "/gallery/ring/southsea-feather-12.5/southsea-12.5-4.webp",
+      "/gallery/ring/southsea-feather-12.5/southsea-12.5-5.webp",
     ],
   },
   {
