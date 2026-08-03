@@ -111,6 +111,7 @@ export function Navbar() {
 
 				{/* Right nav group */}
 				<div className="hidden md:flex items-center gap-1">
+					<NavLink to="/gifting">{t('nav.gifting')}</NavLink>
 					<NavLink to="/story">{t('nav.ourStory')}</NavLink>
 					<NavLink to="/materials">{t('nav.materials')}</NavLink>
 					<NavLink to="/faq">{t('nav.faq')}</NavLink>
@@ -199,6 +200,12 @@ export function Navbar() {
 										</AccordionContent>
 									</AccordionItem>
 								</Accordion>
+
+								<SheetClose asChild>
+									<Link to="/gifting" className={mobileLink}>
+										{t('nav.gifting')}
+									</Link>
+								</SheetClose>
 
 								<SheetClose asChild>
 									<Link to="/story" className={mobileLink}>

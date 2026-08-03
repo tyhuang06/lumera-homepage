@@ -3,6 +3,7 @@
 		"home": "Home",
 		"icons": "Icons",
 		"collections": "Collections",
+		"gifting": "Gifting",
 		"ourStory": "Our Story",
 		"materials": "Materials",
 		"faq": "FAQ",
@@ -80,6 +81,64 @@
 	"icons": {
 		"title": "The Luméra Icons",
 		"desc": "Every piece in our collection, available to explore."
+	},
+
+	"lines": {
+		"signature": {
+			"title": "Signature",
+			"desc": "Iconic Pieces — $200 to $999"
+		},
+		"forever": {
+			"title": "Forever",
+			"desc": "Heirloom Pieces — Passed Down for Generations"
+		},
+		"movement": {
+			"title": "Movement",
+			"desc": "Flowing Pieces That Move With You"
+		}
+	},
+
+	"gifting": {
+		"hero": {
+			"label": "Gifting",
+			"title": "For Your Special Event",
+			"description": "Anniversaries, milestone birthdays, engagements — some moments deserve more than a gift, they deserve a Luméra piece. Thoughtfully packaged and ready to make someone feel truly special."
+		},
+		"imagesCaption": "Every piece we send out is wrapped with the same care we'd want for someone we love.",
+		"picks": {
+			"label": "Gift Picks",
+			"title": "Gifts They'll Treasure",
+			"priceBadge": "All Below $300",
+			"desc": "A curated edit of our most gifted designs — timeless pieces for the people who matter most.",
+			"cta": "Explore More"
+		},
+		"premium": {
+			"label": "Premium Gifts",
+			"title": "Premium Jewelry",
+			"priceBadge": "Items Above $1,500 — Complimentary Jewelry Box",
+			"desc": "For the gestures that call for something extraordinary — gifts that make the people you love feel most cherished."
+		},
+		"features": {
+			"box": {
+				"title": "A Special Box Full of Surprises",
+				"text": "Every order arrives in a signature carton box, tied with ribbon and finished with the small touches that make gifting effortless.",
+				"items": [
+					"Special carton box",
+					"Ribbon for your jewelry",
+					"Pearl cleaning cloth",
+					"Travel-size jewelry bag",
+					"Paper bag"
+				]
+			},
+			"bag": {
+				"title": "Our Brand Paper Bag",
+				"text": "A beautifully finished paper bag, made for handing off to the people you love — because presentation is part of the gift."
+			},
+			"box2": {
+				"title": "Even More Surprises",
+				"text": "Select pieces come home in a luxurious jewelry box, elevating the moment your gift is opened."
+			}
+		}
 	},
 
 	"materials": {
@@ -223,6 +282,10 @@
 		"icons": {
 			"title": "Icons | Luméra Fine Pearls",
 			"description": "Explore every piece in the Luméra collection."
+		},
+		"gifting": {
+			"title": "Gifting | Luméra Fine Pearls",
+			"description": "Find the perfect Luméra piece for your next special occasion — thoughtfully packaged gifts for the people you love."
 		},
 		"materials": {
 			"title": "Materials | Luméra Fine Pearls",

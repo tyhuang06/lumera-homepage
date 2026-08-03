@@ -5,13 +5,18 @@ export function ScrollToTop() {
 	const { pathname, hash } = useLocation();
 
 	useEffect(() => {
-		if (!hash) {
-			window.scrollTo({
-				top: 0,
-				left: 0,
-				behavior: 'instant', // or "smooth" if you prefer
-			});
+		if (hash) {
+			const el = document.getElementById(hash.slice(1));
+			if (el) {
+				el.scrollIntoView({ behavior: 'instant' });
+				return;
+			}
 		}
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: 'instant', // or "smooth" if you prefer
+		});
 	}, [pathname, hash]);
 
 	return null;

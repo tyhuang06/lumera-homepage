@@ -33,6 +33,7 @@ export function Footer() {
 						</h4>
 						<div className="flex flex-col gap-3">
 							<FooterLink to="/icons">{t('nav.icons')}</FooterLink>
+							<FooterLink to="/gifting">{t('nav.gifting')}</FooterLink>
 							<FooterLink to="/collections/rings">{t('categories.rings')}</FooterLink>
 							<FooterLink to="/collections/necklaces">{t('categories.necklaces')}</FooterLink>
 							<FooterLink to="/collections/earrings">{t('categories.earrings')}</FooterLink>

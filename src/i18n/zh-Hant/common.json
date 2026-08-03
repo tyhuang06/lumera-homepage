@@ -3,6 +3,7 @@
 		"home": "首頁",
 		"icons": "精選作品",
 		"collections": "飾品系列",
+		"gifting": "送禮首選",
 		"ourStory": "品牌故事",
 		"materials": "材質工藝",
 		"faq": "常見問題",
@@ -80,6 +81,64 @@
 	"icons": {
 		"title": "Luméra 精選作品",
 		"desc": "我們系列中的每一件作品，等你探索。"
+	},
+
+	"lines": {
+		"signature": {
+			"title": "Signature",
+			"desc": "經典代表作 — $200 至 $999"
+		},
+		"forever": {
+			"title": "Forever",
+			"desc": "傳世之作 — 世代珍藏傳承"
+		},
+		"movement": {
+			"title": "Movement",
+			"desc": "靈動線條 — 隨你的每個動作搖曳"
+		}
+	},
+
+	"gifting": {
+		"hero": {
+			"label": "送禮首選",
+			"title": "為特別的日子準備",
+			"description": "紀念日、重要生日、訂婚——有些時刻值得更多，值得一件 Luméra 珍珠飾品。用心包裝，讓收到禮物的人感受到滿滿心意。"
+		},
+		"imagesCaption": "每一件寄出的作品，我們都用對待摯愛的心意細心包裝。",
+		"picks": {
+			"label": "送禮首選",
+			"title": "值得珍藏的禮物",
+			"priceBadge": "全館低於 $300",
+			"desc": "精選我們最受歡迎的送禮款式——為你在乎的人，挑一件經典。",
+			"cta": "探索更多"
+		},
+		"premium": {
+			"label": "頂級之選",
+			"title": "頂級珠寶",
+			"priceBadge": "訂單滿 $1,500，贈送精緻珠寶盒",
+			"desc": "獻給值得被隆重對待的時刻——讓你在乎的人，感受最深的珍視。"
+		},
+		"features": {
+			"box": {
+				"title": "驚喜滿滿的禮物盒",
+				"text": "每筆訂單都以品牌紙盒包裝，繫上緞帶，並附上貼心小物，讓送禮更輕鬆。",
+				"items": [
+					"專屬紙盒",
+					"珠寶緞帶",
+					"珍珠拭珠布",
+					"旅行用珠寶收納袋",
+					"品牌紙袋"
+				]
+			},
+			"bag": {
+				"title": "品牌紙袋",
+				"text": "精緻的品牌紙袋，方便你直接交到摯愛手中——因為包裝也是禮物的一部分。"
+			},
+			"box2": {
+				"title": "更多驚喜",
+				"text": "精選作品更以奢華珠寶盒呈現，讓開箱的那一刻更加難忘。"
+			}
+		}
 	},
 
 	"materials": {
@@ -219,6 +278,10 @@
 		"icons": {
 			"title": "精選作品 | Luméra Fine Pearls",
 			"description": "探索 Luméra 系列的每一件作品。"
+		},
+		"gifting": {
+			"title": "送禮首選 | Luméra Fine Pearls",
+			"description": "為你重要的日子挑選 Luméra 珍珠飾品——用心包裝的禮物，獻給你在乎的人。"
 		},
 		"materials": {
 			"title": "材質工藝 | Luméra Fine Pearls",
