@@ -110,6 +110,20 @@ export const earringsProducts: Product[] = [
     ],
   },
   {
+    id: "earrings-southsea-diana-11mm",
+    featured: true,
+    collection: "southsea",
+    category: "earrings",
+    titleKey: "products.earrings-southsea-diana-11mm",
+    descriptionKey: "earrings-southsea-diana-11mm",
+    images: [
+      "/gallery/earrings/southsea-diana-11mm/southsea-diana-1.webp",
+      "/gallery/earrings/southsea-diana-11mm/southsea-diana-2.webp",
+      "/gallery/earrings/southsea-diana-11mm/southsea-diana-3.webp",
+      "/gallery/earrings/southsea-diana-11mm/southsea-diana-4.webp",
+    ],
+  },
+  {
     id: "earrings-southsea-9.0mm-feather",
     featured: false,
     collection: "southsea",
@@ -345,6 +359,8 @@ export const earringsProducts: Product[] = [
     images: [
       "/gallery/earrings/southsea-pheonix-12mm/southsea-pheonix-12mm-1.webp",
       "/gallery/earrings/southsea-pheonix-12mm/southsea-pheonix-12mm-2.webp",
+      "/gallery/earrings/southsea-pheonix-12mm/southsea-pheonix-12mm-3.webp",
+      "/gallery/earrings/southsea-pheonix-12mm/southsea-pheonix-12mm-4.webp",
     ],
   },
   {
