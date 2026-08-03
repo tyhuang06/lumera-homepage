@@ -41,7 +41,12 @@ export default function CategoryPage() {
 
 			<main className="pt-20 bg-cream min-h-screen">
 				<div className="mx-auto max-w-7xl px-6 py-12">
-					<Breadcrumb items={[{ label }]} />
+					<Breadcrumb
+						items={[
+							{ label: t('nav.collections'), to: '/#collections' },
+							{ label },
+						]}
+					/>
 
 					<PageHeader
 						eyebrow={t('home.collections.label')}

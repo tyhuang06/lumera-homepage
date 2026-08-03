@@ -46,7 +46,7 @@ export default function ProductPage() {
 				<div className="mx-auto max-w-6xl px-6 py-12">
 					<Breadcrumb
 						items={[
-							{ label: t('nav.icons'), to: '/icons' },
+							{ label: t(`categories.${product.category}`), to: `/collections/${product.category}` },
 							{ label: title },
 						]}
 					/>

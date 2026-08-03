@@ -73,6 +73,8 @@ export const earringsProducts: Product[] = [
     images: [
       "/gallery/earrings/akoya-diamnond-drop/akoya-diamnond-drop-1.webp",
       "/gallery/earrings/akoya-diamnond-drop/akoya-diamnond-drop-2.webp",
+      "/gallery/earrings/akoya-diamnond-drop/akoya-diamnond-drop-3.webp",
+      "/gallery/earrings/akoya-diamnond-drop/akoya-diamnond-drop-4.webp",
     ],
   },
   {
