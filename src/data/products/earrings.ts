@@ -6,6 +6,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earrings-akoya-hanadama-8.0mm",
     descriptionKey: "earrings-akoya-hanadama-8.0mm",
     images: [
@@ -18,6 +19,7 @@ export const earringsProducts: Product[] = [
     featured: true,
     collection: "akoya",
     category: "earrings",
+    line: "signature",
     titleKey: "products.akoya-earrings-hanadama85",
     descriptionKey: "akoya-earrings-hanadama85",
     images: [
@@ -33,6 +35,7 @@ export const earringsProducts: Product[] = [
     featured: true,
     collection: "akoya",
     category: "earrings",
+    line: "signature",
     titleKey: "products.akoya-earrings-diana",
     descriptionKey: "akoya-earrings-diana",
     images: [
@@ -48,6 +51,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earrings-akoya-diana-8.5mm",
     descriptionKey: "earrings-akoya-diana-8.5mm",
     images: [
@@ -63,6 +67,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "earrings",
+    line: "movement",
     titleKey: "products.earrings-akoya-diamnond-drop",
     descriptionKey: "earrings-akoya-diamnond-drop",
     images: [
@@ -75,6 +80,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "earrings",
+    line: "movement",
     titleKey: "products.earrings-akoya-flower",
     descriptionKey: "earrings-akoya-flower",
     images: [
@@ -89,6 +95,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earrings-akoya-tie",
     descriptionKey: "earrings-akoya-tie",
     images: [
@@ -102,6 +109,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "southsea",
     category: "earrings",
+    line: "forever",
     titleKey: "products.earrings-p-southsea-11.0mm",
     descriptionKey: "earrings-p-southsea-11.0mm",
     images: [
@@ -114,6 +122,7 @@ export const earringsProducts: Product[] = [
     featured: true,
     collection: "southsea",
     category: "earrings",
+    line: "forever",
     titleKey: "products.earrings-southsea-diana-11mm",
     descriptionKey: "earrings-southsea-diana-11mm",
     images: [
@@ -128,6 +137,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "southsea",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earrings-southsea-9.0mm-feather",
     descriptionKey: "earrings-southsea-9.0mm-feather",
     images: [
@@ -141,6 +151,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "southsea",
     category: "earrings",
+    line: "movement",
     titleKey: "products.earrings-southsea-drop",
     descriptionKey: "earrings-southsea-drop",
     images: [
@@ -154,6 +165,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "keshi",
     category: "earrings",
+    line: "movement",
     titleKey: "products.earrings-keshi-southsea-drop",
     descriptionKey: "earrings-keshi-southsea-drop",
     images: [
@@ -166,6 +178,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earrings-akoya-bluerose",
     descriptionKey: "earrings-akoya-bluerose",
     images: [
@@ -178,6 +191,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "earrings",
+    line: "movement",
     titleKey: "products.earrings-akoya-loveshaped",
     descriptionKey: "earrings-akoya-loveshaped",
     images: [
@@ -192,6 +206,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "keshi",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earrings-keshi-southsea-diana",
     descriptionKey: "earrings-keshi-southsea-diana",
     images: [
@@ -203,6 +218,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "keshi",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earrings-keshi-southsea-gold",
     descriptionKey: "earrings-keshi-southsea-gold",
     images: [
@@ -215,6 +231,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "keshi",
     category: "earrings",
+    line: "movement",
     titleKey: "products.earrings-keshi-tahitian-10mm",
     descriptionKey: "earrings-keshi-tahitian-10mm",
     images: [
@@ -228,6 +245,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "keshi",
     category: "earrings",
+    line: "movement",
     titleKey: "products.earrings-keshi-tahitian-12mm",
     descriptionKey: "earrings-keshi-tahitian-12mm",
     images: [
@@ -243,6 +261,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "keshi",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earrings-keshi-tahitian-three",
     descriptionKey: "earrings-keshi-tahitian-three",
     images: [
@@ -256,6 +275,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earrings-akoya-bluerose-diana",
     descriptionKey: "earrings-akoya-bluerose-diana",
     images: [
@@ -271,6 +291,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "earrings",
+    line: "movement",
     titleKey: "products.earrings-akoya-bluerose-drop",
     descriptionKey: "earrings-akoya-bluerose-drop",
     images: [
@@ -286,6 +307,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earclip-8.0mm",
     descriptionKey: "earclip-8.0mm",
     images: [
@@ -299,6 +321,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earclip-bluerose",
     descriptionKey: "earclip-bluerose",
     images: [
@@ -312,6 +335,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earclip-hanadama-8.5mm",
     descriptionKey: "earclip-hanadama-8.5mm",
     images: [
@@ -325,6 +349,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "tahitian",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earclip-tahitian",
     descriptionKey: "earclip-tahitian",
     images: [
@@ -339,6 +364,7 @@ export const earringsProducts: Product[] = [
     featured: true,
     collection: "southsea",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earrings-southsea-pheonex-11mm",
     descriptionKey: "earrings-southsea-pheonex-11mm",
     images: [
@@ -354,6 +380,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "southsea",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earrings-southsea-pheonix-12mm",
     descriptionKey: "earrings-southsea-pheonix-12mm",
     images: [
@@ -368,6 +395,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "southsea",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earrings-southsea-pheonix-13mm",
     descriptionKey: "earrings-southsea-pheonix-13mm",
     images: [
@@ -383,6 +411,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "tahitian",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earrings-tahitian",
     descriptionKey: "earrings-tahitian",
     images: [
@@ -396,6 +425,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "tahitian",
     category: "earrings",
+    line: "signature",
     titleKey: "products.earrings-tahitian-ocenblue",
     descriptionKey: "earrings-tahitian-ocenblue",
     images: [

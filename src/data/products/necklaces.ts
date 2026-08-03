@@ -6,6 +6,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "necklaces",
+    line: "signature",
     titleKey: "products.pendant-akoya-wg-diana",
     descriptionKey: "pendant-akoya-wg-diana",
     images: [
@@ -21,6 +22,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "necklaces",
+    line: "signature",
     titleKey: "products.pendant-akoya-classic",
     descriptionKey: "pendant-akoya-classic",
     images: [
@@ -37,6 +39,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "necklaces",
+    line: "movement",
     titleKey: "products.pendant-akoya-y",
     descriptionKey: "pendant-akoya-y",
     images: [
@@ -48,6 +51,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "tahitian",
     category: "necklaces",
+    line: "signature",
     titleKey: "products.pendant-tahitian-necklace",
     descriptionKey: "pendant-tahitian-necklace",
     images: [
@@ -61,6 +65,7 @@ export const necklacesProducts: Product[] = [
     featured: true,
     collection: "akoya",
     category: "necklaces",
+    line: "forever",
     titleKey: "products.necklace-m-akoya-3.5",
     descriptionKey: "necklace-m-akoya-3.5",
     images: [
@@ -75,6 +80,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "necklaces",
+    line: "forever",
     titleKey: "products.necklace-akoya-5.5mm",
     descriptionKey: "necklace-akoya-5.5mm",
     images: [
@@ -88,6 +94,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "necklaces",
+    line: "forever",
     titleKey: "products.necklace-t-akoya-3.5",
     descriptionKey: "necklace-t-akoya-3.5",
     images: [
@@ -101,6 +108,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "necklaces",
+    line: "signature",
     titleKey: "products.necklace-akoya-7.5mm",
     descriptionKey: "necklace-akoya-7.5mm",
     images: [
@@ -116,6 +124,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "necklaces",
+    line: "forever",
     titleKey: "products.necklace-m-akoya-8.5mm",
     descriptionKey: "necklace-m-akoya-8.5mm",
     images: [
@@ -133,6 +142,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "necklaces",
+    line: "forever",
     titleKey: "products.necklace-m-akoya-candy-8.0",
     descriptionKey: "necklace-m-akoya-candy-8.0",
     images: [
@@ -148,6 +158,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "southsea",
     category: "necklaces",
+    line: "forever",
     titleKey: "products.necklace-southsea-8.0-10.0",
     descriptionKey: "necklace-southsea-8.0-10.0",
     images: [
@@ -166,6 +177,7 @@ export const necklacesProducts: Product[] = [
     featured: true,
     collection: "tahitian",
     category: "necklaces",
+    line: "forever",
     titleKey: "products.necklace-tahitian",
     descriptionKey: "necklace-tahitian",
     images: [
@@ -182,6 +194,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "southsea",
     category: "necklaces",
+    line: "movement",
     titleKey: "products.pendant-southsea-blue-y",
     descriptionKey: "pendant-southsea-blue-y",
     images: [
@@ -196,6 +209,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "southsea",
     category: "necklaces",
+    line: "movement",
     titleKey: "products.pendant-southsea-rainbow-y",
     descriptionKey: "pendant-southsea-rainbow-y",
     images: [
@@ -211,6 +225,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "southsea",
     category: "necklaces",
+    line: "signature",
     titleKey: "products.pendant-southsea-apple",
     descriptionKey: "pendant-southsea-apple",
     images: [
@@ -227,6 +242,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "necklaces",
+    line: "signature",
     titleKey: "products.necklace-akoya-keshi",
     descriptionKey: "necklace-akoya-keshi",
     images: [
@@ -238,6 +254,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "necklaces",
+    line: "signature",
     titleKey: "products.necklace-akoya-star",
     descriptionKey: "necklace-akoya-star",
     images: [
@@ -254,6 +271,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "keshi",
     category: "necklaces",
+    line: "forever",
     titleKey: "products.necklace-bluebarouque",
     descriptionKey: "necklace-bluebarouque",
     images: [
@@ -267,6 +285,7 @@ export const necklacesProducts: Product[] = [
     featured: true,
     collection: "akoya",
     category: "necklaces",
+    line: "movement",
     titleKey: "products.pendant-akoya-mermaid",
     descriptionKey: "pendant-akoya-mermaid",
     images: [
@@ -284,6 +303,7 @@ export const necklacesProducts: Product[] = [
     featured: false,
     collection: "southsea",
     category: "necklaces",
+    line: "signature",
     titleKey: "products.pendant-southsea-flower",
     descriptionKey: "pendant-southsea-flower",
     images: [
