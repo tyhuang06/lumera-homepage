@@ -279,8 +279,8 @@ export const earringsProducts: Product[] = [
     titleKey: "products.earrings-akoya-bluerose-diana",
     descriptionKey: "earrings-akoya-bluerose-diana",
     images: [
-      "/gallery/earrings/akoya-bluerose-diana/akoya-bluerose-diana-1.webp",
       "/gallery/earrings/akoya-bluerose-diana/akoya-bluerose-diana-2.webp",
+      "/gallery/earrings/akoya-bluerose-diana/akoya-bluerose-diana-1.webp",
       "/gallery/earrings/akoya-bluerose-diana/akoya-bluerose-diana-3.webp",
       "/gallery/earrings/akoya-bluerose-diana/akoya-bluerose-diana-4.webp",
       "/gallery/earrings/akoya-bluerose-diana/akoya-bluerose-diana-5.webp",
@@ -353,9 +353,9 @@ export const earringsProducts: Product[] = [
     titleKey: "products.earclip-tahitian",
     descriptionKey: "earclip-tahitian",
     images: [
-      "/gallery/earrings/earclip-tahitian/earclip-tahitian-01.webp",
-      "/gallery/earrings/earclip-tahitian/earclip-tahitian-2.webp",
       "/gallery/earrings/earclip-tahitian/earclip-tahitian-3.webp",
+      "/gallery/earrings/earclip-tahitian/earclip-tahitian-2.webp",
+      "/gallery/earrings/earclip-tahitian/earclip-tahitian-01.webp",
       "/gallery/earrings/earclip-tahitian/earclip-tahitian-4.webp",
     ],
   },
