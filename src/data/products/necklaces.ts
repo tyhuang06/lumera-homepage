@@ -58,6 +58,9 @@ export const necklacesProducts: Product[] = [
       "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-1.webp",
       "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-2.webp",
       "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-3.webp",
+      "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-4.webp",
+      "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-5.webp",
+      "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-6.webp",
     ],
   },
   {
