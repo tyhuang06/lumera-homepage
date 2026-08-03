@@ -51,6 +51,18 @@ export default function MaterialsPage() {
 
 					<div className="h-px bg-border mb-14" />
 
+					{/* 14K Gold & Japanese Silver */}
+					<section className="mb-14">
+						<h2 className="font-cormorant text-2xl font-light text-charcoal mb-4">
+							{t('materials.silver.title')}
+						</h2>
+						<p className="text-sm leading-relaxed text-muted-foreground">
+							{t('materials.silver.text')}
+						</p>
+					</section>
+
+					<div className="h-px bg-border mb-14" />
+
 					{/* Pearl types */}
 					<section className="mb-14">
 						<h2 className="font-cormorant text-2xl font-light text-charcoal mb-8">

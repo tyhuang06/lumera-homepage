@@ -2,16 +2,19 @@
 	"products": {
 		"bracelets-akoya-double": "Lumie Layer - Akoya Duo Star Bracelet",
 		"bracelets-candy": "Lumie Signature - Akoya Confetti Bracelet",
-		"bracelets-southsea": "Soul Forever - South Sea Classic Bracelet"
+		"bracelets-southsea": "Soul Forever - South Sea Classic Bracelet",
+		"bracelets-southsea-nearround": "Soul Forever - South Sea Near-Round Bracelet"
 	},
 	"descriptions": {
 		"bracelets-akoya-double": "a bracelet rich in design detail — refined japanese 18K gold paired with lustrous akoya pearls, as though stars had scattered across the wrist. a beauty that's yours alone to notice.",
 		"bracelets-candy": "bright, spirited, and beautiful worn any way — this confetti bracelet gathers akoya pearls in every natural hue. wear it alone or layered with a gold or silver chain — a beauty that's yours alone to notice.",
-		"bracelets-southsea": "the most understated way to wear a south sea pearl. a single pearl on a delicate gold chain — quiet confidence at the wrist. those who truly understand fine jewelry will notice it immediately."
+		"bracelets-southsea": "the most understated way to wear a south sea pearl. a single pearl on a delicate gold chain — quiet confidence at the wrist. those who truly understand fine jewelry will notice it immediately.",
+		"bracelets-southsea-nearround": "a strand of near-round south sea pearls, full and lustrous at the wrist. simple enough to wear every day, substantial enough to be the only jewelry you need."
 	},
 	"sidenotes": {
-		"bracelets-akoya-double": "🦪 pearl type: Akoya\n📏 size: 6.0-6.5mm\n🪙 material: 18K gold\n👗 suitable for: everyday wear",
+		"bracelets-akoya-double": "🦪 pearl type: Akoya (base color: white, overtone: pink)\n📏 size: 6.0-6.5mm\n🪙 material: 18K gold\n👗 suitable for: everyday wear",
 		"bracelets-candy": "🦪 pearl type: Akoya (Natural Mixed Colours)\n📏 size: 5.5-6.0mm\n🪙 material: steel wire, Japanese silver clasp (upgradeable to K gold)\n👗 suitable for: everyday wear",
-		"bracelets-southsea": "🦪 pearl type: South Sea\n📏 size: 9.0-11.0mm\n🪙 material: steel wire, 18K gold clasp\n👗 suitable for: statement piece"
+		"bracelets-southsea": "🦪 pearl type: South Sea (base color: white, overtone: pink & green)\n📏 size: 9.0-11.0mm\n🪙 material: steel wire, 18K gold clasp\n👗 suitable for: statement piece",
+		"bracelets-southsea-nearround": "🦪 pearl type: South Sea (White, Near-Round)\n📏 size: 9.0-11.0mm\n🪙 material: steel wire, Japanese silver clasp\n👗 suitable for: everyday wear"
 	}
 }

@@ -28,6 +28,21 @@ export const braceletsProducts: Product[] = [
     ],
   },
   {
+    id: "bracelets-southsea-nearround",
+    featured: false,
+    collection: "southsea",
+    category: "bracelets",
+    titleKey: "products.bracelets-southsea-nearround",
+    descriptionKey: "bracelets-southsea-nearround",
+    images: [
+      "/gallery/bracelets/southsea-nearround/southsea-nearround-2.webp",
+      "/gallery/bracelets/southsea-nearround/southsea-nearround-1.webp",
+      "/gallery/bracelets/southsea-nearround/southsea-nearround-3.webp",
+      "/gallery/bracelets/southsea-nearround/southsea-nearround-4.webp",
+      "/gallery/bracelets/southsea-nearround/southsea-nearround-5.webp",
+    ],
+  },
+  {
     id: "bracelets-candy",
     featured: false,
     collection: "akoya",

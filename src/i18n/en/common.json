@@ -145,12 +145,16 @@
 		"title": "Our Materials",
 		"subtitle": "Made to last a lifetime",
 		"sourcing": {
-			"title": "Ethically Sourced",
-			"text": "We work directly with trusted suppliers in Japan, French Polynesia, and Australia. Every pearl is hand-selected for its luster, surface quality, and shape. We use 18K gold for all settings — no plating, no shortcuts."
+			"title": "Trusted Sourcing",
+			"text": "We work directly with trusted suppliers in Japan, French Polynesia, and Australia — including renowned names like Mikimoto and Paspaley. Every pearl is hand-selected for its luster, surface quality, and shape. Our gold and silver hardware is sourced from Japan, where strict regulations on gold content ensure every component is genuinely solid — never hollow, never cut with base metals."
 		},
 		"gold": {
-			"title": "18K Gold",
-			"text": "Over 50% of our findings are precision-crafted in Japan. 18K gold is our standard: the ideal balance of purity, durability, and warmth. It will not tarnish or cause skin reactions with regular wear."
+			"title": "18K Solid Gold",
+			"text": "More than 70% of our pieces are set in solid 18K gold — the ideal balance of purity, durability, and warmth. Precision-crafted in Japan, where stricter gold regulations guarantee every setting is solid all the way through. It will not tarnish or cause skin reactions with regular wear."
+		},
+		"silver": {
+			"title": "14K Gold & Japanese Silver",
+			"text": "For a more accessible price point, select pieces are crafted in solid 14K gold or Japanese silver finished with gold plating. Our silver is worked using a Japanese technique that makes it noticeably more resistant to tarnish than standard silver, so it stays bright with everyday wear."
 		},
 		"pearls": {
 			"title": "Pearl Types",
@@ -222,6 +226,25 @@
 						"text": "I wear my pearls every day now. They make work feel special.",
 						"author": "Customer feedback"
 					}
+				]
+			},
+			{
+				"type": "heading",
+				"text": "How to Purchase"
+			},
+			"We keep it personal — real conversations, not a checkout cart. And before anything ships, you see it first: we send photos and videos of your actual piece, so there are no surprises when it arrives.",
+			{
+				"type": "images",
+				"caption": "Real photos and videos we've shared with customers before their pieces shipped."
+			},
+			{
+				"type": "list",
+				"items": [
+					"Contact us via WeChat (ID: dollyzsca24) or Instagram (ID: lumera_pearls)",
+					"Tell us what you're looking for — we'll help you choose and give you a quote",
+					"Once confirmed, we prepare your piece and send photos and videos so you can see exactly what you're getting",
+					"Complete payment once you're happy with what you see (Venmo, Zelle accepted)",
+					"We confirm your shipping date and provide a tracking number"
 				]
 			}
 		]
