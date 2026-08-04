@@ -20,11 +20,11 @@ const GIFT_PICK_IDS = [
 	'earrings-akoya-hanadama-8.0mm', // Lumie Signature - Akoya Classic Earrings (Hanadama 8.0mm)
 	'earrings-akoya-bluerose', // Lumie Signature - Akoya Blue Rose Earrings (8.0mm)
 	'earclip-8.0mm', // Lumie Signature - Akoya Classic Ear Clip (8.0mm)
-	'earrings-akoya-loveshaped', // Lumie Movement - Akoya Love Earrings
+	'earrings-akoya-loveshaped', // Lumie Signature - Akoya Love Earrings
 	'earrings-akoya-tie', // Lumie Signature - Akoya Ribbon Earrings
 	'earrings-southsea-9.0mm-feather', // Soul Signature - South Sea Plume Earrings
 	'earclip-bluerose', // Lumie Signature - Akoya Blue Rose Ear Clip
-	'ring-southsea-feather-12.5', // Soul Movement - South Sea Feather Ring (12.5mm)
+	'ring-southsea-feather-12.5', // Soul Signature - South Sea Feather Ring (12.5mm)
 ];
 
 // Premium necklace picks, shown below the best-value section.
