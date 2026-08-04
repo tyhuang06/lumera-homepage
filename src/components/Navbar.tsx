@@ -68,26 +68,28 @@ export function Navbar() {
 					<NavLink to="/icons">{t('nav.icons')}</NavLink>
 
 					{/* Collections dropdown */}
-					<NavigationMenu>
+					<NavigationMenu viewport={false}>
 						<NavigationMenuList>
 							<NavigationMenuItem>
 								<NavigationMenuTrigger
 									className={cn(
 										'bg-transparent text-white/80 hover:text-white hover:bg-white/10',
+										'focus:bg-white/10 focus:text-white',
 										'text-xs font-normal tracking-[0.15em] uppercase h-auto px-3 py-1',
-										'data-[state=open]:bg-white/10',
+										'data-[state=open]:bg-white/10 data-[state=open]:text-white',
+										'data-[state=open]:hover:bg-white/10 data-[state=open]:focus:bg-white/10',
 									)}
 								>
 									{t('nav.collections')}
 								</NavigationMenuTrigger>
-								<NavigationMenuContent>
-									<ul className="w-44 bg-charcoal border border-white/10 p-3 flex flex-col gap-1">
+								<NavigationMenuContent className="p-1">
+									<ul className="min-w-36 flex flex-col gap-0.5">
 										{COLLECTIONS.map(({ slug }) => (
 											<li key={slug}>
 												<NavigationMenuLink asChild>
 													<Link
 														to={`/collections/${slug}`}
-														className="block px-3 py-2 text-sm text-white/70 hover:text-white hover:bg-white/10 transition-colors"
+														className="block rounded-sm px-2 py-1.5 text-sm text-popover-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
 													>
 														{t(`categories.${slug}`)}
 													</Link>
