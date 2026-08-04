@@ -16,27 +16,51 @@ import { products, homeIcons } from '@/data/products';
 // SVG icons matching the wireframe design
 const categoryIcons: Record<string, React.ReactNode> = {
 	rings: (
-		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-7 h-7">
+		<svg
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			strokeWidth="1"
+			className="w-7 h-7"
+		>
 			<circle cx="12" cy="12" r="8" />
 			<circle cx="12" cy="12" r="3" />
 		</svg>
 	),
 	necklaces: (
-		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-7 h-7">
+		<svg
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			strokeWidth="1"
+			className="w-7 h-7"
+		>
 			<path d="M12 2L8 8h8l-4-6z" />
 			<line x1="12" y1="8" x2="12" y2="22" />
 			<circle cx="12" cy="15" r="3" />
 		</svg>
 	),
 	earrings: (
-		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-7 h-7">
+		<svg
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			strokeWidth="1"
+			className="w-7 h-7"
+		>
 			<path d="M6 12a6 6 0 0112 0" />
 			<line x1="6" y1="12" x2="6" y2="18" />
 			<line x1="18" y1="12" x2="18" y2="18" />
 		</svg>
 	),
 	bracelets: (
-		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-7 h-7">
+		<svg
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			strokeWidth="1"
+			className="w-7 h-7"
+		>
 			<ellipse cx="12" cy="12" rx="10" ry="4" />
 			<path d="M2 12v2c0 2.2 4.5 4 10 4s10-1.8 10-4v-2" />
 		</svg>
@@ -150,17 +174,27 @@ export function Home() {
 
 					{/* Carousel */}
 					{featuredProducts.length > 0 ? (
-						<div ref={iconsGridRef} className="reveal relative -mx-6 px-6 pb-10 md:mx-0 md:px-0">
+						<div
+							ref={iconsGridRef}
+							className="reveal relative -mx-6 px-6 pb-10 md:mx-0 md:px-0"
+						>
 							<Swiper
 								modules={[Scrollbar, Navigation, Keyboard]}
 								spaceBetween={16}
 								slidesPerView={1.5}
 								scrollbar={{ draggable: true, hide: false }}
 								keyboard={{ enabled: true }}
-								navigation={{ prevEl: '.icons-nav-prev', nextEl: '.icons-nav-next' }}
+								navigation={{
+									prevEl: '.icons-nav-prev',
+									nextEl: '.icons-nav-next',
+								}}
 								breakpoints={{
 									640: { slidesPerView: 2, spaceBetween: 20 },
-									1024: { slidesPerView: 4, spaceBetween: 32, slidesPerGroup: 4 },
+									1024: {
+										slidesPerView: 4,
+										spaceBetween: 32,
+										slidesPerGroup: 4,
+									},
 								}}
 							>
 								{featuredProducts.map((product) => (
@@ -175,8 +209,18 @@ export function Home() {
 								aria-label={t('ui.previous')}
 								className="icons-nav-prev absolute left-0 top-[calc(50%-3rem)] z-10 hidden h-14 w-14 -translate-x-1/2 items-center justify-center rounded-full border border-gold bg-white text-gold shadow-md transition-all duration-300 hover:scale-105 hover:bg-gold hover:text-white lg:flex [&.swiper-button-disabled]:opacity-0 [&.swiper-button-disabled]:pointer-events-none"
 							>
-								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5">
-									<path d="M15 5l-7 7 7 7" strokeLinecap="round" strokeLinejoin="round" />
+								<svg
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									strokeWidth="1.75"
+									className="h-5 w-5"
+								>
+									<path
+										d="M15 5l-7 7 7 7"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+									/>
 								</svg>
 							</button>
 							<button
@@ -184,8 +228,18 @@ export function Home() {
 								aria-label={t('ui.next')}
 								className="icons-nav-next absolute right-0 top-[calc(50%-3rem)] z-10 hidden h-14 w-14 translate-x-1/2 items-center justify-center rounded-full border border-gold bg-white text-gold shadow-md transition-all duration-300 hover:scale-105 hover:bg-gold hover:text-white lg:flex [&.swiper-button-disabled]:opacity-0 [&.swiper-button-disabled]:pointer-events-none"
 							>
-								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5">
-									<path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+								<svg
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									strokeWidth="1.75"
+									className="h-5 w-5"
+								>
+									<path
+										d="M9 5l7 7-7 7"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+									/>
 								</svg>
 							</button>
 						</div>
@@ -208,7 +262,10 @@ export function Home() {
 			</section>
 
 			{/* ─── Collections ─── */}
-			<section id="collections" className="bg-cream py-28 px-6 scroll-mt-16">
+			<section
+				id="collections"
+				className="bg-cream py-28 px-6 scroll-mt-16"
+			>
 				<div className="mx-auto max-w-7xl">
 					<div ref={collectionsHeaderRef} className="reveal">
 						<PageHeader
@@ -225,7 +282,11 @@ export function Home() {
 						className="reveal-stagger grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6"
 					>
 						{categories.map((cat, index) => (
-							<CategoryCard key={cat.slug} slug={cat.slug} index={index} />
+							<CategoryCard
+								key={cat.slug}
+								slug={cat.slug}
+								index={index}
+							/>
 						))}
 					</div>
 				</div>
@@ -293,7 +354,10 @@ function CategoryCard({ slug, index }: { slug: string; index: number }) {
 		<Link to={`/collections/${slug}`} className="group block">
 			<div
 				className="relative aspect-square overflow-hidden"
-				style={{ background: categoryGradients[index % categoryGradients.length] }}
+				style={{
+					background:
+						categoryGradients[index % categoryGradients.length],
+				}}
 			>
 				{/* Background zoom on hover */}
 				<div className="absolute inset-0 bg-inherit transition-transform duration-700 group-hover:scale-[1.05]" />
@@ -307,7 +371,9 @@ function CategoryCard({ slug, index }: { slug: string; index: number }) {
 						{t(`categories.${slug}`)}
 					</p>
 					<p className="text-[0.65rem] tracking-[0.15em] uppercase text-white/40">
-						{count > 0 ? `${count} ${t('ui.pieces')}` : t('ui.viewAll')}
+						{count > 0
+							? `${count} ${t('ui.pieces')}`
+							: t('ui.viewAll')}
 					</p>
 				</div>
 			</div>

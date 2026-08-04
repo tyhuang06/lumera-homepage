@@ -159,7 +159,9 @@
 .reveal {
 	opacity: 0;
 	transform: translateY(24px);
-	transition: opacity 0.7s ease, transform 0.7s ease;
+	transition:
+		opacity 0.7s ease,
+		transform 0.7s ease;
 }
 
 .reveal.is-visible {
@@ -171,7 +173,9 @@
 .reveal-stagger > * {
 	opacity: 0;
 	transform: translateY(20px);
-	transition: opacity 0.6s ease, transform 0.6s ease;
+	transition:
+		opacity 0.6s ease,
+		transform 0.6s ease;
 }
 
 .reveal-stagger.is-visible > * {
@@ -179,10 +183,18 @@
 	transform: translateY(0);
 }
 
-.reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0ms; }
-.reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 100ms; }
-.reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 200ms; }
-.reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 300ms; }
+.reveal-stagger.is-visible > *:nth-child(1) {
+	transition-delay: 0ms;
+}
+.reveal-stagger.is-visible > *:nth-child(2) {
+	transition-delay: 100ms;
+}
+.reveal-stagger.is-visible > *:nth-child(3) {
+	transition-delay: 200ms;
+}
+.reveal-stagger.is-visible > *:nth-child(4) {
+	transition-delay: 300ms;
+}
 
 /* ─── Chinese font override ─── */
 /* When language is set to zh-Hant, swap Cormorant Garamond for Noto Serif TC */
@@ -197,4 +209,8 @@
 
 .swiper-scrollbar-drag {
 	background: var(--color-gold);
+}
+
+.swiper-wrapper {
+	padding-bottom: 1rem;
 }
