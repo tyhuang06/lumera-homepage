@@ -59,8 +59,6 @@ export const necklacesProducts: Product[] = [
       "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-2.webp",
       "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-3.webp",
       "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-4.webp",
-      "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-5.webp",
-      "/gallery/necklace/pendant/tahitian-necklace/tahitian-necklace-6.webp",
     ],
   },
   {
@@ -76,20 +74,6 @@ export const necklacesProducts: Product[] = [
       "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-2.webp",
       "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-3.webp",
       "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-4.webp",
-    ],
-  },
-  {
-    id: "necklace-t-akoya-3.5",
-    featured: false,
-    collection: "akoya",
-    category: "necklaces",
-    line: "forever",
-    titleKey: "products.necklace-t-akoya-3.5",
-    descriptionKey: "necklace-t-akoya-3.5",
-    images: [
-      "/gallery/necklace/necklace/t-akoya-3.5/t-akoya-3.5-1.webp",
-      "/gallery/necklace/necklace/t-akoya-3.5/t-akoya-3.5-2.webp",
-      "/gallery/necklace/necklace/t-akoya-3.5/t-akoya-3.5-3.webp",
     ],
   },
   {
@@ -135,6 +119,22 @@ export const necklacesProducts: Product[] = [
       "/gallery/necklace/necklace/m-akoya-candy-8.0/m-akoya-candy-8.0-3.webp",
       "/gallery/necklace/necklace/m-akoya-candy-8.0/m-akoya-candy-8.0-4.webp",
       "/gallery/necklace/necklace/m-akoya-candy-8.0/m-akoya-candy-8.0-5.webp",
+    ],
+  },
+  {
+    id: "necklace-m-akoya-8-8.5-q1",
+    featured: false,
+    collection: "akoya",
+    category: "necklaces",
+    line: "forever",
+    titleKey: "products.necklace-m-akoya-8-8.5-q1",
+    descriptionKey: "necklace-m-akoya-8-8.5-q1",
+    images: [
+      "/gallery/necklace/necklace/m-akoya-8-8.5-q1/m-akoya-8-8.5-q1-1.webp",
+      "/gallery/necklace/necklace/m-akoya-8-8.5-q1/m-akoya-8-8.5-q1-2.webp",
+      "/gallery/necklace/necklace/m-akoya-8-8.5-q1/m-akoya-8-8.5-q1-3.webp",
+      "/gallery/necklace/necklace/m-akoya-8-8.5-q1/m-akoya-8-8.5-q1-4.webp",
+      "/gallery/necklace/necklace/m-akoya-8-8.5-q1/m-akoya-8-8.5-q1-5.webp",
     ],
   },
   {
