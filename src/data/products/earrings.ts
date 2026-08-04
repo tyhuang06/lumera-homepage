@@ -67,7 +67,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "earrings",
-    line: "movement",
+    line: "forever",
     titleKey: "products.earrings-akoya-diamnond-drop",
     descriptionKey: "earrings-akoya-diamnond-drop",
     images: [
@@ -82,7 +82,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "earrings",
-    line: "movement",
+    line: "forever",
     titleKey: "products.earrings-akoya-flower",
     descriptionKey: "earrings-akoya-flower",
     images: [
@@ -183,7 +183,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "southsea",
     category: "earrings",
-    line: "movement",
+    line: "forever",
     titleKey: "products.earrings-southsea-drop",
     descriptionKey: "earrings-southsea-drop",
     images: [
@@ -197,7 +197,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "keshi",
     category: "earrings",
-    line: "movement",
+    line: "forever",
     titleKey: "products.earrings-keshi-southsea-drop",
     descriptionKey: "earrings-keshi-southsea-drop",
     images: [
@@ -223,7 +223,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "earrings",
-    line: "movement",
+    line: "signature",
     titleKey: "products.earrings-akoya-loveshaped",
     descriptionKey: "earrings-akoya-loveshaped",
     images: [
@@ -263,7 +263,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "keshi",
     category: "earrings",
-    line: "movement",
+    line: "signature",
     titleKey: "products.earrings-keshi-tahitian-10mm",
     descriptionKey: "earrings-keshi-tahitian-10mm",
     images: [
@@ -277,7 +277,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "keshi",
     category: "earrings",
-    line: "movement",
+    line: "signature",
     titleKey: "products.earrings-keshi-tahitian-12mm",
     descriptionKey: "earrings-keshi-tahitian-12mm",
     images: [
@@ -323,7 +323,7 @@ export const earringsProducts: Product[] = [
     featured: false,
     collection: "akoya",
     category: "earrings",
-    line: "movement",
+    line: "forever",
     titleKey: "products.earrings-akoya-bluerose-drop",
     descriptionKey: "earrings-akoya-bluerose-drop",
     images: [

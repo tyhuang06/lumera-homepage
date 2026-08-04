@@ -9,9 +9,9 @@ import type { ProductLine } from '@/data/products/types';
 import { products } from '@/data/products';
 import { sortByCollectionSequence } from '@/lib/productLines';
 
-// Necklaces & earrings split into Signature / Forever / Movement subsections.
+// Necklaces & earrings split into Signature / Forever subsections.
 const LINE_CATEGORIES: CategorySlug[] = ['necklaces', 'earrings'];
-const LINE_ORDER: ProductLine[] = ['signature', 'forever', 'movement'];
+const LINE_ORDER: ProductLine[] = ['signature', 'forever'];
 
 export default function CategoryPage() {
 	const { t } = useTranslation();
