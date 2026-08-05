@@ -64,6 +64,7 @@
 	"home": {
 		"hero": {
 			"tagline": "Handcrafted in Seattle",
+			"brand": "Fine Pearls",
 			"subtitle": "For every version of you.",
 			"cta": "Explore the Collection"
 		},
@@ -339,6 +340,13 @@
 		"faq": {
 			"title": "FAQ | Luméra Fine Pearls",
 			"description": "Answers to common questions about pearl jewelry and care."
+		},
+		"category": {
+			"description": "{{label}} — fine pearl jewelry handcrafted in Seattle.",
+			"descriptionWithPrice": "{{label}} — {{priceHeadline}}. Fine pearl jewelry handcrafted in Seattle."
+		},
+		"product": {
+			"descriptionFallback": "{{title}} — fine pearl jewelry handcrafted in Seattle."
 		}
 	}
 }

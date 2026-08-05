@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,6 +11,7 @@ import { LazyImage } from '@/components/LazyImage';
 import { PageHeader } from '@/components/PageHeader';
 import { categories } from '@/data/categories';
 import { products, homeIcons } from '@/data/products';
+import { Seo } from '@/components/Seo';
 
 // SVG icons matching the wireframe design
 const categoryIcons: Record<string, React.ReactNode> = {
@@ -85,16 +85,10 @@ export function Home() {
 
 	return (
 		<>
-			<Helmet>
-				<title>{t('seo.home.title')}</title>
-				<meta name="description" content={t('seo.home.description')} />
-			</Helmet>
+			<Seo title={t('seo.home.title')} description={t('seo.home.description')} />
 
 			{/* ─── Hero ─── */}
-			<section
-				className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
-				style={{ marginTop: 'calc(var(--announcement-h, 0px) * -1)' }}
-			>
+			<section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
 				{/* Background gradient */}
 				<div
 					className="absolute inset-0"
@@ -124,6 +118,16 @@ export function Home() {
 					>
 						Luméra
 					</h1>
+
+					<p
+						className="animate-hero font-cormorant italic text-white -mt-1"
+						style={{
+							animationDelay: '950ms',
+							fontSize: 'clamp(1rem, 2.5vw, 1.4rem)',
+						}}
+					>
+						{t('home.hero.brand')}
+					</p>
 
 					<p
 						className={`animate-hero text-gold-light mt-4 ${isZh ? 'font-noto-tc font-light tracking-[0.08em]' : 'font-cormorant italic'}`}
