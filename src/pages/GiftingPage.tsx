@@ -24,7 +24,8 @@ const GIFT_PICK_IDS = [
 	'earrings-akoya-tie', // Lumie Signature - Akoya Ribbon Earrings
 	'earrings-southsea-9.0mm-feather', // Soul Signature - South Sea Plume Earrings
 	'earclip-bluerose', // Lumie Signature - Akoya Blue Rose Ear Clip
-	'ring-southsea-feather-12.5', // Soul Signature - South Sea Feather Ring (12.5mm)
+	'tahitian-peacock-8mm', // Eclipse Signature - Tahitian Peacock Green Earrings (8.0mm)
+	'tahitian-sparkle', // Eclipse Signature - Tahitian Sparkle Earrings
 ];
 
 // Premium necklace picks, shown below the best-value section.

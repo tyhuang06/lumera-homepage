@@ -91,7 +91,10 @@ export function Home() {
 			</Helmet>
 
 			{/* ─── Hero ─── */}
-			<section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+			<section
+				className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
+				style={{ marginTop: 'calc(var(--announcement-h, 0px) * -1)' }}
+			>
 				{/* Background gradient */}
 				<div
 					className="absolute inset-0"
@@ -105,7 +108,7 @@ export function Home() {
 				<div className="relative z-10 text-center px-6">
 					<p
 						className={`animate-hero text-gold-light text-xs tracking-[0.35em] uppercase mb-6 ${isZh ? 'font-noto-tc font-light' : ''}`}
-						style={{ animationDelay: '200ms' }}
+						style={{ animationDelay: '500ms' }}
 					>
 						{t('home.hero.tagline')}
 					</p>
@@ -114,7 +117,7 @@ export function Home() {
 						lang="en"
 						className="animate-hero font-light text-white leading-none tracking-[0.08em]"
 						style={{
-							animationDelay: '500ms',
+							animationDelay: '800ms',
 							fontSize: 'clamp(3.5rem, 10vw, 7rem)',
 							fontFamily: "'Cormorant Garamond', Georgia, serif",
 						}}
@@ -125,7 +128,7 @@ export function Home() {
 					<p
 						className={`animate-hero text-gold-light mt-4 ${isZh ? 'font-noto-tc font-light tracking-[0.08em]' : 'font-cormorant italic'}`}
 						style={{
-							animationDelay: '800ms',
+							animationDelay: '1100ms',
 							fontSize: 'clamp(1rem, 2.5vw, 1.4rem)',
 						}}
 					>
@@ -134,7 +137,7 @@ export function Home() {
 
 					<div
 						className="animate-hero mt-10"
-						style={{ animationDelay: '1100ms' }}
+						style={{ animationDelay: '1400ms' }}
 					>
 						<a
 							href="#collections"
@@ -148,7 +151,7 @@ export function Home() {
 				{/* Scroll indicator */}
 				<div
 					className="animate-hero absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
-					style={{ animationDelay: '1400ms' }}
+					style={{ animationDelay: '1700ms' }}
 				>
 					<span className="text-[0.55rem] tracking-[0.3em] uppercase text-gold-light/60">
 						Scroll

@@ -53,6 +53,13 @@ i18n
     }
   });
 
+// i18next only fires "languageChanged" on a runtime i18n.changeLanguage()
+// call — not when `lng` is simply resolved from init options (e.g. restored
+// from localStorage). Set it once up front too, or a fresh load in zh-Hant
+// never gets <html lang="zh-Hant">, and every `:lang(zh-Hant)` CSS rule
+// (the Chinese font override included) silently never matches.
+document.documentElement.lang = i18n.language;
+
 i18n.on("languageChanged", (lng) => {
   document.documentElement.lang = lng;
 });

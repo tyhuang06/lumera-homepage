@@ -57,7 +57,7 @@ export function Navbar() {
 			className={cn(
 				'fixed top-0 z-50 w-full transition-colors duration-300',
 				solid
-					? 'bg-charcoal/95 backdrop-blur-md'
+					? 'bg-[#2d261f]/95 backdrop-blur-md'
 					: 'bg-transparent',
 			)}
 		>

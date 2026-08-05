@@ -23,6 +23,7 @@ export const ringsProducts: Product[] = [
     featured: true,
     collection: "akoya",
     category: "rings",
+    limited: true,
     titleKey: "products.ring-akoya-balance",
     descriptionKey: "ring-akoya-balance",
     images: [
@@ -83,6 +84,7 @@ export const ringsProducts: Product[] = [
     featured: false,
     collection: "tahitian",
     category: "rings",
+    limited: true,
     titleKey: "products.ring-tahitian",
     descriptionKey: "ring-tahitian",
     images: [
@@ -98,6 +100,7 @@ export const ringsProducts: Product[] = [
     featured: false,
     collection: "keshi",
     category: "rings",
+    limited: true,
     titleKey: "products.ring-keshi",
     descriptionKey: "ring-keshi",
     images: [
