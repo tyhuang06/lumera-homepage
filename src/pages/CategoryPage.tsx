@@ -33,6 +33,16 @@ export default function CategoryPage() {
 	const filtered = products.filter((p) => p.category === slug);
 	const useLineSections = LINE_CATEGORIES.includes(slug);
 
+	// Price headlines pair a Signature line with a Forever line separated by
+	// " | " — break them onto two lines for an easier read on mobile.
+	const priceHeadline =
+		slug === 'earrings'
+			? t('earrings.priceHeadline')
+			: slug === 'necklaces'
+				? t('necklaces.priceHeadline')
+				: undefined;
+	const [signatureLine, foreverLine] = priceHeadline?.split(' | ') ?? [];
+
 	return (
 		<>
 			<Helmet>
@@ -52,11 +62,13 @@ export default function CategoryPage() {
 						eyebrow={t('home.collections.label')}
 						title={label}
 						description={
-							slug === 'earrings'
-								? t('earrings.priceHeadline')
-								: slug === 'necklaces'
-									? t('necklaces.priceHeadline')
-									: undefined
+							signatureLine && foreverLine ? (
+								<>
+									{signatureLine}
+									<br />
+									{foreverLine}
+								</>
+							) : undefined
 						}
 						className={useLineSections ? 'mb-20' : undefined}
 					/>

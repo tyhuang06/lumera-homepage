@@ -54,7 +54,7 @@ export const necklacesProducts: Product[] = [
     featured: true,
     collection: "akoya",
     category: "necklaces",
-    line: "forever",
+    line: "signature",
     titleKey: "products.necklace-m-akoya-3.5",
     descriptionKey: "necklace-m-akoya-3.5",
     images: [
