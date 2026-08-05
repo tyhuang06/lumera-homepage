@@ -48,7 +48,7 @@ export function ProductCard({ product }: { product: Product }) {
 
 			{/* Title */}
 			<div className="mt-3 px-0.5">
-				<p className="font-cormorant text-base text-foreground leading-snug">
+				<p className="font-cormorant text-base font-light tracking-wide text-foreground leading-snug">
 					{t(`products:${product.titleKey}`)}
 				</p>
 			</div>

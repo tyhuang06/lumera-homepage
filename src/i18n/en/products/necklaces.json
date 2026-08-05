@@ -6,20 +6,23 @@
 		"necklace-akoya-star": "Lumie Signature - Akoya Stellar Necklace",
 		"necklace-akoya-5.5mm": "Lumie Forever - Akoya Blue Rose Full Strand Necklace (5.5mm)",
 		"necklace-akoya-7.5mm": "Lumie Signature - Akoya Full Strand Necklace (7.0mm)",
-		"necklace-m-akoya-8-8.5-q1": "Lumie Forever - Pink Akoya Full Stand Necklace (8.0-8.5mm)",
-		"pendant-akoya-y": "Lumie Signature - Akoya Y-Drop Diana Pendant",
+		"necklace-m-akoya-8-8.5-q1": "Lumie Forever - Pink Akoya Full Strand Necklace (8.0-8.5mm)",
 		"necklace-m-akoya-3.5": "Lumie Forever - Baby Akoya Necklace (Hanadama 3.5mm)",
-		"necklace-m-akoya-8.5mm": "Lumie Forever - Akoya Full Stand Necklace (8.0-8.5mm)",
+		"necklace-m-akoya-8.5mm": "Lumie Forever - Akoya Full Strand Necklace (8.0-8.5mm)",
 		"necklace-m-akoya-candy-8.0": "Lumie Forever - Akoya Confetti Necklace (7.5-8.0mm)",
 		"necklace-southsea-8.0-10.0": "Soul Forever - South Sea Full Strand Necklace (8.0-10.0mm)",
 		"pendant-southsea-apple": "Soul Signature - South Sea Apple Pendant",
 		"pendant-southsea-flower": "Soul Signature - South Sea Floral Pendant",
 		"pendant-southsea-blue-y": "Soul Signature - South Sea Silver Blue Y-Drop Pendant",
-		"pendant-southsea-rainbow-y": "Soul Forever - South Sea Y-Drop Pendant",
+		"pendant-southsea-rainbow-y": "Soul Signature - South Sea Y-Drop Pendant",
 		"necklace-tahitian": "Eclipse Forever - Tahitian Full Strand Necklace (Certified)",
 		"pendant-tahitian-necklace": "Eclipse Signature - Tahitian Peacock Blue Necklace",
 		"necklace-akoya-keshi": "Nature Signature - Akoya Keshi Necklace",
-		"necklace-bluebarouque": "Flow Forever - Blue South Sea Baroque Full Strand Necklace"
+		"necklace-bluebarouque": "Flow Forever - Blue South Sea Baroque Full Strand Necklace",
+		"akoya-hanadama-apple": "Lumie Signature - Akoya Hanadama Apple Pendant",
+		"akoya-tennyo-flower": "Lumie Signature - Akoya Tennyo Flower Pendant",
+		"southsea": "Soul Forever - Silver Blue South Sea Full Strand Necklace (10.0-12.0mm)",
+		"tahitian-oceanblue": "Eclipse Forever - Tahitian Ocean Blue Full Strand Necklace"
 	},
 	"descriptions": {
 		"pendant-akoya-wg-diana": "the classic diana setting, reimagined as a pendant — equally versatile with a simple tee or a tailored shirt. the first piece you'll reach for whenever you want to feel your best.",
@@ -29,7 +32,6 @@
 		"necklace-akoya-5.5mm": "the soft grey-blue hue gives this pearl an instantly elevated look. 5.5mm strikes the perfect balance — understated, yet unmistakably present. beautiful with a dress, a shirt, or a simple tee, and even more striking layered with other necklaces.",
 		"necklace-akoya-7.5mm": "the most classic akoya necklace size — substantial enough to wear alone and make a statement. beautiful with an open neckline, especially in summer, and just as lovely over a simple camisole.",
 		"necklace-m-akoya-8-8.5-q1": "a single strand that does it all — luminous, full-bodied akoya pearls in a soft pink hue, rivaling any fine jewelry counter. whether for a wedding, a graduation, or any moment that matters, this necklace shines alongside you.",
-		"pendant-akoya-y": "our most beloved silhouette — the y-chain elongates the neckline and flatters the face beautifully. a single akoya pearl rests at the center, swaying gently with your movement and drawing the eye exactly where it should. the adjustable length allows for several ways to wear it.",
 		"necklace-m-akoya-3.5": "our summer favorite — an exquisitely refined strand of small akoya pearls. understated luxury worn alone, and effortlessly elevated when layered with other necklaces.",
 		"necklace-m-akoya-8.5mm": "a single strand that does it all — luminous, full-bodied akoya pearls rivaling any fine jewelry counter. whether for a wedding, a graduation, or any moment that matters, this necklace shines alongside you.",
 		"necklace-m-akoya-candy-8.0": "for anyone who's found pearls a little too formal — this macaron-hued strand brings a playful sweetness to the neckline, without compromising on the quality of a fine akoya pearl. a summer favorite.",
@@ -41,7 +43,11 @@
 		"necklace-tahitian": "no two multicolor tahitian necklaces are ever alike — that is precisely its beauty. black, grey, green, and peacock pearls, thoughtfully paired to complement one another. a collector's piece that draws admiration every time it's worn.",
 		"pendant-tahitian-necklace": "a single tahitian pearl on a delicate chain — deep, complex, endlessly captivating. for those drawn to depth and mystery rather than the expected.",
 		"necklace-akoya-keshi": "akoya keshi pearls carry all the luster of fine akoya with the freedom of organic form — each one a small marvel of nature. gathered together in a single strand, they become something truly special.",
-		"necklace-bluebarouque": "baroque south sea pearls in a cool blue-grey are a rare find — organic form and cool tone together create something sculptural rather than merely decorative. for those who truly wish to stand apart."
+		"necklace-bluebarouque": "baroque south sea pearls in a cool blue-grey are a rare find — organic form and cool tone together create something sculptural rather than merely decorative. for those who truly wish to stand apart.",
+		"akoya-hanadama-apple": "a single hanadama-certified akoya pearl, cradled by a delicate diamond accent — simple, precise, and quietly luxurious. the everyday pendant that never goes out of style.",
+		"akoya-tennyo-flower": "a softly lustrous akoya pearl on a fine chain, touched with a small floral accent — delicate enough for daily wear, refined enough to be your go-to piece.",
+		"southsea": "a full strand of silver-blue south sea pearls, graduated from 10-12mm — a rare, investment-grade piece with presence to match. the necklace that elevates absolutely anything you wear it with.",
+		"tahitian-oceanblue": "a full strand of tahitian pearls in a uniform ocean blue tone — the depth of tahitian pearls, without the multicolor mix. a striking, cohesive piece for those who want tahitian's signature luster in a single, unmistakable hue."
 	},
 	"sidenotes": {
 		"pendant-akoya-wg-diana": "🦪 pearl type: Akoya\n📏 size: 8.0-8.5mm\n🪙 material: 18K white gold\n⛓️ chain length: 45cm\n👗 suitable for: everyday wear\n📜 certification: yes (hanadama card from Pearl Science Laboratory)",
@@ -50,7 +56,6 @@
 		"necklace-akoya-star": "🦪 pearl type: Akoya\n📏 size: 3.0-3.5mm\n🪙 material: 18K gold\n⛓️ chain length: 45cm\n👗 suitable for: everyday wear",
 		"necklace-akoya-5.5mm": "🦪 pearl type: Akoya (Shintama)\n📏 size: 5.0-5.5mm\n🪙 material: steel wire, Japanese silver clasp (upgradeable to K gold)\n⛓️ chain length: ~42–45cm\n👗 suitable for: everyday wear\n📜 certification: yes (Shintama certificate from Pearl Science Laboratory)",
 		"necklace-m-akoya-8-8.5-q1": "🦪 pearl type: Akoya (Pink)\n📏 size: 8.0-8.5mm\n🪙 material: steel wire, Japanese silver clasp (upgradeable to K gold)\n⛓️ chain length: 45cm\n👗 suitable for: statement piece",
-		"pendant-akoya-y": "🦪 pearl type: Akoya\n🪙 material: 18K gold\n⛓️ chain length: 45cm\n👗 suitable for: everyday wear",
 		"necklace-akoya-7.5mm": "🦪 pearl type: Akoya\n📏 size: 6.5-7.0mm\n🪙 material: steel wire, Japanese silver clasp (upgradeable to K gold)\n⛓️ chain length: ~40–46cm\n👗 suitable for: statement piece",
 		"necklace-m-akoya-8.5mm": "🦪 pearl type: Akoya\n📏 size: 8.0–8.5mm\n🪙 material: steel wire, Japanese silver clasp (upgradeable to K gold)\n⛓️ chain length: 45cm\n👗 suitable for: statement piece",
 		"necklace-m-akoya-candy-8.0": "🦪 pearl type: Akoya\n📏 size: 7.5–8.0mm\n🪙 material: steel wire, Japanese silver clasp (upgradeable to K gold)\n⛓️ chain length: 45cm\n👗 suitable for: everyday wear",
@@ -63,6 +68,10 @@
 		"pendant-tahitian-necklace": "🦪 pearl type: Tahitian & Akoya\n📏 size: Tahitian 9.0mm & Akoya 5.5mm\n🪙 material: 18K white gold\n⛓️ chain length: 45cm\n👗 suitable for: everyday wear\n📜 certification: yes (ocean blue card from Pearl Science Laboratory)",
 		"necklace-akoya-keshi": "🦪 pearl type: Akoya Keshi\n🪙 material: steel wire, Japanese silver clasp\n⛓️ chain length: 45cm\n👗 suitable for: everyday wear",
 		"necklace-m-akoya-3.5": "🦪 pearl type: Akoya\n📏 size: 3.0-3.5mm\n🪙 material: steel wire, Japanese silver clasp (upgradeable to K gold)\n⛓️ chain length: 45cm\n👗 suitable for: everyday wear\n📜 certification: yes (hanadama certificate from Pearl Science Laboratory)",
-		"necklace-bluebarouque": "🦪 pearl type: South Sea (Silver Blue)\n📏 size: 10.0-12.0mm\n🪙 material: steel wire, Japanese silver clasp (upgradeable to K gold)\n⛓️ chain length: 45cm\n👗 suitable for: statement piece"
+		"necklace-bluebarouque": "🦪 pearl type: South Sea (Silver Blue)\n📏 size: 10.0-12.0mm\n🪙 material: steel wire, Japanese silver clasp (upgradeable to K gold)\n⛓️ chain length: 45cm\n👗 suitable for: statement piece",
+		"akoya-hanadama-apple": "🦪 pearl type: Akoya (Hanadama)\n📏 size: 8.0-8.5mm\n🪙 material: 18K white gold\n⛓️ chain length: 45cm\n👗 suitable for: everyday wear\n📜 certification: yes (hanadama card from Pearl Science Laboratory)",
+		"akoya-tennyo-flower": "🦪 pearl type: Akoya\n🪙 material: 18K white gold\n⛓️ chain length: 45cm\n👗 suitable for: everyday wear",
+		"southsea": "🦪 pearl type: South Sea (Silver Blue)\n📏 size: 10.0-12.0mm graduated\n🪙 material: steel wire, Japanese silver clasp (upgradeable to K gold)\n⛓️ chain length: ~40–46cm\n👗 suitable for: statement piece",
+		"tahitian-oceanblue": "🦪 pearl type: Tahitian (Ocean Blue)\n📏 size: 9.0-11.0mm graduated\n🪙 material: steel wire, Japanese silver clasp (upgradeable to K gold)\n⛓️ chain length: ~40–46cm\n👗 suitable for: statement piece\n📜 certification: yes (ocean blue card from Pearl Science Laboratory)"
 	}
 }
