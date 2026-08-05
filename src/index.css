@@ -197,8 +197,13 @@
 }
 
 /* ─── Chinese font override ─── */
-/* When language is set to zh-Hant, swap Cormorant Garamond for Noto Serif TC */
-:lang(zh-Hant) .font-cormorant {
+/* When the site language is zh-Hant, every element (nav, buttons, product
+   names/descriptions, page copy — not just headings) should render in Noto
+   Serif TC instead of the default Jost, so the whole site matches the serif
+   used in the hero tagline. This is unlayered, so it wins over Tailwind's
+   layered utility classes (font-jost, font-cormorant, the body base style)
+   regardless of specificity or source order. */
+:lang(zh-Hant) {
 	font-family: var(--font-noto-tc), serif;
 }
 
