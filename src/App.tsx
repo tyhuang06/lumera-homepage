@@ -20,7 +20,7 @@ function App() {
 			<Navbar />
 			<AnnouncementBar />
 
-			<main style={{ paddingTop: 'var(--announcement-h, 0px)' }}>
+			<main>
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/icons" element={<IconsPage />} />
