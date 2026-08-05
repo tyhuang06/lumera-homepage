@@ -64,6 +64,7 @@
 	"home": {
 		"hero": {
 			"tagline": "西雅圖手工精製",
+			"brand": "Fine Pearls",
 			"subtitle": "陪著每一個階段的你",
 			"cta": "探索系列"
 		},
@@ -335,6 +336,13 @@
 		"faq": {
 			"title": "常見問題 | Luméra Fine Pearls",
 			"description": "關於珍珠首飾與保養的常見問題解答。"
+		},
+		"category": {
+			"description": "{{label}} — 精選珍珠珠寶，西雅圖手工製作。",
+			"descriptionWithPrice": "{{label}} — {{priceHeadline}}。西雅圖手工製作的精選珍珠珠寶。"
+		},
+		"product": {
+			"descriptionFallback": "{{title}} — 精選珍珠珠寶，西雅圖手工製作。"
 		}
 	}
 }

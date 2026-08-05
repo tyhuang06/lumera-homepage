@@ -2,11 +2,14 @@ import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-// Thin campaign strip that sits directly below the fixed Navbar — home page
-// only. Measures its own (responsive, can wrap to 2 lines on small screens)
-// height and exposes it as the --announcement-h CSS variable so the layout
-// can offset around it; that var is reset to 0 on every other page since the
-// bar isn't rendered there.
+// Thin campaign strip that sits directly below the fixed Navbar, overlaid on
+// the hero — home page only. Positioned `absolute` (not `fixed`) so it's
+// anchored to the document rather than the viewport: it scrolls away with
+// the hero as the page scrolls, instead of staying pinned. Measures its own
+// (responsive, can wrap to 2 lines on small screens) height and exposes it
+// as the --announcement-h CSS variable in case other layout needs to offset
+// around it; that var is reset to 0 on every other page since the bar isn't
+// rendered there.
 export function AnnouncementBar() {
 	const { t, i18n } = useTranslation();
 	const { pathname } = useLocation();
@@ -46,7 +49,7 @@ export function AnnouncementBar() {
 	return (
 		<div
 			ref={ref}
-			className="animate-hero fixed top-16 inset-x-0 z-40 bg-cream border-b border-gold/25"
+			className="animate-hero absolute top-16 inset-x-0 z-40 bg-cream border-b border-gold/25"
 			style={{ animationDelay: '0ms' }}
 		>
 			<div className="mx-auto max-w-4xl px-6 py-2 text-center leading-snug">
