@@ -17,6 +17,14 @@
 		"bracelets": "Bracelets"
 	},
 
+	"earrings": {
+		"priceHeadline": "Signature Earrings - $199 to $888 | Forever Earrings - from $1,990"
+	},
+
+	"necklaces": {
+		"priceHeadline": "Signature Necklaces - $269 - $1,099 | Forever Necklaces - from $1,499"
+	},
+
 	"collections": {
 		"akoya": "Akoya",
 		"akoya-gray": "Akoya Gray",

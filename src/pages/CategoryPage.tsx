@@ -51,6 +51,13 @@ export default function CategoryPage() {
 					<PageHeader
 						eyebrow={t('home.collections.label')}
 						title={label}
+						description={
+							slug === 'earrings'
+								? t('earrings.priceHeadline')
+								: slug === 'necklaces'
+									? t('necklaces.priceHeadline')
+									: undefined
+						}
 						className={useLineSections ? 'mb-20' : undefined}
 					/>
 

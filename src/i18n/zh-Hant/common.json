@@ -17,6 +17,14 @@
 		"bracelets": "手鍊"
 	},
 
+	"earrings": {
+		"priceHeadline": "Signature 耳環 - $199 至 $888 | Forever 耳環 - $1,990 起"
+	},
+
+	"necklaces": {
+		"priceHeadline": "Signature 項鍊系列 - $269 至 $1,099 | Forever 項鍊系列 - $1,499 起"
+	},
+
 	"collections": {
 		"akoya": "Akoya 珍珠",
 		"akoya-gray": "灰色 Akoya",
