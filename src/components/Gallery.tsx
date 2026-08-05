@@ -33,6 +33,11 @@ export function ProductCard({ product }: { product: Product }) {
 		>
 			{/* Image */}
 			<div className="relative aspect-[3/4] overflow-hidden bg-cream-dark">
+				{product.limited && (
+					<span className="absolute left-2 top-2 z-10 border border-gold/60 bg-cream/90 px-2.5 py-1 text-[0.6rem] tracking-[0.2em] uppercase text-gold">
+						{t('ui.limitedTag')}
+					</span>
+				)}
 				<LazyImage
 					src={product.images[0]}
 					alt={t(`products:${product.titleKey}`)}

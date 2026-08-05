@@ -83,6 +83,7 @@ export const earringsProducts: Product[] = [
     collection: "akoya",
     category: "earrings",
     line: "signature",
+    limited: true,
     titleKey: "products.earrings-akoya-flower",
     descriptionKey: "earrings-akoya-flower",
     images: [
@@ -184,6 +185,7 @@ export const earringsProducts: Product[] = [
     collection: "southsea",
     category: "earrings",
     line: "signature",
+    limited: true,
     titleKey: "products.earrings-southsea-drop",
     descriptionKey: "earrings-southsea-drop",
     images: [
@@ -198,6 +200,7 @@ export const earringsProducts: Product[] = [
     collection: "keshi",
     category: "earrings",
     line: "signature",
+    limited: true,
     titleKey: "products.earrings-keshi-southsea-drop",
     descriptionKey: "earrings-keshi-southsea-drop",
     images: [
@@ -251,6 +254,7 @@ export const earringsProducts: Product[] = [
     collection: "keshi",
     category: "earrings",
     line: "signature",
+    limited: true,
     titleKey: "products.earrings-keshi-southsea-gold",
     descriptionKey: "earrings-keshi-southsea-gold",
     images: [
@@ -409,7 +413,7 @@ export const earringsProducts: Product[] = [
   },
   {
     id: "earrings-southsea-pheonix-12mm",
-    featured: false,
+    featured: true,
     collection: "southsea",
     category: "earrings",
     line: "signature",
@@ -473,6 +477,7 @@ export const earringsProducts: Product[] = [
     collection: "southsea",
     category: "earrings",
     line: "signature",
+    limited: true,
     titleKey: "products.southsea-10mm-drop",
     descriptionKey: "southsea-10mm-drop",
     images: [

@@ -18,6 +18,7 @@ export const braceletsProducts: Product[] = [
     featured: false,
     collection: "southsea",
     category: "bracelets",
+    limited: true,
     titleKey: "products.bracelets-southsea",
     descriptionKey: "bracelets-southsea",
     images: [

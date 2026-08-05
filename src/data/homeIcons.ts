@@ -8,9 +8,10 @@ export const homeIcons: string[] = [
 	"akoya-earrings-diana",
 	"pendant-akoya-mermaid",
 	"earrings-southsea-pheonex-11mm",
-	"necklace-m-akoya-3.5",
+	"earrings-southsea-pheonix-12mm",
+	"bracelets-akoya-double",
 	"necklace-akoya-star",
 	"necklace-tahitian",
 	"ring-akoya-balance",
-	"bracelets-akoya-double",
+	"necklace-m-akoya-3.5",
 ];

@@ -34,13 +34,19 @@ export default function CategoryPage() {
 	const useLineSections = LINE_CATEGORIES.includes(slug);
 
 	// Price headlines pair a Signature line with a Forever line separated by
-	// " | " — break them onto two lines for an easier read on mobile.
+	// " | " — break them onto two lines for an easier read on mobile. Rings
+	// and bracelets don't have a Signature/Forever split, so theirs is just
+	// a single line.
 	const priceHeadline =
 		slug === 'earrings'
 			? t('earrings.priceHeadline')
 			: slug === 'necklaces'
 				? t('necklaces.priceHeadline')
-				: undefined;
+				: slug === 'rings'
+					? t('rings.priceHeadline')
+					: slug === 'bracelets'
+						? t('bracelets.priceHeadline')
+						: undefined;
 	const [signatureLine, foreverLine] = priceHeadline?.split(' | ') ?? [];
 
 	return (
@@ -62,12 +68,16 @@ export default function CategoryPage() {
 						eyebrow={t('home.collections.label')}
 						title={label}
 						description={
-							signatureLine && foreverLine ? (
-								<>
-									{signatureLine}
-									<br />
-									{foreverLine}
-								</>
+							signatureLine ? (
+								foreverLine ? (
+									<>
+										{signatureLine}
+										<br />
+										{foreverLine}
+									</>
+								) : (
+									signatureLine
+								)
 							) : undefined
 						}
 						className={useLineSections ? 'mb-20' : undefined}

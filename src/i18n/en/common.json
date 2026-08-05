@@ -1,4 +1,9 @@
 {
+	"announcement": {
+		"line1": "Luméra Lookbook is here✨",
+		"line2": "Message us to inquire. Mention LAUNCH10 for 10% off orders $1,000+, through August 20."
+	},
+
 	"nav": {
 		"home": "Home",
 		"icons": "Icons",
@@ -15,6 +20,14 @@
 		"necklaces": "Necklaces",
 		"earrings": "Earrings",
 		"bracelets": "Bracelets"
+	},
+
+	"rings": {
+		"priceHeadline": "Rings - from $249 to $1,299"
+	},
+
+	"bracelets": {
+		"priceHeadline": "Bracelets - from $399 to $3,280"
 	},
 
 	"earrings": {
@@ -44,7 +57,8 @@
 		"productNotFound": "Product not found.",
 		"backToIcons": "Back to Icons",
 		"previous": "Previous",
-		"next": "Next"
+		"next": "Next",
+		"limitedTag": "Limited"
 	},
 
 	"home": {
