@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && tsx scripts/prerender.ts",
     "lint": "eslint .",
     "preview": "vite preview",
     "check-data": "tsx scripts/check-data.ts",
     "check-gallery": "tsx scripts/check-gallery.ts",
+    "generate-sitemap": "tsx scripts/generate-sitemap.ts",
+    "prerender": "tsx scripts/prerender.ts",
     "optimize-images": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
