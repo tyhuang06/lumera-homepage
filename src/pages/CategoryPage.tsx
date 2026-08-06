@@ -1,9 +1,9 @@
 import { useParams } from 'react-router';
-import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { Gallery } from '@/components/Gallery';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { PageHeader } from '@/components/PageHeader';
+import { Seo, SITE_URL } from '@/components/Seo';
 import type { CategorySlug } from '@/data/categories';
 import type { ProductLine } from '@/data/products/types';
 import { products } from '@/data/products';
@@ -48,12 +48,43 @@ export default function CategoryPage() {
 						? t('bracelets.priceHeadline')
 						: undefined;
 	const [signatureLine, foreverLine] = priceHeadline?.split(' | ') ?? [];
+	const pageDescription = priceHeadline
+		? t('seo.category.descriptionWithPrice', { label, priceHeadline })
+		: t('seo.category.description', { label });
+
+	const itemListJsonLd = {
+		'@context': 'https://schema.org',
+		'@type': 'CollectionPage',
+		name: pageTitle,
+		description: pageDescription,
+		url: `${SITE_URL}/collections/${slug}`,
+		mainEntity: {
+			'@type': 'ItemList',
+			itemListElement: filtered.map((p, i) => ({
+				'@type': 'ListItem',
+				position: i + 1,
+				url: `${SITE_URL}/products/${p.id}`,
+			})),
+		},
+	};
+
+	const breadcrumbJsonLd = {
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: t('nav.home'), item: SITE_URL },
+			{ '@type': 'ListItem', position: 2, name: label, item: `${SITE_URL}/collections/${slug}` },
+		],
+	};
 
 	return (
 		<>
-			<Helmet>
-				<title>{pageTitle}</title>
-			</Helmet>
+			<Seo
+				title={pageTitle}
+				description={pageDescription}
+				image={filtered[0]?.images[0]}
+				jsonLd={[itemListJsonLd, breadcrumbJsonLd]}
+			/>
 
 			<main className="pt-20 bg-cream min-h-screen">
 				<div className="mx-auto max-w-7xl px-6 py-12">

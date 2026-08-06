@@ -19,12 +19,15 @@ type SeoProps = {
 	/** Absolute or root-relative image URL for OG/Twitter cards. */
 	image?: string;
 	type?: 'website' | 'product' | 'article';
+	/** Extra structured data for this page (e.g. Product, BreadcrumbList). Rendered in addition to the site-wide Organization/WebSite JSON-LD already in index.html. */
+	jsonLd?: object | object[];
 };
 
-export function Seo({ title, description, image = DEFAULT_IMAGE, type = 'website' }: SeoProps) {
+export function Seo({ title, description, image = DEFAULT_IMAGE, type = 'website', jsonLd }: SeoProps) {
 	const { pathname } = useLocation();
 	const url = `${SITE_URL}${pathname}`;
 	const absoluteImage = image.startsWith('http') ? image : `${SITE_URL}${image}`;
+	const jsonLdBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 
 	return (
 		<Helmet>
@@ -43,6 +46,10 @@ export function Seo({ title, description, image = DEFAULT_IMAGE, type = 'website
 			<meta name="twitter:title" content={title} />
 			{description && <meta name="twitter:description" content={description} />}
 			<meta name="twitter:image" content={absoluteImage} />
+
+			{jsonLdBlocks.map((obj, i) => (
+				<script key={i} type="application/ld+json">{JSON.stringify(obj)}</script>
+			))}
 		</Helmet>
 	);
 }

@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 import {
 	Accordion,
 	AccordionContent,
@@ -7,6 +6,7 @@ import {
 	AccordionTrigger,
 } from '@/components/ui/accordion';
 import { ContentListBlock, type ListBlock } from '@/components/ContentBlocks';
+import { Seo } from '@/components/Seo';
 
 const FAQ_KEYS = ['q1', 'q2', 'q3'] as const;
 
@@ -17,10 +17,7 @@ export default function FaqPage() {
 
 	return (
 		<>
-			<Helmet>
-				<title>{t('seo.faq.title')}</title>
-				<meta name="description" content={t('seo.faq.description')} />
-			</Helmet>
+			<Seo title={t('seo.faq.title')} description={t('seo.faq.description')} />
 
 			<main className="pt-20 bg-cream min-h-screen">
 				<div className="mx-auto max-w-3xl px-6 py-16">

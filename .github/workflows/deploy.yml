@@ -25,6 +25,7 @@ jobs:
             - run: yarn install --frozen-lockfile
             - run: yarn check-data
             - run: yarn check-gallery
+            - run: yarn generate-sitemap
             - run: yarn build
 
             - name: Upload Pages artifact
