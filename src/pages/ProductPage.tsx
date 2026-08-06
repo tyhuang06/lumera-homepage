@@ -57,6 +57,16 @@ export default function ProductPage() {
 		},
 	};
 
+	const breadcrumbJsonLd = {
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: t('nav.home'), item: SITE_URL },
+			{ '@type': 'ListItem', position: 2, name: categoryLabel, item: `${SITE_URL}/collections/${product.category}` },
+			{ '@type': 'ListItem', position: 3, name: title, item: `${SITE_URL}/products/${product.id}` },
+		],
+	};
+
 	return (
 		<>
 			<Seo
@@ -64,7 +74,7 @@ export default function ProductPage() {
 				description={description}
 				image={images[0]}
 				type="product"
-				jsonLd={productJsonLd}
+				jsonLd={[productJsonLd, breadcrumbJsonLd]}
 			/>
 
 			<main className="pt-20 bg-cream min-h-screen">

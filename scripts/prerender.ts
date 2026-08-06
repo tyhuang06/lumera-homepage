@@ -295,11 +295,20 @@ function buildCategoryPage(route: Extract<Route, { kind: "category" }>): PageDat
 		},
 	};
 
+	const breadcrumbJsonLd = {
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		itemListElement: [
+			{ "@type": "ListItem", position: 1, name: t("nav.home"), item: SITE_URL },
+			{ "@type": "ListItem", position: 2, name: label, item: `${SITE_URL}${route.path}` },
+		],
+	};
+
 	return {
 		title,
 		description,
 		image: filtered[0]?.images[0],
-		jsonLd: [itemListJsonLd],
+		jsonLd: [itemListJsonLd, breadcrumbJsonLd],
 		bodyHtml: `
 			<h1>${escapeHtml(label)}</h1>
 			<p>${escapeHtml(description)}</p>
@@ -327,12 +336,22 @@ function buildProductPage(route: Extract<Route, { kind: "product" }>): PageData 
 		brand: { "@type": "Brand", name: "Luméra Fine Pearls" },
 	};
 
+	const breadcrumbJsonLd = {
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		itemListElement: [
+			{ "@type": "ListItem", position: 1, name: t("nav.home"), item: SITE_URL },
+			{ "@type": "ListItem", position: 2, name: categoryLabel, item: `${SITE_URL}/collections/${product.category}` },
+			{ "@type": "ListItem", position: 3, name: title, item: `${SITE_URL}${route.path}` },
+		],
+	};
+
 	return {
 		title: `${title} | Luméra Fine Pearls`,
 		description,
 		image: product.images[0],
 		type: "product",
-		jsonLd: [productJsonLd],
+		jsonLd: [productJsonLd, breadcrumbJsonLd],
 		bodyHtml: `
 			<h1>${escapeHtml(title)}</h1>
 			<p>${escapeHtml(description)}</p>

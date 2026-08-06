@@ -68,13 +68,22 @@ export default function CategoryPage() {
 		},
 	};
 
+	const breadcrumbJsonLd = {
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: t('nav.home'), item: SITE_URL },
+			{ '@type': 'ListItem', position: 2, name: label, item: `${SITE_URL}/collections/${slug}` },
+		],
+	};
+
 	return (
 		<>
 			<Seo
 				title={pageTitle}
 				description={pageDescription}
 				image={filtered[0]?.images[0]}
-				jsonLd={itemListJsonLd}
+				jsonLd={[itemListJsonLd, breadcrumbJsonLd]}
 			/>
 
 			<main className="pt-20 bg-cream min-h-screen">
