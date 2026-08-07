@@ -8,6 +8,7 @@ import 'swiper/css';
 import { cn } from '@/lib/utils';
 import { products } from '@/data/products';
 import { LazyImage } from '@/components/LazyImage';
+import { ImageLightbox } from '@/components/ImageLightbox';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { Seo, SITE_URL } from '@/components/Seo';
 
@@ -16,6 +17,7 @@ export default function ProductPage() {
 	const { id } = useParams<{ id: string }>();
 	const product = products.find((p) => p.id === id);
 	const [activeIndex, setActiveIndex] = useState(0);
+	const [lightboxOpen, setLightboxOpen] = useState(false);
 	const swiperRef = useRef<SwiperType | null>(null);
 
 	if (!product) {
@@ -104,7 +106,8 @@ export default function ProductPage() {
 												src={src}
 												alt={`${title} ${i + 1}`}
 												priority={i === 0}
-												className="h-full w-full object-cover"
+												onClick={() => setLightboxOpen(true)}
+												className="h-full w-full cursor-zoom-in object-cover"
 											/>
 										</SwiperSlide>
 									))}
@@ -154,6 +157,18 @@ export default function ProductPage() {
 									))}
 								</div>
 							)}
+
+							<ImageLightbox
+								images={images}
+								alt={title}
+								index={activeIndex}
+								onIndexChange={(i) => {
+									setActiveIndex(i);
+									swiperRef.current?.slideTo(i);
+								}}
+								open={lightboxOpen}
+								onOpenChange={setLightboxOpen}
+							/>
 						</div>
 
 						{/* Right: product info */}
