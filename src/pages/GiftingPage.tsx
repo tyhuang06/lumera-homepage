@@ -1,40 +1,17 @@
-import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { PageHeader } from '@/components/PageHeader';
 import { Gallery } from '@/components/Gallery';
 import { LazyImage } from '@/components/LazyImage';
+import { Seo } from '@/components/Seo';
 import { products } from '@/data/products';
+import { GIFT_PICK_IDS, PREMIUM_PICK_IDS } from '@/data/giftPicks';
 
 const GIFT_IMAGES = [
 	'/gallery/gift/gifting-1.webp',
 	'/gallery/gift/gifting-2.webp',
 	'/gallery/gift/gifting-3.webp',
-];
-
-// Curated gift picks — all under $300. To change what shows up, edit this list.
-const GIFT_PICK_IDS = [
-	'ring-akoya-ring-3.0mm', // Lumie Signature - Akoya Smile Ring
-	'necklace-akoya-keshi', // Nature Forever - Akoya Keshi Classic Necklace
-	'earrings-akoya-hanadama-8.0mm', // Lumie Signature - Akoya Classic Earrings (Hanadama 8.0mm)
-	'earrings-akoya-bluerose', // Lumie Signature - Akoya Blue Rose Earrings (8.0mm)
-	'earclip-8.0mm', // Lumie Signature - Akoya Classic Ear Clip (8.0mm)
-	'earrings-akoya-loveshaped', // Lumie Signature - Akoya Love Earrings
-	'earrings-akoya-tie', // Lumie Signature - Akoya Ribbon Earrings
-	'earrings-southsea-9.0mm-feather', // Soul Signature - South Sea Plume Earrings
-	'earclip-bluerose', // Lumie Signature - Akoya Blue Rose Ear Clip
-	'tahitian-peacock-8mm', // Eclipse Signature - Tahitian Peacock Green Earrings (8.0mm)
-	'tahitian-sparkle', // Eclipse Signature - Tahitian Sparkle Earrings
-];
-
-// Premium necklace picks, shown below the best-value section.
-const PREMIUM_PICK_IDS = [
-	'necklace-akoya-5.5mm', // Lumie Signature - Akoya Classic Necklace (5.5mm)
-	'necklace-m-akoya-8.5mm', // Lumie Forever - Akoya Classic Necklace (8.0-8.5mm)
-	'necklace-southsea-8.0-10.0', // Soul Forever - South Sea Classic Necklace (8.0-10.0mm)
-	'necklace-m-akoya-3.5', // Lumie Forever - Baby Akoya Necklace (Hanadama 3.5mm)
-	'bracelets-southsea', // Soul Forever - South Sea Classic Bracelet
 ];
 
 export default function GiftingPage() {
@@ -50,10 +27,11 @@ export default function GiftingPage() {
 
 	return (
 		<>
-			<Helmet>
-				<title>{t('seo.gifting.title')}</title>
-				<meta name="description" content={t('seo.gifting.description')} />
-			</Helmet>
+			<Seo
+				title={t('seo.gifting.title')}
+				description={t('seo.gifting.description')}
+				image={GIFT_IMAGES[0]}
+			/>
 
 			<main className="pt-20 bg-cream min-h-screen">
 				<div className="mx-auto max-w-7xl px-6 py-12">

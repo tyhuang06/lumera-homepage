@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,6 +9,7 @@ import { cn } from '@/lib/utils';
 import { products } from '@/data/products';
 import { LazyImage } from '@/components/LazyImage';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { Seo, SITE_URL } from '@/components/Seo';
 
 export default function ProductPage() {
 	const { t } = useTranslation();
@@ -35,12 +35,47 @@ export default function ProductPage() {
 	const title = t(`products:${product.titleKey}`);
 	const sidenote = t(`products:sidenotes.${product.id}`, '');
 	const sidenoteLines = sidenote.split('\n').filter(Boolean);
+	const categoryLabel = t(`categories.${product.category}`);
+	const description = product.descriptionKey
+		? t(`products:descriptions.${product.descriptionKey}`)
+		: t('seo.product.descriptionFallback', { title });
+
+	// No per-item price data in the product model — omit `offers` rather than
+	// guess. Once real prices are wired in, add an `offers` block here to
+	// become eligible for Google's Product rich results.
+	const productJsonLd = {
+		'@context': 'https://schema.org',
+		'@type': 'Product',
+		name: title,
+		description,
+		image: images.map((img) => `${SITE_URL}${img}`),
+		url: `${SITE_URL}/products/${product.id}`,
+		category: categoryLabel,
+		brand: {
+			'@type': 'Brand',
+			name: 'Luméra Fine Pearls',
+		},
+	};
+
+	const breadcrumbJsonLd = {
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: t('nav.home'), item: SITE_URL },
+			{ '@type': 'ListItem', position: 2, name: categoryLabel, item: `${SITE_URL}/collections/${product.category}` },
+			{ '@type': 'ListItem', position: 3, name: title, item: `${SITE_URL}/products/${product.id}` },
+		],
+	};
 
 	return (
 		<>
-			<Helmet>
-				<title>{`${title} | Luméra Fine Pearls`}</title>
-			</Helmet>
+			<Seo
+				title={`${title} | Luméra Fine Pearls`}
+				description={description}
+				image={images[0]}
+				type="product"
+				jsonLd={[productJsonLd, breadcrumbJsonLd]}
+			/>
 
 			<main className="pt-20 bg-cream min-h-screen">
 				<div className="mx-auto max-w-6xl px-6 py-12">

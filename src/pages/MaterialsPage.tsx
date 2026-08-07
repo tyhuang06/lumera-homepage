@@ -1,7 +1,7 @@
-import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { PageHeader } from '@/components/PageHeader';
+import { Seo } from '@/components/Seo';
 
 export default function MaterialsPage() {
 	const { t } = useTranslation();
@@ -12,10 +12,7 @@ export default function MaterialsPage() {
 
 	return (
 		<>
-			<Helmet>
-				<title>{t('seo.materials.title')}</title>
-				<meta name="description" content={t('seo.materials.description')} />
-			</Helmet>
+			<Seo title={t('seo.materials.title')} description={t('seo.materials.description')} />
 
 			<main className="pt-20 bg-cream min-h-screen">
 				<div className="mx-auto max-w-3xl px-6 py-16">

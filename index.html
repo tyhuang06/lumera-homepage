@@ -26,6 +26,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=Noto+Serif+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!--
+      Organization + WebSite structured data. Static (not injected by JS) so
+      non-rendering crawlers — Bing, GPTBot, PerplexityBot, ClaudeBot, and
+      whatever backs Google's AI Overview — can see it without executing
+      React. This is the entity-identity signal tying this exact domain to
+      our real social accounts, so brand-name lookups for "Lumera"/"Luméra
+      Fine Pearls" resolve to us instead of an unrelated account that
+      happens to share the name.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Luméra Fine Pearls",
+        "alternateName": "Lumera Fine Pearls",
+        "url": "https://lumerafinepearls.com",
+        "logo": "https://lumerafinepearls.com/gallery/logo.webp",
+        "description": "Fine pearl jewelry handcrafted in Seattle.",
+        "sameAs": [
+          "https://instagram.com/lumera_pearls",
+          "https://www.xiaohongshu.com/user/profile/65720f9b000000001902f3f6"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Luméra Fine Pearls",
+        "url": "https://lumerafinepearls.com"
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

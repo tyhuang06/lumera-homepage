@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 import {
 	ContentHeadingBlock,
 	ContentImagesBlock,
@@ -8,6 +7,7 @@ import {
 	type ImagesBlock,
 	type ListBlock,
 } from '@/components/ContentBlocks';
+import { Seo } from '@/components/Seo';
 
 const STORY_IMAGES = [
 	'/gallery/our-story/ourstory-1.webp',
@@ -37,10 +37,11 @@ export default function StoryPage() {
 
 	return (
 		<>
-			<Helmet>
-				<title>{t('seo.story.title')}</title>
-				<meta name="description" content={t('seo.story.description')} />
-			</Helmet>
+			<Seo
+				title={t('seo.story.title')}
+				description={t('seo.story.description')}
+				image={STORY_IMAGES[0]}
+			/>
 
 			<main className="pt-20 bg-cream min-h-screen">
 				<div className="mx-auto max-w-3xl px-6 py-16">

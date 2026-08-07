@@ -1,8 +1,8 @@
-import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { Gallery } from '@/components/Gallery';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { PageHeader } from '@/components/PageHeader';
+import { Seo } from '@/components/Seo';
 import { products } from '@/data/products';
 
 export default function IconsPage() {
@@ -10,10 +10,7 @@ export default function IconsPage() {
 
 	return (
 		<>
-			<Helmet>
-				<title>{t('seo.icons.title')}</title>
-				<meta name="description" content={t('seo.icons.description')} />
-			</Helmet>
+			<Seo title={t('seo.icons.title')} description={t('seo.icons.description')} />
 
 			<main className="pt-20 bg-cream min-h-screen">
 				<div className="mx-auto max-w-7xl px-6 py-12">
