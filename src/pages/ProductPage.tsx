@@ -7,6 +7,7 @@ import type { Swiper as SwiperType } from 'swiper';
 import 'swiper/css';
 import { cn } from '@/lib/utils';
 import { products } from '@/data/products';
+import { getPriceRange } from '@/data/productPricing';
 import { LazyImage } from '@/components/LazyImage';
 import { ImageLightbox } from '@/components/ImageLightbox';
 import { Breadcrumb } from '@/components/Breadcrumb';
@@ -42,9 +43,9 @@ export default function ProductPage() {
 		? t(`products:descriptions.${product.descriptionKey}`)
 		: t('seo.product.descriptionFallback', { title });
 
-	// No per-item price data in the product model — omit `offers` rather than
-	// guess. Once real prices are wired in, add an `offers` block here to
-	// become eligible for Google's Product rich results.
+	// Each piece is natural/handmade and varies slightly, so we publish a
+	// price range (AggregateOffer) rather than a single exact price.
+	const priceRange = getPriceRange(product.category, product.line);
 	const productJsonLd = {
 		'@context': 'https://schema.org',
 		'@type': 'Product',
@@ -56,6 +57,18 @@ export default function ProductPage() {
 		brand: {
 			'@type': 'Brand',
 			name: 'Luméra Fine Pearls',
+		},
+		// `availability` is deliberately omitted: it's recommended by Google's
+		// guidelines but not required, and we have no real stock-tracking data
+		// (pieces are natural/one-of-a-kind and can sell out) — an untracked
+		// "InStock" claim would eventually be false. price + priceCurrency below
+		// are the only required fields.
+		offers: {
+			'@type': 'AggregateOffer',
+			priceCurrency: priceRange.currency,
+			lowPrice: priceRange.low,
+			...(priceRange.high !== undefined ? { highPrice: priceRange.high } : {}),
+			url: `${SITE_URL}/products/${product.id}`,
 		},
 	};
 

@@ -35,6 +35,7 @@ import i18next from "i18next";
 
 import { getRoutes, type Route } from "./lib/routes.ts";
 import { products } from "../src/data/products/index.ts";
+import { getPriceRange } from "../src/data/productPricing.ts";
 import { GIFT_PICK_IDS, PREMIUM_PICK_IDS } from "../src/data/giftPicks.ts";
 import { homeIcons } from "../src/data/homeIcons.ts";
 
@@ -325,6 +326,9 @@ function buildProductPage(route: Extract<Route, { kind: "product" }>): PageData 
 		? t(`products:descriptions.${product.descriptionKey}`)
 		: t("seo.product.descriptionFallback", { title });
 
+	// Each piece is natural/handmade and varies slightly, so we publish a
+	// price range (AggregateOffer) rather than a single exact price.
+	const priceRange = getPriceRange(product.category, product.line);
 	const productJsonLd = {
 		"@context": "https://schema.org",
 		"@type": "Product",
@@ -334,6 +338,18 @@ function buildProductPage(route: Extract<Route, { kind: "product" }>): PageData 
 		url: `${SITE_URL}${route.path}`,
 		category: categoryLabel,
 		brand: { "@type": "Brand", name: "Luméra Fine Pearls" },
+		// `availability` is deliberately omitted: it's recommended by Google's
+		// guidelines but not required, and we have no real stock-tracking data
+		// (pieces are natural/one-of-a-kind and can sell out) — an untracked
+		// "InStock" claim would eventually be false. price + priceCurrency below
+		// are the only required fields.
+		offers: {
+			"@type": "AggregateOffer",
+			priceCurrency: priceRange.currency,
+			lowPrice: priceRange.low,
+			...(priceRange.high !== undefined ? { highPrice: priceRange.high } : {}),
+			url: `${SITE_URL}${route.path}`,
+		},
 	};
 
 	const breadcrumbJsonLd = {
