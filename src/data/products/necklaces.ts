@@ -358,6 +358,8 @@ export const necklacesProducts: Product[] = [
       "/gallery/necklace/necklace/southsea-blue/southsea-1.webp",
       "/gallery/necklace/necklace/southsea-blue/southsea-2.webp",
       "/gallery/necklace/necklace/southsea-blue/southsea-3.webp",
+      "/gallery/necklace/necklace/southsea-blue/southsea-4.webp",
+      "/gallery/necklace/necklace/southsea-blue/southsea-5.webp",
     ],
   },
   {
