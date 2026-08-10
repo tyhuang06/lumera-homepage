@@ -26,4 +26,6 @@ export const PREMIUM_PICK_IDS: string[] = [
 	'necklace-southsea-8.0-10.0', // Soul Forever - South Sea Classic Necklace (8.0-10.0mm)
 	'necklace-m-akoya-3.5', // Lumie Forever - Baby Akoya Necklace (Hanadama 3.5mm)
 	'bracelets-southsea', // Soul Forever - South Sea Classic Bracelet
+	'necklace-m-akoya-8-8.5-q1', // Lumie Forever - Pink Akoya Full Strand Necklace (8.0-8.5mm)
+	'southsea', // Soul Forever - Silver Blue South Sea Full Strand Necklace (10.0-12.0mm)
 ];
