@@ -2,7 +2,6 @@ import { Route, Routes } from 'react-router';
 import './App.css';
 import { Footer } from './components/Footer';
 import { Navbar } from './components/Navbar';
-import { AnnouncementBar } from './components/AnnouncementBar';
 import { ScrollToTop } from './components/ScrollToTop';
 import { Home } from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
@@ -18,7 +17,6 @@ function App() {
 		<>
 			<ScrollToTop />
 			<Navbar />
-			<AnnouncementBar />
 
 			<main>
 				<Routes>
