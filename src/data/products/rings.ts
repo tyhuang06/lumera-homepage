@@ -101,6 +101,7 @@ export const ringsProducts: Product[] = [
     collection: "keshi",
     category: "rings",
     limited: true,
+    outOfStock: true,
     titleKey: "products.ring-keshi",
     descriptionKey: "ring-keshi",
     images: [

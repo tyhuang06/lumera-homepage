@@ -26,3 +26,6 @@ dist-ssr
 # Claude Code local state
 .claude/settings.local.json
 .claude/worktrees/
+
+# Raw uploads held back from the public site (cert scans, identifiable photos, etc.)
+private-uploads/

@@ -41,6 +41,7 @@ export const necklacesProducts: Product[] = [
     category: "necklaces",
     line: "signature",
     limited: true,
+    outOfStock: true,
     titleKey: "products.pendant-tahitian-necklace",
     descriptionKey: "pendant-tahitian-necklace",
     images: [
@@ -59,10 +60,11 @@ export const necklacesProducts: Product[] = [
     titleKey: "products.necklace-m-akoya-3.5",
     descriptionKey: "necklace-m-akoya-3.5",
     images: [
-      "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-1.webp",
       "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-2.webp",
       "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-3.webp",
       "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-4.webp",
+      "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-5.webp",
+      "/gallery/necklace/necklace/m-akoya-3.5/m-akoya-3.5-6.webp",
     ],
   },
   {
@@ -78,6 +80,7 @@ export const necklacesProducts: Product[] = [
       "/gallery/necklace/necklace/akoya-5.5mm/akoya-5.5mm-1.webp",
       "/gallery/necklace/necklace/akoya-5.5mm/akoya-5.5mm-2.webp",
       "/gallery/necklace/necklace/akoya-5.5mm/akoya-5.5mm-3.webp",
+      "/gallery/necklace/necklace/akoya-5.5mm/akoya-5.5mm-4.webp",
     ],
   },
   {
@@ -86,6 +89,7 @@ export const necklacesProducts: Product[] = [
     collection: "akoya",
     category: "necklaces",
     line: "signature",
+    outOfStock: true,
     titleKey: "products.necklace-akoya-7.5mm",
     descriptionKey: "necklace-akoya-7.5mm",
     images: [
@@ -119,6 +123,7 @@ export const necklacesProducts: Product[] = [
     category: "necklaces",
     line: "forever",
     limited: true,
+    outOfStock: true,
     titleKey: "products.necklace-m-akoya-8-8.5-q1",
     descriptionKey: "necklace-m-akoya-8-8.5-q1",
     images: [
@@ -154,6 +159,7 @@ export const necklacesProducts: Product[] = [
     collection: "southsea",
     category: "necklaces",
     line: "forever",
+    outOfStock: true,
     titleKey: "products.necklace-southsea-8.0-10.0",
     descriptionKey: "necklace-southsea-8.0-10.0",
     images: [
@@ -271,6 +277,7 @@ export const necklacesProducts: Product[] = [
     collection: "akoya",
     category: "necklaces",
     line: "signature",
+    outOfStock: true,
     titleKey: "products.necklace-akoya-star",
     descriptionKey: "necklace-akoya-star",
     images: [
@@ -375,6 +382,38 @@ export const necklacesProducts: Product[] = [
       "/gallery/necklace/necklace/tahitian-oceanblue/tahitian-oceanblue-1.webp",
       "/gallery/necklace/necklace/tahitian-oceanblue/tahitian-oceanblue-3.webp",
       "/gallery/necklace/necklace/tahitian-oceanblue/tahitian-oceanblue-4.webp",
+    ],
+  },
+  {
+    id: "necklace-akoya-8.5-9.0mm",
+    featured: false,
+    collection: "akoya",
+    category: "necklaces",
+    line: "forever",
+    titleKey: "products.necklace-akoya-8.5-9.0mm",
+    descriptionKey: "necklace-akoya-8.5-9.0mm",
+    images: [
+      "/gallery/necklace/necklace/akoya-8.5-9.0mm/akoya-8.5-9.0mm-1.webp",
+      "/gallery/necklace/necklace/akoya-8.5-9.0mm/akoya-8.5-9.0mm-2.webp",
+      "/gallery/necklace/necklace/akoya-8.5-9.0mm/akoya-8.5-9.0mm-3.webp",
+      "/gallery/necklace/necklace/akoya-8.5-9.0mm/akoya-8.5-9.0mm-4.webp",
+      "/gallery/necklace/necklace/akoya-8.5-9.0mm/akoya-8.5-9.0mm-5.webp",
+    ],
+  },
+  {
+    id: "necklace-tahitian-peacock",
+    featured: false,
+    collection: "tahitian",
+    category: "necklaces",
+    line: "forever",
+    titleKey: "products.necklace-tahitian-peacock",
+    descriptionKey: "necklace-tahitian-peacock",
+    images: [
+      "/gallery/necklace/necklace/tahitian-peacock/tahitian-peacock-3.webp",
+      "/gallery/necklace/necklace/tahitian-peacock/tahitian-peacock-1.webp",
+      "/gallery/necklace/necklace/tahitian-peacock/tahitian-peacock-2.webp",
+      "/gallery/necklace/necklace/tahitian-peacock/tahitian-peacock-4.webp",
+      "/gallery/necklace/necklace/tahitian-peacock/tahitian-peacock-5.webp",
     ],
   },
 ];

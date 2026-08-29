@@ -66,6 +66,7 @@ export function Navbar() {
 				<div className="hidden md:flex items-center gap-1">
 					<NavLink to="/">{t('nav.home')}</NavLink>
 					<NavLink to="/icons">{t('nav.icons')}</NavLink>
+					<NavLink to="/new-arrivals">{t('nav.newArrivals')}</NavLink>
 
 					{/* Collections dropdown */}
 					<NavigationMenu viewport={false}>
@@ -174,6 +175,12 @@ export function Navbar() {
 								<SheetClose asChild>
 									<Link to="/icons" className={mobileLink}>
 										{t('nav.icons')}
+									</Link>
+								</SheetClose>
+
+								<SheetClose asChild>
+									<Link to="/new-arrivals" className={mobileLink}>
+										{t('nav.newArrivals')}
 									</Link>
 								</SheetClose>
 

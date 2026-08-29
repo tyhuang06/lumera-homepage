@@ -2,6 +2,7 @@
 	"nav": {
 		"home": "首頁",
 		"icons": "精選作品",
+		"newArrivals": "新品上市",
 		"collections": "飾品系列",
 		"gifting": "送禮首選",
 		"ourStory": "品牌故事",
@@ -53,7 +54,9 @@
 		"backToIcons": "返回精選作品",
 		"previous": "上一個",
 		"next": "下一個",
-		"limitedTag": "限量"
+		"limitedTag": "限量",
+		"outOfStockTag": "暫時缺貨",
+		"joinWaitlist": "加入候補名單"
 	},
 
 	"home": {
@@ -99,6 +102,12 @@
 	"icons": {
 		"title": "Luméra 精選作品",
 		"desc": "我們系列中的每一件作品，等你探索。"
+	},
+
+	"newArrivals": {
+		"label": "新鮮上架",
+		"title": "新品上市",
+		"desc": "最新一批選品——剛加入 Luméra 系列的全新作品。"
 	},
 
 	"lines": {
@@ -315,6 +324,10 @@
 		"icons": {
 			"title": "精選作品 | Luméra Fine Pearls",
 			"description": "探索 Luméra 系列的每一件作品。"
+		},
+		"newArrivals": {
+			"title": "新品上市 | Luméra Fine Pearls",
+			"description": "剛加入 Luméra 系列的全新作品。"
 		},
 		"gifting": {
 			"title": "送禮首選 | Luméra Fine Pearls",
