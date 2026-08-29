@@ -2,6 +2,7 @@
 	"nav": {
 		"home": "Home",
 		"icons": "Icons",
+		"newArrivals": "New Arrivals",
 		"collections": "Collections",
 		"gifting": "Gifting",
 		"ourStory": "Our Story",
@@ -53,7 +54,9 @@
 		"backToIcons": "Back to Icons",
 		"previous": "Previous",
 		"next": "Next",
-		"limitedTag": "Limited"
+		"limitedTag": "Limited",
+		"outOfStockTag": "Out of Stock",
+		"joinWaitlist": "Join Waitlist"
 	},
 
 	"home": {
@@ -99,6 +102,12 @@
 	"icons": {
 		"title": "The Luméra Icons",
 		"desc": "Every piece in our collection, available to explore."
+	},
+
+	"newArrivals": {
+		"label": "Just In",
+		"title": "New Arrivals",
+		"desc": "Fresh from our latest sourcing trip — the newest pieces to join the Luméra collection."
 	},
 
 	"lines": {
@@ -319,6 +328,10 @@
 		"icons": {
 			"title": "Icons | Luméra Fine Pearls",
 			"description": "Explore every piece in the Luméra collection."
+		},
+		"newArrivals": {
+			"title": "New Arrivals | Luméra Fine Pearls",
+			"description": "The newest pieces to join the Luméra collection."
 		},
 		"gifting": {
 			"title": "Gifting | Luméra Fine Pearls",

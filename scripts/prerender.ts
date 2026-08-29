@@ -37,6 +37,7 @@ import { getRoutes, type Route } from "./lib/routes.ts";
 import { products } from "../src/data/products/index.ts";
 import { getPriceRange } from "../src/data/productPricing.ts";
 import { GIFT_PICK_IDS, PREMIUM_PICK_IDS } from "../src/data/giftPicks.ts";
+import { NEW_ARRIVAL_IDS } from "../src/data/newArrivals.ts";
 import { homeIcons } from "../src/data/homeIcons.ts";
 
 import commonEN from "../src/i18n/en/common.json" with { type: "json" };
@@ -207,6 +208,16 @@ function buildStaticPage(routePath: string): PageData {
 				title: t("seo.icons.title"),
 				description,
 				bodyHtml: `<h1>${escapeHtml(t("icons.title"))}</h1><p>${escapeHtml(description)}</p><ul>${featured}</ul>`,
+			};
+		}
+		case "/new-arrivals": {
+			const description = t("seo.newArrivals.description");
+			const arrivals = NEW_ARRIVAL_IDS.map(productLink).join("");
+			return {
+				title: t("seo.newArrivals.title"),
+				description,
+				image: products.find((p) => p.id === NEW_ARRIVAL_IDS[0])?.images[0],
+				bodyHtml: `<h1>${escapeHtml(t("newArrivals.title"))}</h1><p>${escapeHtml(description)}</p><ul>${arrivals}</ul>`,
 			};
 		}
 		case "/gifting": {

@@ -107,6 +107,12 @@ export default function ProductPage() {
 						<div>
 							{/* Main swiper */}
 							<div className="relative product-swiper">
+								{product.outOfStock && (
+									<span className="absolute left-3 top-3 z-10 border border-charcoal/40 bg-cream/90 px-2.5 py-1 text-[0.6rem] tracking-[0.2em] uppercase text-charcoal/70">
+										{t('ui.outOfStockTag')}
+									</span>
+								)}
+
 								<Swiper
 									slidesPerView={1}
 									onSwiper={(swiper) => { swiperRef.current = swiper; }}
@@ -218,9 +224,9 @@ export default function ProductPage() {
 
 							<a
 								href="#contact"
-								className="mt-10 inline-block border border-gold px-10 py-3.5 text-xs tracking-[0.25em] uppercase text-charcoal hover:bg-gold hover:text-white transition-all duration-300"
+								className="mt-10 block w-fit border border-gold px-10 py-3.5 text-xs tracking-[0.25em] uppercase text-charcoal hover:bg-gold hover:text-white transition-all duration-300"
 							>
-								{t('ui.enquire')}
+								{t(product.outOfStock ? 'ui.joinWaitlist' : 'ui.enquire')}
 							</a>
 						</div>
 					</div>

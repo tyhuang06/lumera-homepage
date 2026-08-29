@@ -22,7 +22,9 @@
 		"akoya-hanadama-apple": "Lumie Signature - Akoya Hanadama Apple Pendant",
 		"akoya-tennyo-flower": "Lumie Signature - Akoya Tennyo Flower Pendant",
 		"southsea": "Soul Forever - Silver Blue South Sea Full Strand Necklace (10.0-12.0mm)",
-		"tahitian-oceanblue": "Eclipse Forever - Tahitian Ocean Blue Full Strand Necklace"
+		"tahitian-oceanblue": "Eclipse Forever - Tahitian Ocean Blue Full Strand Necklace",
+		"necklace-akoya-8.5-9.0mm": "Lumie Forever - Akoya Ribbon Full Strand Necklace (8.5-9.0mm)",
+		"necklace-tahitian-peacock": "Eclipse Forever - Tahitian Peacock Green Full Strand Necklace"
 	},
 	"descriptions": {
 		"pendant-akoya-wg-diana": "the classic diana setting, reimagined as a pendant — equally versatile with a simple tee or a tailored shirt. the first piece you'll reach for whenever you want to feel your best.",
@@ -47,7 +49,9 @@
 		"akoya-hanadama-apple": "a single hanadama-certified akoya pearl, cradled by a delicate diamond accent — simple, precise, and quietly luxurious. the everyday pendant that never goes out of style.",
 		"akoya-tennyo-flower": "a softly lustrous akoya pearl on a fine chain, touched with a small floral accent — delicate enough for daily wear, refined enough to be your go-to piece.",
 		"southsea": "a full strand of silver-blue south sea pearls, graduated from 10-12mm — a rare, investment-grade piece with presence to match. the necklace that elevates absolutely anything you wear it with.",
-		"tahitian-oceanblue": "a full strand of tahitian pearls in a uniform ocean blue tone — the depth of tahitian pearls, without the multicolor mix. a striking, cohesive piece for those who want tahitian's signature luster in a single, unmistakable hue."
+		"tahitian-oceanblue": "a full strand of tahitian pearls in a uniform ocean blue tone — the depth of tahitian pearls, without the multicolor mix. a striking, cohesive piece for those who want tahitian's signature luster in a single, unmistakable hue.",
+		"necklace-akoya-8.5-9.0mm": "a full strand of luminous, tennyo-certified akoya pearls finished with a pavé bow clasp and a delicate drop pendant — substantial enough to be the only jewelry you need, refined enough for any occasion.",
+		"necklace-tahitian-peacock": "a full strand of tahitian pearls in a deep peacock green, each one iridescent and completely one of a kind — a necklace substantial enough to wear alone, striking enough to be remembered."
 	},
 	"sidenotes": {
 		"pendant-akoya-wg-diana": "🦪 pearl type: Akoya\n📏 size: 8.0-8.5mm\n🪙 material: 18K white gold\n⛓️ chain length: 45cm\n👗 suitable for: everyday wear\n📜 certification: yes (hanadama card from Pearl Science Laboratory)",
@@ -72,6 +76,8 @@
 		"akoya-hanadama-apple": "🦪 pearl type: Akoya (Hanadama)\n📏 size: 8.0-8.5mm\n🪙 material: 18K white gold\n⛓️ chain length: 45cm\n👗 suitable for: everyday wear\n📜 certification: yes (hanadama card from Pearl Science Laboratory)",
 		"akoya-tennyo-flower": "🦪 pearl type: Akoya\n🪙 material: 18K white gold\n⛓️ chain length: 45cm\n👗 suitable for: everyday wear\n📜 certification: yes (tennyo certificate from Pearl Science Laboratory)",
 		"southsea": "🦪 pearl type: South Sea (Silver Blue)\n📏 size: 10.0-12.0mm graduated\n🪙 material: steel wire, Japanese silver clasp (upgradeable to K gold)\n⛓️ chain length: ~40–46cm\n👗 suitable for: statement piece",
-		"tahitian-oceanblue": "🦪 pearl type: Tahitian (Ocean Blue)\n📏 size: 9.0-11.0mm graduated\n🪙 material: steel wire, Japanese silver clasp (upgradeable to K gold)\n⛓️ chain length: ~40–46cm\n👗 suitable for: statement piece\n📜 certification: yes (ocean blue card from Pearl Science Laboratory)"
+		"tahitian-oceanblue": "🦪 pearl type: Tahitian (Ocean Blue)\n📏 size: 9.0-11.0mm graduated\n🪙 material: steel wire, Japanese silver clasp (upgradeable to K gold)\n⛓️ chain length: ~40–46cm\n👗 suitable for: statement piece\n📜 certification: yes (ocean blue card from Pearl Science Laboratory)",
+		"necklace-akoya-8.5-9.0mm": "🦪 pearl type: Akoya\n📏 size: 8.5-9.0mm\n🪙 material: steel wire, silver clasp (pavé bow, upgradeable to K gold)\n⛓️ chain length: ~40–46cm\n👗 suitable for: statement piece\n📜 certification: yes (tennyo certificate from Pearl Science Laboratory)",
+		"necklace-tahitian-peacock": "🦪 pearl type: Tahitian (Peacock Green)\n📏 size: 9.0-11.0mm graduated\n🪙 material: steel wire, Japanese silver clasp (upgradeable to K gold)\n⛓️ chain length: ~40–46cm\n👗 suitable for: statement piece\n📜 certification: yes (peacock green certificate from Pearl Science Laboratory)"
 	}
 }

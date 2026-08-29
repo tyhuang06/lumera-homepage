@@ -14,6 +14,7 @@ export function getRoutes(): Route[] {
 	const staticRoutes: Route[] = [
 		{ kind: "static", path: "/" },
 		{ kind: "static", path: "/icons" },
+		{ kind: "static", path: "/new-arrivals" },
 		{ kind: "static", path: "/gifting" },
 		{ kind: "static", path: "/story" },
 		{ kind: "static", path: "/materials" },

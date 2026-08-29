@@ -19,6 +19,7 @@ export const braceletsProducts: Product[] = [
     collection: "southsea",
     category: "bracelets",
     limited: true,
+    outOfStock: true,
     titleKey: "products.bracelets-southsea",
     descriptionKey: "bracelets-southsea",
     images: [
@@ -41,6 +42,20 @@ export const braceletsProducts: Product[] = [
       "/gallery/bracelets/southsea-nearround/southsea-nearround-3.webp",
       "/gallery/bracelets/southsea-nearround/southsea-nearround-4.webp",
       "/gallery/bracelets/southsea-nearround/southsea-nearround-5.webp",
+    ],
+  },
+  {
+    id: "bracelets-akoya-rose",
+    featured: false,
+    collection: "akoya",
+    category: "bracelets",
+    titleKey: "products.bracelets-akoya-rose",
+    descriptionKey: "bracelets-akoya-rose",
+    images: [
+      "/gallery/bracelets/akoya-rose/akoya-rose-1.webp",
+      "/gallery/bracelets/akoya-rose/akoya-rose-2.webp",
+      "/gallery/bracelets/akoya-rose/akoya-rose-3.webp",
+      "/gallery/bracelets/akoya-rose/akoya-rose-4.webp",
     ],
   },
   {

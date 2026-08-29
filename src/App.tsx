@@ -6,6 +6,7 @@ import { ScrollToTop } from './components/ScrollToTop';
 import { Home } from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
 import IconsPage from './pages/IconsPage';
+import NewArrivalsPage from './pages/NewArrivalsPage';
 import GiftingPage from './pages/GiftingPage';
 import ProductPage from './pages/ProductPage';
 import MaterialsPage from './pages/MaterialsPage';
@@ -22,6 +23,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/icons" element={<IconsPage />} />
+					<Route path="/new-arrivals" element={<NewArrivalsPage />} />
 					<Route path="/gifting" element={<GiftingPage />} />
 					<Route path="/products/:id" element={<ProductPage />} />
 					<Route path="/collections/:type" element={<CategoryPage />} />
