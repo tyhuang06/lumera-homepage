@@ -5,6 +5,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const NEW_ARRIVAL_IDS: string[] = [
+	'pendant-southsea-apple-13mm', // Soul Signature - South Sea Apple Pendant (Venus 13.0mm)
 	'necklace-akoya-8.5-9.0mm', // Lumie Forever - Akoya Ribbon Full Strand Necklace (8.5-9.0mm)
 	'necklace-tahitian-peacock', // Eclipse Forever - Tahitian Peacock Green Full Strand Necklace
 	'bracelets-akoya-rose', // Lumie Signature - Akoya Rose Bracelet

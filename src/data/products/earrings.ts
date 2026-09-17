@@ -118,6 +118,10 @@ export const earringsProducts: Product[] = [
     images: [
       "/gallery/earrings/p-southsea-11.0mm/p-southsea-11.0mm-1.webp",
       "/gallery/earrings/p-southsea-11.0mm/p-southsea-11.0mm-2.webp",
+      "/gallery/earrings/p-southsea-11.0mm/p-southsea-11.0mm-3.webp",
+      "/gallery/earrings/p-southsea-11.0mm/p-southsea-11.0mm-4.webp",
+      "/gallery/earrings/p-southsea-11.0mm/p-southsea-11.0mm-5.webp",
+      "/gallery/earrings/p-southsea-11.0mm/p-southsea-11.0mm-6.webp",
     ],
   },
   {
